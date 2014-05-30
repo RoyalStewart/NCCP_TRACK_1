@@ -1,0 +1,120 @@
+.menu, .menu ul
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    line-height: 2.5em;
+    background-color: White;
+    font-size: 10px;
+    font-family: Verdana, Geneva, sans-serif;
+    text-transform: uppercase;
+}
+.menu a
+{
+    text-decoration: none;
+}
+.menu > li
+{
+    margin-left: 15px;
+}
+.menu > li:first-child
+{
+    margin-left: 0px !important;
+}
+.menu > li > a
+{
+    padding: 0px 0.8em;
+    margin: 0;
+    width: 100%;
+    text-decoration: none;
+    color: Black;
+    font-weight: bold;
+}
+div.box
+{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    border-radius: 1.2em 1.2em 0px 0px;
+}
+li.pull-down
+{
+    padding-right: 6px;
+}
+li.pull-down > a
+{
+    background-image: url('../images/darrow.png');
+    background-position: 96% 75%;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+li.right-menu > a
+{
+    background-image: url('../images/rarrow.png');
+    background-position: 97% 45%;
+    background-repeat: no-repeat;
+}
+.menu a.selected
+{
+    background-color: #75CDD2;
+    border-radius: 0px 1.2em 1.2em 1.2em;
+}
+.menu li
+{
+    float: left;
+    position: relative;
+    z-index: 100;   /* Ensure the menu items are above any subsequent content. */
+}
+
+.menu ul
+{
+    position: absolute;
+    display: none;
+    width: 200px;
+    top: 2.5em; /*padding-right: 10px;*/
+    border-radius: 0px 1.2em 1.2em 1.2em;
+    z-index: 1;
+}
+
+.menu li ul
+{
+    border: 1px solid #CCC;
+}
+
+.menu li ul a
+{
+    width: 180px;
+    height: auto;
+    float: left;
+    color: Black;
+    padding: 0 10px;
+}
+.menu li ul li
+{
+    padding: 0;
+    margin: 0;
+}
+.menu ul ul
+{
+    top: auto;
+}
+
+.menu li ul ul
+{
+    left: 198px; /*margin: 0px 0 0 10px;*/
+}
+.menu-item-selected > a
+{
+    background-color: #FFFEFD;
+    opacity: .50;
+}
+.menu-item-selected > a:hover, .menu li:hover
+{
+    background-color: #d1e8b2;
+    color: Black;
+    border-radius: 0px 1.2em 1.2em 1.2em;
+}
+
+

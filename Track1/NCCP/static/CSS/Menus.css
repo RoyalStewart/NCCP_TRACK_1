@@ -1,0 +1,23 @@
+#MenuArea
+{
+    clear: both;
+}
+
+#MainMenuBar
+{
+    display: none;
+}
+
+.menubar
+{
+    background: White;
+    padding-top: 1em;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    clear: both;
+    width: 1060px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}

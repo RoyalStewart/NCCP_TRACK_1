@@ -1,0 +1,146 @@
+@font-face
+{
+    font-family: 'Poller One';
+    font-style: normal;
+    font-weight: normal;
+    src: url('http://themes.googleusercontent.com/static/fonts/pollerone/v2/7FMOfxy_tGzN2YzWSe-XE1QlYEbsez9cZjKsNMjLOwM.eot');
+    src: local('Poller One'), local('PollerOne-Regular'), url('http://themes.googleusercontent.com/static/fonts/pollerone/v2/7FMOfxy_tGzN2YzWSe-XExsxEYwM7FgeyaSgU71cLG0.woff') format('woff');
+}
+
+body
+{
+    background: #42413C;
+    margin: 0;
+    padding: 0;
+    color: Black;
+    font-family: "Lucida Sans Unicode" , "Lucida Grande" , sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+p
+{
+    text-indent: 0.5em;
+}
+
+a img
+{
+    border: none;
+}
+
+
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+
+a:link, a:visited
+{
+    color: #669900;
+    text-decoration: none;
+}
+
+a:hover, a:active, a:focus
+{
+    /* this group of selectors will give a keyboard navigator the same hover experience as a mouse. */
+    text-decoration: underline;
+    color: #688828;
+}
+
+
+/* ~~ This fixed width container surrounds all other divs ~~ */
+
+#NormalContent
+{
+    width: 1100px;
+    margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+    background-color: White;
+}
+
+
+/* ~~ These designate regions for the banner images with different heights ~~ */
+
+.bigimage
+{
+    background: White;
+    padding-top: 4px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    height: 280px;
+    clear: both;
+}
+
+
+.bigimage-2
+{
+    background: White;
+    padding-top: 4px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    height: 199px;
+    clear: both;
+}
+
+
+
+/* 
+    Layout areas
+*/
+
+#Left
+{
+    float: left;
+    width: 200px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+
+
+#Main
+{
+    float: left;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    width: 660px;
+}
+
+
+#Right
+{
+    float: left;
+    width: 200px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0;
+}
+
+section#Content ul, section#Content ol
+{
+    padding: 0 15px 15px 40px;
+}
+
+/* ~~ For tables with alternating colored rows, this style is not supported by IE ~~ */
+
+
+.striped-table tr:nth-child(even)
+{
+    background-color: White;
+}
+
+.striped-table tr:nth-child(odd)
+{
+    background-color: #e1eff7;
+}
+
