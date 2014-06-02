@@ -7,5 +7,4 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 	url(r'^$', 'NCCP.views.home', name='home'),
-	{'document_root': settings.MEDIA_ROOT, 'show_indexes': True},
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

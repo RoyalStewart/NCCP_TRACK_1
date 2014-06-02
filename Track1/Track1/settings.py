@@ -78,8 +78,8 @@ USE_TZ = True
 
 
 #Media Files
-MEDIA_ROOT = ''
-MEDIA_URL = ''
+MEDIA_ROOT = '/home/likewise-open/UNR/vle/Desktop/Django/Track1/NCCP/images'
+MEDIA_URL = '/images/'
 
 # Static files (CSS, JavaScript, Images)
 STATIC_ROOT = '/home/likewise-open/UNR/vle/Desktop/Django/Track1/NCCP/static'
