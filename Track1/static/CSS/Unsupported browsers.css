@@ -1,0 +1,11 @@
+﻿html.no-js div.container, html.no-js #MarkupValidation, div#UnsupportedBrowser
+{
+    display: none;
+    visibility: hidden;
+}
+
+html.no-js div#UnsupportedBrowser
+{
+    display: block;
+    visibility: visible;
+}

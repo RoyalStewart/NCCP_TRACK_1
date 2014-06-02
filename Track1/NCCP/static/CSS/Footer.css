@@ -1,0 +1,15 @@
+﻿footer#SiteFooter
+{
+    clear: both;
+    padding: 1em;
+    border-top: 1px solid #360;
+    margin-top: 1em;
+    font-size: 0.7em;
+    font-style: italic;
+    text-align: center;
+}
+
+footer#SiteFooter nav a
+{
+    padding: 0px 2em;
+}
