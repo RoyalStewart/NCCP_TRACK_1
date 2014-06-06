@@ -70,27 +70,27 @@
         <nav id="MenuArea" class="menubar">
             <ul id="MainMenuBar">
                 <li>
-                    <a title="Background and information about the Nevada Climate Change Project and its efforts.">The Project</a>
+                    <a title="Background and information about the Nevada Climate Change Project and its efforts." href="{% url 'projectB' %}">The Project</a>
                     <ul>
                         <li>
-                            <a title="Project funding information.">Funding</a></li>
+                            <a title="Project funding information." href="{% url 'projectF' %}">Funding</a></li>
                         <li>
-                            <a title="The 6 components that work together to support the Nevada Climate Change Project.">Components</a></li>
+                            <a title="The 6 components that work together to support the Nevada Climate Change Project." href="{% url 'projectC' %}">Components</a></li>
                         <li>
-                            <a title="Synergistic efforts.">Synergistic Efforts</a></li>
+                            <a title="Synergistic efforts." href="{% url 'projectS' %}">Synergistic Efforts</a></li>
                         <li>
-                            <a title="The SENSOR system.">The SENSOR System</a></li>
+                            <a title="The SENSOR system." href="{% url 'projectSensor' %}">The SENSOR System</a></li>
                         <li>
                             <a title="A map displaying an overview of Nevada, its features, and the sites we monitor.">Explore Nevada</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN).">Research Sites (NevCAN)</a>
+                    <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a>
                     <ul>
                         <li>
-                            <a title="Hardware used to monitor the environment and collect data.">Equipment</a></li>
+                            <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment</a></li>
                         <li>
-                            <a title="Locations at which climate data is collected.">Locations</a></li>
+                            <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
                         <li>
                             <a title="Some of the most recent images and measurements taken at each monitoring site, updated as quickly as possible.">Current Conditions</a></li>
                         <li>
@@ -104,10 +104,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a title="An overview of the resources deployed for and created by the project to collect data.">Data Resources</a>
+                    <a title="An overview of the resources deployed for and created by the project to collect data." href="{% url 'dataresource' %}">Data Resources</a>
                     <ul>
                         <li>
-                            <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN).">Research Sites (NevCAN)</a>
+                            <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a>
                         </li>
                         <li>
                             <a target="_blank">Data Management Plan</a>
@@ -141,38 +141,38 @@
                 <li>
                     <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People</a></li>
                 <li>
-                    <a title="Videos, publications, software, and other resources related to or produced by the project.">Libraries</a>
+                    <a title="Videos, publications, software, and other resources related to or produced by the project." href="{% url 'libraries' %}">Libraries</a>
                     <ul>
                         <li>
-                            <a title="Publications produced by or related to the project.">Publications</a></li>
+                            <a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
                         <li>
-                            <a title="Photos and videos gathered during project activities.">Photos / Videos</a></li>
+                            <a title="Photos and videos gathered during project activities." href="{% url 'photos_videos' %}">Photos / Videos</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Software systems and technologies produced or utilized by the project.">Tools</a>
+                    <a title="Software systems and technologies produced or utilized by the project." href= "{% url 'tools' %}">Tools</a>
                     <ul>
                         <li>
-                            <a title="The Demeter Framework for Model and Data Interoperability.">Demeter Framework</a>
+                            <a title="The Demeter Framework for Model and Data Interoperability." href="{% url 'demeter' %}">Demeter Framework</a>
                         </li>
                         <li>
-                            <a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization.">SUNPRISM Framework</a>
+                            <a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization." href="{% url 'sunprism' %}">SUNPRISM Framework</a>
                         </li>
                         <li>
-                            <a title="The Web Enabled Date &amp; Modeling Toolkit">WEDMIT</a>
+                            <a title="The Web Enabled Date &amp; Modeling Toolkit" href="{% url 'webmit' %}">WEDMIT</a>
                         </li>
                         <li>
-                            <a title="A web application used for browsing NCARWRF data">VISTED</a>
+                            <a title="A web application used for browsing NCARWRF data" href="{% url 'visted' %}">VISTED</a>
                         </li>
                         <li>
-                            <a title="The ATMOS Toolkit">ATMOS</a>
+                            <a title="The ATMOS Toolkit" href="{% url 'atmos' %}">ATMOS</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Contact members of the Nevada Climate Change Project.">Contact Us</a></li>
+                    <a title="Contact members of the Nevada Climate Change Project." href= "{% url 'contact_us' %}">Contact Us</a></li>
                 <li>
-                    <a title="The Nevada Climate Change Homepage.">Home</a></li>
+                    <a title="The Nevada Climate Change Homepage." href= "{% url 'home' %}">Home</a></li>
             </ul>
         </nav>
 		<header id="HeadingArea">

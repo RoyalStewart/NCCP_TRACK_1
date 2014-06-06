@@ -37,7 +37,7 @@
             var ScriptBasePath = '{{ STATIC_URL }}static/JS/';
             var PluginBasePath = '{{ STATIC_URL }}static/JS/';
             var LightboxBasePath = PluginBasePath;
-            var StaticContentPath = 'http://127.0.0.1:8000/Static/';
+            var StaticContentPath = '{{ STATIC_URL }}static/';
         </script>
         <script type="text/javascript" src="{{ STATIC_URL }}static/JS/Scripts.min.js"></script>
         <script type="text/javascript">
@@ -141,38 +141,38 @@
                 <li>
                     <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People</a></li>
                 <li>
-                    <a title="Videos, publications, software, and other resources related to or produced by the project.">Libraries</a>
+                    <a title="Videos, publications, software, and other resources related to or produced by the project." href="{% url 'libraries' %}">Libraries</a>
                     <ul>
                         <li>
-                            <a title="Publications produced by or related to the project.">Publications</a></li>
+                            <a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
                         <li>
-                            <a title="Photos and videos gathered during project activities.">Photos / Videos</a></li>
+                            <a title="Photos and videos gathered during project activities." href="{% url 'photos_videos' %}">Photos / Videos</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Software systems and technologies produced or utilized by the project.">Tools</a>
+                    <a title="Software systems and technologies produced or utilized by the project." href= "{% url 'tools' %}">Tools</a>
                     <ul>
                         <li>
-                            <a title="The Demeter Framework for Model and Data Interoperability.">Demeter Framework</a>
+                            <a title="The Demeter Framework for Model and Data Interoperability." href="{% url 'demeter' %}">Demeter Framework</a>
                         </li>
                         <li>
-                            <a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization.">SUNPRISM Framework</a>
+                            <a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization." href="{% url 'sunprism' %}">SUNPRISM Framework</a>
                         </li>
                         <li>
-                            <a title="The Web Enabled Date &amp; Modeling Toolkit">WEDMIT</a>
+                            <a title="The Web Enabled Date &amp; Modeling Toolkit" href="{% url 'webmit' %}">WEDMIT</a>
                         </li>
                         <li>
-                            <a title="A web application used for browsing NCARWRF data">VISTED</a>
+                            <a title="A web application used for browsing NCARWRF data" href="{% url 'visted' %}">VISTED</a>
                         </li>
                         <li>
-                            <a title="The ATMOS Toolkit">ATMOS</a>
+                            <a title="The ATMOS Toolkit" href="{% url 'atmos' %}">ATMOS</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Contact members of the Nevada Climate Change Project.">Contact Us</a></li>
+                    <a title="Contact members of the Nevada Climate Change Project." href= "{% url 'contact_us' %}">Contact Us</a></li>
                 <li>
-                    <a title="The Nevada Climate Change Homepage.">Home</a></li>
+                    <a title="The Nevada Climate Change Homepage." href= "{% url 'home' %}">Home</a></li>
             </ul>
         </nav>
 		<header id="HeadingArea">

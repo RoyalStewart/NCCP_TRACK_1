@@ -78,16 +78,16 @@ USE_TZ = True
 
 
 #Media Files
-MEDIA_ROOT = '/home/likewise-open/UNR/vle/Desktop/Django/Track1/NCCP/images'
+MEDIA_ROOT = '/home/likewise-open/UNR/royals/NCCP_TRACK_1/Track1/NCCP/images'
 MEDIA_URL = '/images/'
 
 # Static files (CSS, JavaScript, Images)
-STATIC_ROOT = '/home/likewise-open/UNR/vle/Desktop/Django/Track1/NCCP/static'
+STATIC_ROOT = '/home/likewise-open/UNR/royals/NCCP_TRACK_1/Track1/NCCP/static'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # os.path.join(BASE_DIR, "static"),
-	'/home/likewise-open/UNR/vle/Desktop/Django/Track1/static',
+	'/home/likewise-open/UNR/royals/NCCP_TRACK_1/Track1/static',
 )

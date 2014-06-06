@@ -1,0 +1,47 @@
+{% extends 'NCCP/research_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block style_block %}
+	<style type="text/css">
+		#Right
+		{
+			display: none;
+			visibility: hidden;
+			width: 0px;
+		}
+		#Main
+		{
+			width: 860px;
+		}
+	</style>
+
+{% endblock %}
+
+{% block script_block %}
+{% endblock %}
+
+{% block body_block %}
+	<h1>
+		The Nevada Climate-ecohydrological Assessment Network (N<span class="h1-lowcase">ev</span>CAN)</h1>
+	<h2>
+		List of Sensors</h2>
+    <div>
+        <div>
+            <table id="sensorTable" class="striped-table">
+				{% for sensor in Sensors %}
+                <tr>
+                    <td>{{sensor.Name}}</td>
+                    <td>{{sensor.Description}}</td>
+                    <td><img src="/images/{{sensor.Image}}" width="75" height="75" alt="{{sensor.Name}}" /></td>
+                </tr>
+				{% endfor %}
+            </table>
+	    </div>
+    </div>
+	<p>
+		Back to <span style="font-weight: bold">
+			<a title="Details how monitoring equipmentis used to collect climate data." href="{% url 'researchED' %}">Equipment Details page</a></span>.</p>
+
+
+{% endblock %}

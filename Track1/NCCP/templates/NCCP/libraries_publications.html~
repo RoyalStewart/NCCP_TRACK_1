@@ -1,0 +1,488 @@
+{% extends 'NCCP/libraries_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block body_block %} 
+	<h1>
+		Libraries</h1>
+	<h2>
+		Publications</h2>
+	<p>
+		Publications created as a part of the Nevada Climate Change Project, or relating
+		to the topic of climate change, are organized by the format or purpose of the document.
+		The following categories contain all documents produced by, for, or related to the
+		project and its interests.</p>
+	
+	<h3>
+		2013</h3>
+	<h4>
+		Journal Articles</h4>
+    <p>
+        T.P. Albright, S. Ferguson, J. Li, B. Perryman, and R.S. Nowak (2013). Explaining patterns of species dominance in the
+        shrub steppe systems of the Junggar Basin (China) and Great Basin (USA). Journal of Arid Lands. 5 (4), 415-427.
+    </p>
+    <p>
+        Beck, A., Sinatra, G. M., & Lombardi, A. (2013). Leveraging higher-education instructors in the climate literacy effort:
+        Factors related to university faculty's propensity to teach climate change. The International Journal of Climate Change:
+        RPPR - Preview Report https://reporting.research.gov/rppr-web/rppr?execution=e1s56
+        9 of 44 11/15/2013 10:43 AM
+        Impacts and Responses. 4 (4), 1-17.
+    </p>
+    <p>
+        Biondi, F. (2013). The fourth dimension of interdisciplinary modeling. Journal of Contemporary Water Research and
+        Education.
+    </p>
+    <p>
+        Biondi, F. (2013). Space-time kriging extension of precipitation variability at 12 km spacing from tree-ring chronologies and
+        its implications for drought analysis.  Hydrology and Earth System Science Discussions. 10 4301-4335.
+    </p>
+    <p>
+        F. Biondi and M. Bradley (2013). Long-term survivorship of single-needle pinyon (Pinus monophylla) in mixed-conifer
+        ecosystems of the Great Basin of North America. Ecosphere.
+    </p>
+    <p>
+        C. Carrier, A. Kalra, and S. Ahmad, (2013). Using Paleo Reconstructions to Improve Streamflow Forecast Lead-Time in the
+        Western United States. Journal of the American Water Resources Association (JAWRA).
+    </p>
+    <p>
+        Y. Choi and S. Latifi (2013). Modern Flash Memory Technologies: A Flash Translation Layer Perspective. International
+        Journal of High Performance Systems Architecture. 4 (3), 167-182.
+    </p>
+    <p>
+        Dawadi, S., & Ahmad, S. (2013). Evaluating the Impact of Demand-Side Management on Water Resources Under
+        Changing Climatic Conditions and Increasing Population. Journal of Environmental Management. 114 (1), 261-75.
+    </p>
+    <p>
+        Dittrich, A., Gunes, M. H., and Dascalu, S. (2013). Network analysis
+        of software repositories: Identifying subject matter experts. In
+        Menezes, R., Evsukoff, A., and Gonzáles, M.C. (editors), Complex
+        Networks, Studies in Computational Intelligence, vol. 424, 2013,
+        pp. 187-198, Springer-Verlag, doi 10.1007/978-3-642-30287-9_20.
+    </p>
+    <p>
+        Dorman, C., Mejia, J., Koracin, D. (2013). Impact of U.S. west coastline inhomogeneity and synoptic forcing on winds, wind
+        stress, and wind stress curl during upwelling season. Journal of Geophysical Research Atmospheres. 118 1-6.
+    </p>
+    <p>
+        M. Gautam, K. Chief, and W. Smith Jr. (2013). Climate Change in Arid Lands and Native American Socioeconomic
+        Vulnerability: The Case of the Pyramid Lake Paiute Tribe. Climatic Change. 120 (3), 588-599.
+    </p>
+    <p>
+        Gibson L. J., Lim, J., and Pavlakovich-Kochi, V. (2013). A Marketing Device, Dynamic Economic Regions, or Both?. 
+        Studies in Regional Science.
+    </p>
+    <p>
+        Gibson, L. J., Paclakovoch-Kochi, V., and Lim, J. (2013). The University Research Park as a Micro-cluster: Mapping Its
+        Development and Anatomy. Studies in Regional Science.
+    </p>
+    <p>
+        R. Guida, S. Abella, H. Stephen, and C. Roberts (2013). Climatic Change and desert vegetation distribution: Assessing 30
+        years of change in southern Nevada's Mojave Desert. The Professional Geographer. 1-12.
+    </p>
+    <p>
+        Jiang, P., Gautam, M.R., Zhu, J., Yu, Z., (2013). How well do the GCM/RCMs capture the multi-scale temporal variability
+        of precipitation in the Southwestern United States. Journal of Hydrology. 479 75-85.
+    </p>
+    <p>
+        Jiang, P., Yu, Z., and Gautam, M.R. (2013). Pacific and Atlantic Ocean influence on the spatiotemporal variability of heavy
+        precipitation in the western United States. Global and Planetary Change. 109 38-45.
+    </p>
+    <p>
+        A. Kalra, W.P. Miller, K.W. Lamb, S. Ahmad, T. Piechota (2013). Using large scale climatic patterns for improving long lead
+        time streamflow forecasts for Gunnison and San Juan River Basins.  Hydrological Processes. 27 (11), 1543-1559.
+    </p>
+    <p>
+        Kauneckis, D. (2013). Researching complex governance arrangements: The impact of the Ostrom legacy on research
+        methods and the analysis of institutional design. Policy Matters.
+    </p>
+    <p>
+        M. Kilpatrick, F. Biondi, S. Strachan, and J.S. Sibold (2013). Fire history of mixed conifer ecosystems in the Great
+        Basin/Mojave Deserts transition zone, Nevada, USA. Trees - Structure and Function.
+    </p>
+    <p>
+        Z. Liu, W. Smith Jr., and A. Safi (2013). Rancher and Farmer Perceptions of Climate Change in Nevada, USA. Climatic
+        Change.
+    </p>
+    <p>
+        Mensing, S., Sharpe, S.. Tunno, I., Sada, D., Thomas, J., Starratt, S., Smith, J. (2013). The Late Holocene Dry Period:
+        multiproxy evidence for an extended drought between 2800 and 1850 cal yr BP across the central Great Basin, USA. 
+        Quaternary Science Reviews. 78 266-282.
+    </p>
+    <p>
+        Saito, L., Link, T., Fernald, A., and Kohne, L. (2013). Lessons learned from an inter-institutional graduate course on
+        interdisciplinary modeling for water-related issues and changing climate.  Journal of Contemporary Water Research and
+        Education.
+    </p>
+    <p>
+        G. Tang and J.A. Arnone III (2013). Trends in surface air temperature and temperature extremes in the Great Basin during
+        the 20th century from ground-based observations..  Journal of Geophysical Research-- Atmosphere. 118 3579-3589.
+    </p>
+    <p>
+        Zang, C., and F. Biondi. Dendroclimatic calibration in R:
+        The bootRes package for response and correlation function
+        analysis. Dendrochronologia (in press), 2013, doi:
+        10.1016/j.dendro.2012.08.001
+    </p>
+
+    <h4>
+		Published Book(s) or Other One-time Publication(s):</h4>
+    <p>
+        Ewing-Taylor, J.M. and Kiley, T.J., Eds. (2013). Northern Nevada Science Teachers Present: Climate Change Activities for
+        the Classroom N/A.N/A. Ewing-Taylor, J.M. and Kiley, T.J.. N/A. Reno, Nevada.
+    </p>
+    <p>
+        R. Ostergard and D. Kauneckis (2013). Climate Change and Health Security. New Directions in Human Security 1st.N/A. 
+        S. Rushton and J. Youde. Routledge. New York, New York.
+    </p>
+    
+	<h4>
+		Conference Presentations</h4>
+    <p>
+        S. Ahmad (2013). Water-Energy Nexus in the Arid Southwest: Implications for Sustainable Water Management. 94th
+        annual meeting of American Academy of Sciences (AAAS) Pacific Division. Las Vegas, NV.
+    </p>
+    <p>
+        T. P. Albright (2013). When dispersed means are not enough: Informing conservation in a variable and heterogeneous
+        world. University of Oregon Department of Geography Colloquium, 18 April 2013, Eugene, OR.. Eugene, OR.
+    </p>
+    <p>
+        T.P. Albright, A.P. Vitale, J.F. Brown, and G. Schmidt (2013). Heterogeneous Land Surface Phenology From Fusion of
+        Multi-Sensor Earth Observations. Association of American Geographers. Los Angeles, CA.
+    </p>
+    <p>
+        L. Apodaca (2013). Big Sagebrush and Climate Change: Assessing Growth Response to Climate Variation in an
+        Artemisia Ridentata Plant Community. SoLS Colloquium. Las Vegas, Nevada.
+    </p>
+    <p>
+        L. Apodaca, D. Devitt, and L. Fenstermaker (2013). Assessing Interannual Variation in Great Basin Sagebrush Growth
+        Response to Climate. AAAS. Las Vegas, Nevada.
+    </p>
+    <p>
+        L. Apodaca, D. Devitt, and L. Fenstermaker (2013). Assessing interannual variation in Great Basin sagebrush growth
+        response to climate. EPSCoR Meeting. Las Vegas, Nevada.
+    </p>
+    <p>
+        F. Biondi (2013). Tree-Ring Extension of Precipitation Variability at 12-km Grid Points in Eastern Nevada: Implications for
+        Drought Analysis. 37th NOAA Annual Climate Diagnostics and Prediction Workshop. 37th NOAA Annual Climate
+        Diagnostics and Predictio.
+    </p>
+    <p>
+        A. Bonde (2013). Reaching NV’s teachers through NSF EPSCoR climate change science institutes. AAAS Pacific Division
+        Annual Meeting. Las Vegas, Nevada.
+    </p>
+    <p>
+        A. Bonde, L. Rudd, and P. Buck (2013). Climate Change Science Straight From the Horse’s Mouth…. Tri-State NSF
+        EPSCoR Conference. Las Vegas, Nevada.
+    </p>
+    <p>
+        P. Buck (2013). The EPSCoR Climate Change Secondary Science Teacher Professional Development Program in S.
+        Nevada.. Astronomical Society of the pacific; STEM Literacy. San Jose, CA.
+    </p>
+    <p>
+        Y. Choi, E. Sharifahmadian and S. Latifi (2013). Fusion and Quality Analysis for Satellite Images using Contourlet
+        Tr ansfor m. SPIE Defense, Security, and Sensing. Baltimore, Maryland.
+    </p>
+    <p>
+        J. R. Cordova, E. M. Nussbaum, M.C. Owens, and A. P. Rehmat (2013). Fostering Interest in Learning About Climate
+        Change Through a Computer Simulation Game. Meeting of the European Association for Research on Learning and
+        Instruction. Munich, Germany.
+    </p>
+    <p>
+        B. Dufour, F. Biondi, and H. Morin (2013). Evidence for Cambial Activity in Great Basin Subalpine Conifers Under Heavy
+        Snow. AmeriDendro, Second American Dendrochronology Conference. Tucson, Arizona.
+    </p>
+    <p>
+        T. Dutcher (2013). The Need for Stakeholder Cooperation over Competition to Adapt to Climate Change. Annual Meeting
+        of the American Association for the Advancement of Science, Pacific Division. Las Vegas, NV.
+    </p>
+    <p>
+        T. Dutcher (2013). Results from Rural Perspectives of Climate Change Solutions. Annual Meeting of the Association for
+        Environmental Studies and Sciences. Pittsburgh, PA.
+    </p>
+    <p>
+        T. Dutcher (2013). Perspectives on Renewable Energy Developments from Nevada. Annual Meeting of the Association for
+        Environmental Studies and Sciences. Pittsburgh, PA.
+    </p>
+    <p>
+        L. Fenstermaker, S. Strachan, J. Arnone, F. Biondi, D. Devitt, S. Mensing, and L. Saito (2013). NevCAN: Measuring
+        Climate and Environmental Response in the Great Basin. Bureau of Land Management, Ely and Caliente Offices
+        Seminar. Ely, NV.
+    </p>
+    <p>
+        L. Fenstermaker, S. Strachan, F. Biondi, D. Simeral, G. McCurdy, B. Bird, B. Lyles, J. Arnone, D. Devitt, and L.
+        Saito (2013). NevCAN: Measuring Climate and Environmental Response in the Great Basin. Great Basin Consortium
+        Conference. Boise, ID.
+    </p>
+    <p>
+        L. Fenstermaker, S. Strachan, G. McCurdy, B. Bird, D. Devitt, F. Biondi, J. Arnone, L. Saito, R. Jasoni, B. Johnson, and B.
+        Lyles (2013). NevCAN: Monitoring Climate Variability and Change along Two Elevation Gradients. Great Basin
+        Consortium Conference. Boise, ID.
+    </p>
+    <p>
+        Gibbs, I., Dascalu, S.M., and Harris, F.C., Jr. (2013).  Web Portal
+        Usability Tests for the Nevada Climate Change Portal. Accepted for
+        publication in the Proceedings of the Intl. Conf. on Information
+        Technology: New Generations (ITNG-2013), Las Vegas, NV, April 2013.
+    </p>
+    <p>
+        I. Gibbs, E. Fritzinger, S.M. Dascalu, F.C. Harris, Jr., and Y. Shen (2013). A Workflow Job Manager for the Nevada
+        Climate Change Portal. Intl. Conf. on Collaboration Technologies and Systems (CTS-2013). San Diego, CA.
+    </p>
+    <p>
+        C. Hedge, C. Morton, R. L. Jasoni, and J.A. Arnone III (2013). Quantifying interannual variability in NDVI in the Lehman
+        Creek watershed for use in estimating possible plant community phenology controls on streamflow under current and
+        recent climate change. Tri-State Consortium. Las Vegas, NV.
+    </p>
+    <p>
+        M.K. Hochrein, S. D. Bassett, and E. A. Leger (2013). The Role of Microhabitat in the Establishment of Abies magnifica
+        Seedlings on the Eastern Slope of the Sierra Nevada. Association of the International Association for Landscape Ecology
+        (US-IALE) 2013 Annual Symposium. Austin,TX.
+    </p>
+    <p>
+        M. Hochrein, S. Bassett, and E. Leger (2013). Temporal and spatial variability of the importance of regeneration microsite
+        to Abies magnifica seedlings on arid range margins. Nevada NSF EPSCoR Annual meeting. Las Vegas, Nevada.
+    </p>
+    <p>
+        P. Jigar, S. Dascalu, and F. C. Harris, Jr. (2013). Runtime Generation of Data Processors on Local User Computers. Intl.
+        Conference on Information Technology: New Generations (ITNG-2013). San Diego, CA.
+    </p>
+    <p>
+        A. Kalra and S. Ahmad (2013). Using sea surface temperatures for improving streamflow estimates. ASCE World Water
+        and Environmental Resources Congress. Cincinnati, OH.
+    </p>
+    <p>
+        D. Kauneckis (2013). Decision Node Analysis: Amethod for Unraveling Complex Policy Provision Systems. International
+        Conference Public Policy (ICPP). Genoble.
+    </p>
+    <p>
+        D. Kauneckis (2013). Elinor Ostrom's Research Agenda - The Interplay of Human and Ecological Systems.
+        EcoSummit. Columbus, OH.
+    </p>
+    <p>
+        D. Kauneckis (2013). A framework for multi-scaled assessment of institutional vulnerability. Earth System Governance
+        Conference: Complex Architectures and Multiple Agents. Tokyo, Japan.
+    </p>
+    <p>
+        D. Kauneckis (2013). Integrating decision sciences with hydrological modeling: improving resilience of water
+        management to climate change impacts. EcoSummit. Columbus, OH.
+    </p>
+    <p>
+        D. Kauneckis (2013). Is Nevada ready? Evaluating the resilience and adaptive capacity of Nevada's policy sub-systems to
+        climate change. NSF Climate Change Stakeholders Workshop - Climate Change Science for Effective Resource
+        Management and Public Policy in the Western United States. Las Vegas, NV.
+    </p>
+    <p>
+        M. Kilpatrick and F. Biondi (2013). Bristlecone Fire History and Stand Dynamics at Mount Washington, Nevada.
+        AmeriDendro, Second American Dendrochronology Conference. Tucson, Arizona.
+    </p>
+    <p>
+        D. Koracin, J. Mejia, K.C. King, and C.E. Dorman (2013). Upwelling and Coastal Climate. Climate Trends and Projections
+        in the Coastal Environment—Part I. New Orleans, LA.
+    </p>
+    <p>
+        K. E. Kruse, L. Saito, L. Fenstermaker, D. Devitt, S. Strachan C. Morris, and M. Weltz (2013). Using runoff collectors to
+        understand surface runoff characteristics in remote Nevada catchments. Nevada Water Resources Association Annual
+        Conference. Reno, Nevada.
+    </p>
+    <p>
+        J. Lim (2013). Technology Corridors and Local Economic Development. 52nd Annual Western Regional Science
+        Association (WRSA) Meeting. Santa Barbara, CA.
+    </p>
+    <p>
+        J. Lim and K. Donathan (2013). Socioeconomic Effect on Crime in the Southwest United States Pre- and Post-Great
+        Recession. 2013 Annual AAG (Association of American Geographers) Meeting. Los Angeles, CA.
+    </p>
+    <p>
+        Lim, J. and Kim, J. H. (2013). Joint Determination of Migration and Commuting: Forecasting Inter-Country Migration and
+        Commuting Pattersn in California. Symposium Proceedings of the International Symposium of Forecasting. Rotterdam,
+        The Netherlands.
+    </p>
+    <p>
+        D. Lombardi, G.M. Sinatra, and E.M. Nussbaum (2013). Bridging the Plausibility Gap in Socio-scientific Issues. Meeting
+        of the European Association for Research on Learning and Instruction. Munich, Germany.
+    </p>
+    <p>
+        D. Lombardi, G. M. Sinatra, and E. M. Nussbaum (2013). Using critical evaluation to change middle school students'
+        plausibility reappraisals and conceptions of climate change. Meeting of the American Educational Reseaerch
+        Association. San Francisco, CA.
+    </p>
+    <p>
+        M. Lubelt, L. Saito, and P. Weisberg (2013). Grazing Impacts on Infiltration at Vernal Pools. Nevada Water Resources
+        Association Annual Conference. Reno, Nevada.
+    </p>
+    <p>
+        S. Mensing, S. Sharpe, I. Tunno, D. Sada, J. Thomas and J. Smith (2013). The late Holocene drought: A persistent dry
+        period between 2800 and 1800 cal yr BP across the central Great Basin. PACLIM XXVI: the Pacific Climate
+        Workshop. Pacific Grove, CA.
+    </p>
+    <p>
+        E. M. Nussbaum (2013). Argumentation in a changing climate: Walton's dialogue theory and teaching about global
+        climate change.. Meeting of the European Association for Research on Learning and Instruction. Munich, Germany.
+    </p>
+    <p>
+        E. M. Nussbaum, M.C. Owens, J.R. Cordova, R. P. Rehmat, and G.M. Sinatra (2013). Simulations to promote student
+        knowledge and interest gains in environmentaol science and climate change. Society for Information Technology and
+        Teacher Educaiton. New Orleans, LA.
+    </p>
+    <p>
+        E.M. Nussbaum, M.C. Owens, A.P. Rehmat, and J.R. Cordova (2013). Towards collaborative argumentation in Losing the
+        Lake. International Conference on Computer-Supported Collaborative Learning. Madison, WI.
+    </p>
+    <p>
+        Patel, J., Okamoto, S., Dascalu, S.M., and Harris, F.C., Jr. (2013).
+        A Web-enabled Approach for Generating Data Processors. Accepted for
+        publication in the Proceedings of the Intl. Conf. on Information
+        Technology: New Generations (ITNG-2013), Las Vegas, NV, April 2013.
+    </p>
+    <p>
+        N. Perryman and J. Mejia (2013). Atmospheric Rivers in Regional Climate Models for the Western U.S.. 25th Conference
+        on Climate Variability and Change. Austin, Texas.
+    </p>
+    <p>
+        Y. Qiping, M. McMahon, Jr., S. Dascalu, F. C. Harris, Jr., and L. Ravi (2013). Community Metadata ISO 19115 Adaptor.
+        2013 International Conference on Computers and Their Applications (CATA-2013). Honolulu, HI.
+    </p>
+    <p>
+        Ravi, L., Yan, Q., Dascalu, S., and Harris, F.C., Jr (2013). A Survey
+        of Visualization Techniques and Tools for Environmental Data. Accepted
+        for publication in the Proceedings of the Intl. Conf. on Computers and
+        Their Applications (CATA-2013), Honolulu, HI, April 2013.
+    </p>
+    <p>
+        Reed, S., Reed, T., and Dascalu, S.M. (2013).  Coupling Recursive
+        Hyperspheric Classification with Linear Discriminant Analysis for
+        Improved Results. Accepted for publication in the Proceedings of the
+        Intl. Conf. on Information Technology: New Generations (ITNG-2013),
+        Las Vegas, NV, April 2013.
+    </p>
+    <p>
+        L. Rudd (2013). Communicating Climate Change Science to K-12 Students through Data-Driven Lessons (poster).
+        Tri-State NSF EPSCoR Conference. Las Vegas, Nevada.
+    </p>
+    <p>
+        L. Rudd (2013). Using Online Data Sets to Teach K-12 Students and Teachers about Climate Change. AAAS Pacific
+        Division Annual Meeting. Las Vegas, Nevada.
+    </p>
+    <p>
+        G. Sadoti and T. P. Albright (2013). Extreme Weather and The Museum Vault: Making the Climate Connectionwith Historic
+        Egg Sets. Association of American Geographers. Los Angeles, CA.
+    </p>
+    <p>
+        L. Saito (2013). Interdisciplinary modeling for water-related issues: curriculum development inspired by Pete Loucks.
+        Environmental and Water Resources Congress 2013. Cincinnati, OH.
+    </p>
+    <p>
+        L. Saito, A. Fernald, T. Link, and L. Kohne (2013). Teaching interdisciplinary modeling for water-related issues and
+        climate. Universities Council on Water Resources/National Institutes of Water Research. Lake Tahoe, Califonia.
+    </p>
+    <p>
+        D. Sauceda, J. Mejia, and J. Huntington (2013). Vulnerability and Resilience of Urban Water Systems under Uncertain
+        Climate Change Scenarios. 25th Conference on Climate Variability and Change. Austin,TX.
+    </p>
+    <p>
+        E. Sharifahmadian, Y. Choi, and S. Latif (2013). A Simulation Study of Target Detection using Hyperspectral Data
+        Analysis. SPIE Defense, Security, and Sensing. Baltimore, Maryland, USA.
+    </p>
+    <p>
+        E. Sharifahmadian and S. Latifi (2013). Water Environment Risk Prediction Using Bayesian Network. IEEE Conference,
+        Data Mining and Machine Learning, SoutheastCon 2013. Jacksonville, Florida.
+    </p>
+    <p>
+        Sharifahmadian, E. and S. Latifi, “Water Environment Risk Prediction
+        Using Bayesian Network,” IEEE Conference, Data Mining and Machine
+        Learning, SoutheastCon 2013, Jacksonville, Florida, USA, April 4-7,
+        2013 (under review).
+	</p>
+    <p>
+        S. Shreck and S. Latifi (2013). Reducing Climate Change through CPV Development. 2012 IEEE Green Technology
+        Conference. Tulsa, OK.
+    </p>
+    <p>
+        W. J. Smith, Jr., Z. Liu, A. Safi, and D. Koracin (2013). Mixed methods and multicultural teams for climate change
+        perception research in Nevada. American Association of Geographers Meeting. Los Angeles, CA.
+    </p>
+    <p>
+        S. Strachan and F. Biondi (2013). Real-Time Monitoring of Mountain Conifer Growth Response to Seasonal Climate and
+        the Summer Monsoon in the Great Basin of North America. Fall Meeting of the American Geophysical Union. San
+        Francisco, CA.
+    </p>
+    <p>
+        B. Trustman, L. Saito, and M. Walker (2013). Climate Monitoring at Remote Wildlife Guzzlers. Nevada Water Resources
+        Association Annual Conference. Reno, Nevada.
+    </p>
+    <p>
+        Vesco, J., Harris, F.C., Jr., Dascalu, S.M., Jackson, D., and Baker,
+        J.E. (2013).  Semi-Automated Analysis Software for a Novel
+        Biochemistry Assay. Accepted for publication in the Proceedings of the
+        Intl. Conf. on Information Technology: New Generations (ITNG-2013),
+        Las Vegas, NV, April 2013.
+    </p>
+    <p>
+        F. Vine (2013). Climate Change Connected Curriculum. AAAS Pacific Division Annual Meeting. Las Vegas, Nevada.
+    </p>
+    <p>
+        F. Vine (2013). Climate Change Connected Curriculum for K-12. Southern Nevada Regional Math and Science
+        Conference. Las Vegas, Nevada.
+    </p>
+    <p>
+        F. Vine (2013). Climate Change Connected Curriculum for Secondary Schools. Desert Research Institute – Green Power
+        Program. Las Vegas, Nevada.
+    </p>
+    <p>
+        F. Vine (2013). STEM Stars/Community Collaboration/Climate Change Connected Curriculum for K-12. NSTA STEM
+        Forum and Expo, St. Louis, Mo. St Louis, MO.
+    </p>
+    <p>
+        A.P. Vitale and T.P. Albright (2013). Sampling Topoclimate Variability in the Snake Range, Nevada, USA. Climate Change
+        Science for Effective Resource Management and Public Policy in the Western USA. Las Vegas, Nevada.
+    </p>
+    <p>
+        Yan, Q., McMahon, M., Jr., Dascalu, S., and Harris, F.C., Jr., Ravi,
+        L. (2013). Community Metadata ISO 19115 Adaptor. Accepted for
+        publication in the Proceedings of the Intl. Conf. on Computers and
+        Their Applications (CATA-2013), Honolulu, HI, April 2013.
+    </p>
+	<p>
+        E. Ziaco, F. Biondi, S. Rossi, and A. Deslauriers (2013). Quantifying cambial activity of high-elevation conifers in the
+        Great Basin, Nevada, USA. Fall Meeting of the American Geophysical Union. San Francisco, CA.
+	</p>
+    
+    <h4>
+        Thesis/Dissertations
+    </h4>
+    <p>
+        Apodaca, A.. Assessing growth response to climate controls in a Great Basin Artemisia tridentata plant
+        community. (2013). University of Nevada Las Vegas.
+    </p>
+    <p>
+        Hay, M.. Calibration of a new zone for the SIMulating Patterns and Processes at Landscape scaLEs (SIMPPLLE) model
+        for the Great Basin. (2013). Department of Geography, University of Nevada, Reno.
+    </p>
+    <p>
+        Peng, J.. Impacts of climate changes on the spatiotemporal distribution of precipitation in the Western United
+        States. (2013). University of Nevada Las Vegas.
+    </p>
+    <p>
+        Wagner, A.. Water Source Partitioning for Shrubland Transpiration in a Mixed Phreatophytic Plant Community. (2013). 
+        University of Nevada Las Vegas.
+    </p>
+
+    <h4>
+        Other Publications
+    </h4>
+    <p>
+        Kruse, Kerensa (2013). Surface Runoff Collection in Remote Nevada Catchments. 6-Page Brochure.
+    </p>
+
+	<p style="font-weight: bold">
+		Publications from other years:
+        <a href="{% url 'publications' %}">2013</a>
+		&#8226;
+        <a href="{% url 'publications_2012' %}">2012</a>
+		&#8226;
+		<a href="{% url 'publications_2011' %}">2011</a>
+		&#8226;
+		<a href="{% url 'publications_2010' %}">2010</a>
+		&#8226;
+		<a href="{% url 'publications_2009' %}">2009</a></p>
+{% endblock %}
