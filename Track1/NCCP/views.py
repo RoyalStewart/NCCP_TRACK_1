@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
+from .models import sensorList
 
 # Create your views here.
 def home(request):
