@@ -1,0 +1,285 @@
+{% extends 'NCCP/research_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block style_block %}
+    <style>
+        #SiteTable
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding-bottom: 2em;
+            vertical-align: middle;
+            text-align: center;
+        }
+        
+        #SiteTable thead
+        {
+            background-color: #CCCCCC;
+            font-weight: bold;
+        }
+        
+        #SiteTable thead th, #SiteTable tbody td
+        {
+            padding: 0.5em;
+            border: 2px solid black;
+        }
+        
+        #SiteTable tbody td:nth-child(3)
+        {
+            text-align: left;
+            font-style: italic;
+        }
+    </style>
+{% endblock %}
+
+{% block body_block %}
+    <h1>
+        The Nevada Climate-ecohydrological Assessment Network (N<span class="h1-lowcase">ev</span>CAN)</h1>
+    <p>
+        The Universities of Nevada (Las Vegas and Reno) and the Desert Research Institute
+        have collaborated with land owner agencies in Nevada to establish two elevational
+        transects of monitoring stations named the Nevada Climate-ecohydrology Assessment
+        Network (NevCAN). The primary purpose of NevCAN is to collect data for long-term
+        assessment of climate variability and change in Nevada and its impact on ecological
+        and hydrological processes and function.</p>
+    <p>
+        These basin-to-mountain top transects are located in the Sheep Range (located approximately
+        35 km NNW of Las Vegas) and in the Snake Range (east central NV along the UT border;
+        approximately 335 km NNE of Las Vegas). The Sheep Range transect has five monitoring
+        stations beginning at 900 m and ending at 3015 m (Hayford Peak). All of these monitoring
+        stations are located on land managed by the U.S. Fish and Wildlife Service and several
+        of the stations are co-located with Natural Resource Conservation Service (NRCS)
+        Soil Climate Analysis Network (SCAN) sites. The Snake Range transect has seven monitoring
+        stations beginning at 1790 m on the west side of the range, 3355 m at the western
+        subalpine site and ending at 1560 m on the eastern side of the range. An 8th monitoring
+        station at 1564 m (Salt Desert, west) will be incorporated into the Snake Range
+        transect as funding permits; this site has had an operational eddy covariance system
+        since 2007. The Snake Range transect encompasses several collaborating land holder
+        agencies including: the Long Now Foundation, Bureau of Land Management, Great Basin
+        National Park and the Nevada Land Conservancy.</p>
+    <p>
+        Monitoring stations are located in the elevational &quot;middle&quot; of each major
+        plant community/vegetation type along each transect. Table 1 below lists the plant
+        community zone, predominant plant species and altitude for each monitoring station.
+        A <span style="font-weight: bold">
+            <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">configuration of sensors</a></span>
+        has been installed at each monitoring station including soil and plant sensors,
+        a webcam and standard meteorological sensors.</p>
+    <p>
+        Table 1. Site descriptions of locations along the two transects comprising the NevCAN.
+        For data from these locations, visit the <span style="font-weight: bold">
+            <a>Sensor Data</a></span>
+        page.</p>
+    <table id="SiteTable">
+        <colgroup span="1" style="width: 15%;">
+        </colgroup>
+        <colgroup span="1" style="width: 30%;">
+        </colgroup>
+        <colgroup span="1" style="width: 40%;">
+        </colgroup>
+        <colgroup span="1" style="width: 15%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>
+                    Transect
+                </th>
+                <th>
+                    Zone
+                </th>
+                <th>
+                    Dominant Plant Species
+                </th>
+                <th>
+                    Altitude (m)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Salt Desert (west)
+                </td>
+                <td>
+                    Sarcobatus vermiculatus, Artemisia tridentata tridentata
+                </td>
+                <td>
+                    1755
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Sagebrush (west)
+                </td>
+                <td>
+                    Artemisia tridentata tridentata, Sarcobatus vermiculatus
+                </td>
+                <td>
+                    1790
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Pinyon-Juniper (west)
+                </td>
+                <td>
+                    Pinus monophylla, Juniperus osteosperma
+                </td>
+                <td>
+                    2200
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Montane (west)
+                </td>
+                <td>
+                    Abies concolor, Pinus flexilis
+                </td>
+                <td>
+                    2810
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Subalpine (west)
+                </td>
+                <td>
+                    Pinus longaeva, Pinus flexilis
+                </td>
+                <td>
+                    3355
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Subalpine (east)
+                </td>
+                <td>
+                    Picea engelmannii
+                </td>
+                <td>
+                    3070
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Sagebrush (east)
+                </td>
+                <td>
+                    Artemisia tridentata tridentata
+                </td>
+                <td>
+                    1835
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Snake
+                </td>
+                <td>
+                    Salt Desert (east)
+                </td>
+                <td>
+                    Sarcobatus vermiculatus, Atriplex confertifolia
+                </td>
+                <td>
+                    1560
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sheep
+                </td>
+                <td>
+                    Desert Shrub
+                </td>
+                <td>
+                    Larrea tridentata, Ambrosia dumosa
+                </td>
+                <td>
+                    900
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sheep
+                </td>
+                <td>
+                    Blackbrush
+                </td>
+                <td>
+                    Yucca brevifolia, Atriplex canescens
+                </td>
+                <td>
+                    1670
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sheep
+                </td>
+                <td>
+                    Pinyon-Juniper
+                </td>
+                <td>
+                    Pinus monophylla, Purshia stansburiana
+                </td>
+                <td>
+                    2065
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sheep
+                </td>
+                <td>
+                    Montane
+                </td>
+                <td>
+                    Pinus ponderosa, Juniperus osteosperma
+                </td>
+                <td>
+                    2320
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sheep
+                </td>
+                <td>
+                    <a href="http://www.wcc.nrcs.usda.gov/nwcc/site?sitenum=2143&amp;state=nv">Subalpine (NRCS SCAN data)</a>
+                </td>
+                <td>
+                    Pinus longaeva, Ribes cereum
+                </td>
+                <td>
+                    3015
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

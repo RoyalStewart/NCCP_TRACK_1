@@ -1,0 +1,283 @@
+{% extends 'NCCP/research_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block style_block %}
+	<link rel="Stylesheet" type="text/css" href="{{ STATIC_URL }}static/CSS/skin.css" />
+    <style type="text/css">
+        #Right, #Left
+        {
+            display: none;
+            visibility: hidden;
+            width: 0px;
+        }
+        #Main
+        {
+            width: 100%;
+            padding: 1em;
+        }
+        #ConditionsContainer
+        {
+            min-height: 500px;
+        }
+        .news_text
+        {
+            margin-left: 650px;
+        }
+        .SiteImages
+        {
+            float: left;
+            max-width: 640px;
+        }
+        .jcarousel-skin-tango .jcarousel-item, .jcarousel-skin-tango .jcarousel-clip-horizontal
+        {
+            height: 550px;
+        }
+        .SiteImageInformation
+        {
+            color: #362d2d;
+            padding: 0.2em;
+            font-weight: bold;
+        }
+        .SiteImageTimeStamp
+        {
+            font-size: 0.9em;
+            font-style: italic;
+            text-align: right;
+        }
+        .SiteImageDescription
+        {
+            font-size: 1.1em;
+            text-align: center;
+        }
+        div.CurrentConditions
+        {
+            width: 98%;
+        }
+        table.Measurements
+        {
+            width: 100%;
+            text-align: center;
+            margin-top: 2em;
+        }
+        table.Measurements td
+        {
+            padding: 0.2em;
+            text-align: left;
+        }
+        table.Measurements tbody tr td:first-child + td
+        {
+            text-align: right;
+        }
+        table.Measurements tbody tr td:last-child
+        {
+            white-space: nowrap;
+        }
+        table.Measurements td.MeasurementGroup
+        {
+            text-align: center;
+            font-size: 1.1em;
+            background-color: rgba(155, 189, 106, 0.4);
+            border-radius: 0px 1.2em 1.2em 1.2em;
+        }
+    </style>
+
+{% endblock %}
+
+{% block script_block %}
+    <script type="text/javascript">
+
+        // Define the variables used by the page JavaScript.
+        var camerasUri = 'http://sensor.nevada.edu/Services/Imagery/Imagery.svc/json/CameraCatalog/ListCameras';
+        var imagesUri = 'http://sensor.nevada.edu/Services/Imagery/Imagery.svc/json/ImageCatalog/GetLatestImages';
+        var conditionsUri = 'http://sensor.nevada.edu/Services/Current%20Site%20Conditions/SiteConditions.svc/json/CurrentConditionsReporter/GetSiteCurrentConditions';
+
+        $script('{{ STATIC_URL }}static/JS/Site Conditions.js');
+    </script>
+
+{% endblock %}
+
+{% block body_block %}
+    <h1>
+        Current Research Site Conditions</h1>
+    <div id="ConditionsContainer">
+        <aside class="module" style="visibility: hidden; display: none; margin-right: 2em;">
+            <div>
+                Current Conditions Are Unavailable</div>
+            <p style="padding-top: 1em">
+                The current conditions for the monitoring sites are currently unavailable. Please
+                refresh this page soon &mdash; the site conditions will be updated shortly.</p>
+        </aside>
+        <ul id="Sites" class="jcarousel-skin-tango">
+        </ul>
+    </div>
+    <script id="SiteImageTemplate" type="text/x-query-templ">
+        <div class="SiteCameraImage">
+            <div class="SiteImage" style="width: {{:Width}}px; min-height: {{:Height}}px">
+                <img src="{{:Location}}" height="{{:Height}}" width="{{:Width}}" class="image-feature" alt="{{imageTitle:Description}}" title="{{imageTitle:Description}}" />
+            </div>
+            <div class="SiteImageInformation">
+                <div class="SiteImageDescription">{{imageTitle:Description}}</div>
+                <div class="SiteImageTimeStamp">{{jsonDateTime:TimeStamp}}</div>
+            </div>
+        </div>
+    </script>
+    <script id="SiteCurrentConditionsTemplate" type="text/x-query-templ">
+        <div class="CurrentConditions">
+            <div style="text-align: right; padding: 0.2em; font-style: italic; font-size: 0.9em">Last recorded: {{jsonDateTime:TimeStamp}}</div>
+            <table class="Measurements">
+                <tbody>
+                    <tr>
+                        <td colspan="3" class="MeasurementGroup">
+                            Last Recorded
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Temperature
+                        </td>
+                        <td>
+                            <div>{{number:AirTemperatureAverageFarenheit}}</div>
+                            <div>{{number:AirTemperatureAverageCelsius}}</div>
+                        </td>
+                        <td>
+                            <div>&deg;F</div>
+                            <div>&deg;C</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           Wind Speed
+                        </td>
+                        <td>
+                            <div>{{number:WindSpeedAverageMilesPerHour}}</div>
+                            <div>{{number:WindSpeedAverageMetersPerSecond}}</div>
+                        </td>
+                        <td>
+                            <div>mph</div>
+                            <div>m/s</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Wind Direction
+                        </td>
+                        <td>
+                            {{number:WindDirectionAverageDegreesNorth}}
+                        </td>
+                        <td>
+                            &deg;North
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Relative Humidity
+                        </td>
+                        <td>
+                            {{number:RelativeHumidityAveragePercent}}
+                        </td>
+                        <td>
+                            %
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="MeasurementGroup">
+                            Last 6 Hours
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Barometric Pressure Change
+                        </td>
+                        <td>
+                            <div>{{barometricPressure:BarometricPressure6HourNetChangeInchesMercury}}</div>
+                            <div>{{barometricPressure:BarometricPressure6HourNetChangeMillibars}}</div>
+                        </td>
+                        <td>
+                            <div>in Hg</div>
+                            <div>mbar</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Average Wind Direction
+                        </td>
+                        <td>
+                            {{number:WindDirection6HourAverageDegreesNorth}}
+                        </td>
+                        <td>
+                            &deg;North
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="MeasurementGroup">
+                            Last 24 Hours
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            High Temperature
+                        </td>
+                        <td>
+                            <div>{{number:AirTemperature24HourHighFarenheit}}</div>
+                            <div>{{number:AirTemperature24HourHighCelsius}}</div>
+                        </td>
+                        <td>
+                            <div>&deg;F</div>
+                            <div>&deg;C</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Low Temperature
+                        </td>
+                        <td>
+                            <div>{{number:AirTemperature24HourLowFarenheit}}</div>
+                            <div>{{number:AirTemperature24HourLowCelsius}}</div>
+                        </td>
+                        <td>
+                            <div>&deg;F</div>
+                            <div>&deg;C</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Maximum Wind Gust
+                        </td>
+                        <td>
+                            <div>{{number:WindSpeed24HourMaximumGustMilesPerHour}}</div>
+                            <div>{{number:WindSpeed24HourMaximumGustMetersPerSecond}}</div>
+                        </td>
+                        <td>
+                            <div>mph</div>
+                            <div>m/s</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Accumulated Precipitation
+                        </td>
+                        <td>
+                            <div>{{number:Precipitation24HourAccumulationInches}}</div>
+                            <div>{{number:Precipitation24HourAccumulationMillimeters}}</div>
+                        </td>
+                        <td>
+                            <div>inch</div>
+                            <div>mm</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
+    </script>
+    <script id="SiteConditionsTemplate" type="text/x-query-templ">
+        <li>
+            <div class="SiteImages" />
+            <div class="news_text">
+                <h1>
+                    {{:Name}}</h1>              
+            </div>
+        </li>
+    </script>
+
+{% endblock %}

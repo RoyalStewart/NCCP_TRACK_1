@@ -1,0 +1,27 @@
+﻿.HighlightedArea
+{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+    text-align: left;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    height: 50px;
+    background-color: #e1eff7;
+    margin-bottom: 10px;
+    border-top-right-radius: 1.2em;
+}
+
+.HighlightedArea a, .white-pic-link a:visited
+{
+    color: #666;
+    text-decoration: none;
+}
+
+.HighlightedArea a:hover, .white-pic-link a:focus, .white-pic-link a:active
+{
+    color: #999;
+}

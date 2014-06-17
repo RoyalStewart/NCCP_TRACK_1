@@ -1,0 +1,79 @@
+{% extends 'NCCP/education_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block title_block %}Carbon Footprint{% endblock %}
+
+{% block style_block %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+{% endblock %}
+
+{% block body_block %}
+    <h2>
+        Electric Conductivity of Soil</h2>
+    <figure>
+        <img src="{{ STATIC_URL }}static/images/Soil.png" alt="Hands full of soil" style="height:120px;width:120px;" />
+    </figure>
+    <p>
+        Soil electrical conductivity (EC) is a measurement that correlates with soil properties
+        that affect crop productivity, including soil texture, cation exchange capacity
+        (CEC), drainage conditions, organic matter level, salinity, and subsoil characteristics.
+        Electrical conductivity (EC) is the most common measure of soil salinity and is
+        indicative of the ability of an aqueous solution to carry an electric current. Plants
+        are detrimentally affected, both physically and chemically, by excess salts in some
+        soils and by high levels of exchangeable sodium in others.</p>
+    <p>
+        The electrical conductivity of soils varies depending on the amount of moisture
+        held by soil particles. Sands have a low conductivity, silts have a medium conductivity,
+        and clays have a high conductivity. Consequently, EC correlates strongly to soil
+        particle size and texture.</p>
+    <p>
+        Electrical conductivity (EC) is the ability of a material to transmit (conduct)
+        an electrical current and is commonly expressed in units of milliSiemens per meter
+        (mS/m). Soil EC measurements may also be reported in units of deciSiemens per meter
+        (dS/m), which is equal to the reading in mS/m divided by 100.</p>
+    <h3>
+        NevCAN and NCCP Data</h3>
+    <p>
+        Nevada Climate-Ecohydrology Assessment Network (NevCAN) has two monitoring ranges
+        that monitor the electric conductivity of soil. These basin-to-mountain top transects
+        are located in the Sheep Range (located approximately 35 km NNW of Las Vegas) and
+        in the Snake Range (east central NV along the UT border; approximately 335 km NNE
+        of Las Vegas).</p>
+    <p>
+        Measuring soil EC can be used to monitor regional climate change, soil fertility,
+        and various factors like porosity, salinity, and possible crop fields.
+    </p>
+    <footer>
+        <a href="{{ STATIC_URL }}static/Electric%20Conductivity%20of%20Soil.doc" target="_blank">Download this article as a Microsoft Word document</a>
+    </footer>
+
+
+{% endblock %}

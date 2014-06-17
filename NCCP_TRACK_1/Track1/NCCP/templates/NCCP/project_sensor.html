@@ -1,0 +1,49 @@
+{% extends 'NCCP/project_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block body_block %}
+    <h1>
+        The SENSOR System
+    </h1>
+    <p>
+        The Spatial Engine for Nevada Scientific Observational Results (SENSOR) system 
+        was created under the current NSF EPSCoR-funded RII (Track I) project to provide 
+        an automated mechanism for the long-term acquisition, storage, management, and 
+        curation of raw observational research data. This innovative system combines 
+        complex software systems, state-of-the-art hardware, and an advanced geospatial 
+        database system to provide high-quality, lossless, verifiable data streams and 
+        auto-generated metadata to project stakeholders, including researchers, 
+        students, and the public. Designed for extensibility and performance, this 
+        system is intended to support current and future research efforts throughout 
+        Nevada via cutting-edge technologies.
+    </p>
+    <p>
+        The front end of the SENSOR system is the Nevada Climate Change Portal (NCCP), 
+        which openly provides data and information to a variety of users: scientists, 
+        educators, students, policy makers, and the general public. To enhance the use 
+        and comprehension of this data and information, the NCCP incorporates a variety 
+        of other documents, features, services, and tools, such as data visualizations, 
+        tutorial videos, and search interfaces.
+    </p>
+    <p>
+        Internally, the SENSOR system utilizes various software processes to securely 
+        store and import data from various data sources (e.g., data loggers), performing 
+        basic data integrity checks. Basic quality assurance processes asynchronously 
+        evaluate collected data, indicating whether the data is viable or potentially 
+        erroneous. Data curation services periodically verify the integrity of raw data 
+        files, aggregating and organizing them to simplify management and storage. 
+        Ensuring data redundancy, frequent backup processes duplicate the database and 
+        raw data files to one or more geographically-separate locations.
+    </p>
+    <p>
+        Many data repositories quickly become a graveyard of abandoned, 
+        largely-undocumented post-processed data submitted by researchers at the end of 
+        their projects. The SENSOR system collects, curates, documents, and provides all 
+        raw data to each researcher for their individual use and analysis. This 
+        significantly reduces the involvement of the researchers in data collection 
+        activities while simultaneously providing an unprecedented level of 
+        verifiability, security, and metadata to ensure the data is completely reusable 
+        and identifiable by current and future researchers.
+    </p>
+{% endblock %}

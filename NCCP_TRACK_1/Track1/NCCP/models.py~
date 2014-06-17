@@ -1,0 +1,19 @@
+from django.db import models
+from Track1 import settings
+
+# Create your models here.
+class sensorList(models.Model):
+	Name = models.CharField(max_length=255)
+	Description = models.CharField(max_length=255)
+	Image = models.ImageField(upload_to='Sensors')
+
+class peoplesList(models.Model):
+	Name = models.CharField(max_length=225)
+	Affiliation = models.CharField(max_length=225)
+	Component = models.CharField(max_length=225)
+	Title = models.CharField(max_length=255)
+	PrimaryResearchAreas = models.CharField(max_length=255)
+	Image = models.ImageField(upload_to='People')
+	WebPage= models.CharField(max_length=225)
+	Email = models.CharField(max_length=225)
+

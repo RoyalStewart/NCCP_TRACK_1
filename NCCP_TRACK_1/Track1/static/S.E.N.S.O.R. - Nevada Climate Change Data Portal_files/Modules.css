@@ -1,0 +1,63 @@
+﻿/*
+    The styles and features of self-contained groups of simple information that have a title.
+    These are similar to asides or bubbles of information, and are suitable for menus.
+*/
+
+
+.module nav > ul, ul.nav
+{
+    list-style: none; /* this creates the space between the navigation on the content below */
+    font-family: Verdana, Geneva, sans-serif;
+    color: Black;
+}
+
+.module nav > ul a, .module nav > ul a:visited, ul.nav a, ul.nav a:visited
+{
+    /* grouping these selectors makes sure that your links retain their button look even after being visited */
+    padding: 0.4em 0.1em 0.4em 1em;
+    display: block; /* this gives the anchor block properties so it fills out the whole LI that contains it so that the entire area reacts to a mouse click. */
+    text-decoration: none;
+    background-color: #d1e8b2;
+    color: Black;
+}
+
+.module
+{
+    border-radius: 1.2em;
+    background-color: #d1e8b2;
+    padding-bottom: 1.2em;
+}
+
+/* The title of the module. */
+.module > :first-child
+{
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    font-weight: bold;
+    color: White;
+    background-color: #9BBD69;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 8px;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+
+.module > :first-child a, .module > :first-child a:hover, .module > :first-child a:focus, .module > :first-child a:visited
+{
+    color: White;
+    text-decoration: none;
+}
+
+/* Lists inside the modules should generally have no padding or spacing, especially inherited, as they have limited space.*/
+.module ul, .module ol
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Sibling modules should be vertically spaced. */
+.module + .module
+{
+    margin-top: 2em;
+}

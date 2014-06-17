@@ -1,0 +1,92 @@
+{% extends 'NCCP/education_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block title_block %}Volumetric Water Content{% endblock %}
+
+{% block style_block %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+{% endblock %}
+
+{% block body_block %}
+    <h2>
+        Volumetric Water Content</h2>
+    <h3>
+        How is soil water content relevant?</h3>
+    <figure>
+        <img src="{{ STATIC_URL }}static/images/Water%20sensor.png" alt="Soil water sensors" style="height:190px;width:190px;" />
+    </figure>
+    <p>
+        With the development of irrigation based farming, it has become imperative that
+        farmers and agriculturists measure soil water and its effect on plant life. Generally,
+        the soil water content is measured by physically sampling soil and weighing before
+        and after water loss. The mass of water lost while drying is the direct measure
+        of the soil's water content. Determining water content of a soil can also aid in
+        determining the limit at which the soil can retain water. These types of findings
+        may be used to predict a region's response to natural disasters such as droughts
+        or floods.</p>
+    <p>
+        Studying water content may also aid in water conservation efforts. Once determining
+        the wilting point or the minimum required water level, of a specific crop, agriculturalists
+        can allocate a designated amount of water. This will in return prevent toxic runoffs,
+        field flooding, possible crop and soil dehydration. However, similar practices may
+        be used in ecological restoration efforts.
+    </p>
+    <p>
+        In soil science, hydrology and agricultural sciences, water content has an important
+        role when it comes to groundwater recharge, agriculture, and soil chemistry. Many
+        recent scientific research efforts have aimed toward a predictive-understanding
+        of water content over space and time. Observations have revealed generally that
+        spatial variance in water content tends to increase as overall wetness increases
+        in semiarid regions. Thus, it decreases as overall wetness increases in humid regions,
+        and peaks under intermediate wetness conditions in temperature regions.</p>
+    <p>
+        The water content in soils is usually expressed as either a dimensionless ratio
+        of two masses or two volumes, or is given as a ratio of a mass per unit volume.
+        Such dimensionless ratios can be reported either as decimal fractions or percentages,
+        if multiplied by 100. To avoid confusion between the two dimensionless water content
+        ratios, their measurements (i.e., mass or volume) should always be stated.</p>
+    <h3>
+        NevCAN Equipment and Sensors</h3>
+    <p>
+        The Nevada Climate-Ecohydrological Assessment Network (NevCAN) monitors soil water
+        content/stocks (volumetric) by using water matric potential sensors and time domain
+        reflectrometry probes. These sensors are co-located with sap flow and point dendrometer
+        sensors. Collected data is made public on the Nevada Climate Change Portal (NCCP);
+        available as live and archived data.</p>
+    <p>
+        Volumetric water content is available from sites stationed at the Sheep Range and
+        Snake Range. Sensor data is monitored at the following depths: 24.5 cm (17-32 cm
+        vertical), 20.32 cm (8 in horizontal), 10.16 cm (4 in horizontal) and 9.5 cm (2-17
+        vertical).</p>
+    <footer>
+        <a href="{{ STATIC_URL }}static/Volumetric%20Water%20Content.doc" target="_blank">Download this article as a Microsoft Word document</a>
+    </footer>
+{% endblock %}

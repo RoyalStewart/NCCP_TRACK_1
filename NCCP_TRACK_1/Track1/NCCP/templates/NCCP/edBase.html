@@ -1,0 +1,29 @@
+{% extends 'NCCP/Base.html' %}
+
+{% block title %}S.E.N.S.O.R. - Nevada Climate Change Data Portal{% endblock %}
+
+{% block default %}
+<div class="module">
+    <header>Education</header>
+    <ul class="nav">
+        <li>
+            <a id="LeftSideBar_ctl00_HyperLink1" title="Informative science / research articles and educational activities for students and instructors from elementary school onward." href="{% url 'education' %}">Lesson Plan Matrix</a>
+        </li>
+        <li>
+            <a title="A series of activities created by Clark county school teachers to help educators teach climate change science to their students." href="{% url 'educationC' %}">Clark Science Activities</a>
+        </li>
+        <li>
+            <a title="A series of activities created by Washoe county school teachers to help educators teach climate change science to their students." href="{% url 'educationW' %}">Washoe Science Activities</a>
+        </li>
+        <li>
+            <a title="A collection of course materials for post secondary education classes." href="{% url 'educationS' %}">Post Secondary Materials</a>
+        </li>
+        <li>
+            <a title="Learn how water conservation steps you can take at home can keep a lake from disappearing.">Losing the Lake</a>
+        </li>
+        <li>
+            <a href="http://guides.library.unlv.edu/content.php?pid=334568&amp;sid=2736757" target="_blank">UNLV Library Guide</a>
+        </li>
+    </ul>
+</div>
+{% endblock %}

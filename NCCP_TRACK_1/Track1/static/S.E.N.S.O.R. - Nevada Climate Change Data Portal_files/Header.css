@@ -1,0 +1,33 @@
+﻿header#TitleArea
+{
+    padding: 0.5em 0px 1.2em 1.2em;
+    font-family: 'Poller One';
+    font-size: 1.9em;
+    text-transform: uppercase;
+    color: #669801;
+}
+
+header#TitleArea a:hover
+{
+    text-decoration: none;
+    color: #669801;
+}
+
+header#TitleArea img, header#TitleArea span
+{
+    float: left;
+}
+
+header#TitleArea span
+{
+    padding-top: 1.8em;
+    padding-left: 1em;
+}
+
+header h1
+{
+    color: #669900;
+    font-family: Georgia, "Times New Roman" , Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+}

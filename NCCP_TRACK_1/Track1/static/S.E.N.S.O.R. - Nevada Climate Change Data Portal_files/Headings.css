@@ -1,0 +1,62 @@
+﻿h1, h2, h3, h4, h5, h6, p
+{
+    margin-top: 0px; /* adding the padding to the sides of the elements within the divs to get rid of box model math.  */
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+h1
+{
+    color: #669900;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.h1-lowcase
+{
+    text-transform: none;
+}
+
+
+h2
+{
+    color: #669900;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+h3
+{
+    color: #669900;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+h4
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    color: Black;
+    padding-top: 10px;
+}
+
+
+
+h5
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    font-style: italic;
+    color: Black;
+}

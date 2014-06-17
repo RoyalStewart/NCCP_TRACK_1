@@ -1,0 +1,19 @@
+﻿/*
+    Styles for the scrolling news list.
+*/
+
+.NewsList
+{
+    list-style-type: none;
+}
+
+.NewsList .Date
+{
+    padding: 0.5em 0px 0px 0.4em;
+    font-style: italic;
+}
+
+.NewsList .News
+{
+    padding: 0.2em 0px 0px 1em;
+}

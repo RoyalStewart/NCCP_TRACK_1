@@ -1,0 +1,13 @@
+﻿aside#MarkupValidation
+{
+    position: fixed;
+    right: 0.1em;
+    bottom: 0.1em;
+    z-index: -1;
+}
+
+aside#MarkupValidation img
+{
+    display: block;
+    padding: 1em;
+}

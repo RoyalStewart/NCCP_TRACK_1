@@ -1,0 +1,109 @@
+{% extends 'NCCP/tools_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block body_block %}
+            
+	<h1>
+		Tools</h1>
+	<p>
+		The Nevada Climate Change Project has produced several software tools and systems.
+		Software tools are created as a part of the research and development efforts
+		of the project itself, and are released to the public to contribute to the pool
+		of tools available to developers and researchers, improving their ability to more
+		easily utilize climate change data.</p>
+	<p>
+		In terms of software systems, the Nevada Climate Change Project will create, as
+		one of its primary goals, a framework for interconnecting climate models and data.
+		This system – entitled &ldquo;The Demeter Framework&rdquo; – is designed to specifically address
+		the need for researchers and climate modelers to create data processing pipelines,
+		spanning multiple data sources, models, and processing steps.</p>
+	<h2>
+		The Demeter Framework</h2>
+	<p>
+		The Demeter Framework is a web-based framework that allows the user to create custom 
+        scenarios for model coupling. By utilizing powerful web services, the user can access a 
+        library of models, data sources, visualizations, and other activities that have been written 
+        by scientists and programmers for use with this system. The system is user-driven, allowing developers and modelers from
+		all over the world to register their models and data sources as &quot;activities&quot; for use, and couple
+		those models with the existing activities already in the system. Currently, these activities
+		can take the form of web services or .NET-compatible libraries.
+	</p>
+    <p>
+        The main author of Demeter and its Persephone GUI interface is Eric Fritzinger, a UNR Computer Science and Engineering 
+        R&amp;D faculty and software professional. He can be contacted at <a href="mailto:ericf@cse.unr.edu">ericf@cse.unr.edu</a>.
+    </p>
+    
+
+    <h2>
+		The SUNPRISM Framework</h2>
+	<p>
+        The SUNPRISM framework defines an approach and provides tools aimed at supporting scientific 
+        investigation via new capabilities for combining data transformations, model simulations, 
+        and output visualizations in application scenarios developed for climate change research.
+    </p>
+    <p>
+        The main author of SUNPRISM is Sohei Okamoto, who developed it part of his PhD in Computer Science 
+        and Engineering at UNR. Sohei can be contacted at 
+        <a href="mailto:sohei.okamoto@gmail.com">sohei.okamoto@gmail.com</a>.
+    </p>
+
+
+    <h2>
+        The Web Enabled Date & Modeling Toolkit</h2>
+    <p>
+        Web Enabled Date & Modeling Toolkit (WEDMIT) is a combination of a web enabled 
+        application with a cross platform desktop application. WEDMIT is primarily aimed 
+        to address the data and model interoperability challenges. Researchers in 
+        environmental sciences work with datasets that have a large variety of data 
+        structures and file formats. Consequently, for data and model interoperability, 
+        it is essential to have the right tools for converting from a given data structure 
+        to another, and from a specific file format to another. WEDMIT is an original 
+        web-enabled approach for generating data processors capable of handling a multitude 
+        of data operations, including numerous data conversion and processing activities. 
+    </p>
+    <p>
+        The main author of the WEDMIT is Jigar Patel, who developed it as part of his Ph.D. in 
+        Computer Science and Engineering at UNR. Jigar can be contacted at 
+        <a href="mailto:jspatel@cse.unr.edu">jspatel@cse.unr.edu</a>.
+    </p>
+
+
+    <h2>
+		The VISTED Tool</h2>
+    <p>
+        VISTED is a visualization toolset for environmental data. The main goal of 
+        the VISTED is to help the climate researchers in visualizing the datasets 
+        and also giving them the flexibility in choosing the data of their interest.   
+        VISTED tool suite includes new capabilities such as data extraction and 
+        interoperability of various data formats. The tool will allow users to extract, 
+        view, download, and visualize data. It will input and download data in netCDF, 
+        ASCII, HDF5, and CSV formats. The time series charts, and maps will help in 
+        visualizing the data. And finally, to support several browsers, operating 
+        systems, and hardware devices HTML5 is adopted.
+    </p>
+    <p>
+        The main author of the VISTED is Likhitha Ravi, who developed it as part of her research assistantship in the 
+        Computer Science and Engineering department at UNR. Likhitha can be contacted at 
+        <a href="mailto:likhitha.ravi@gmail.com">likhitha.ravi@gmail.com</a>.
+    </p>
+
+
+    <h2>
+		The ATMOS Toolkit</h2>
+    <p>
+        The ATMOS toolkit provides Access to Tabular and Map-based Online Services.  It is an 
+        ASP.NET web application that aggregates climate change data from various web services 
+        and presents that data in a uniform way to researchers.  The toolkit uses a set of 
+        plugins to provide access to various data sources, and can be extended by writing new 
+        plugins to access additional data sources.  The fact that multiple disparate services 
+        are being accessed through multiple plugins is transparent to the end user, who accesses 
+        data through the web front-end.
+    </p>
+        <p>
+        The main author of ATMOS is Andrew Dittrich, who developed it as part of his master's thesis 
+        in Computer Science at the University of Nevada, Reno.  Andrew can be contacted at 
+        <a href="mailto:andy.dittrich@gmail.com">andy.dittrich@gmail.com</a>
+    </p>
+
+{% endblock %}

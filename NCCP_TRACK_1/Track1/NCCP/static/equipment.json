@@ -1,0 +1,117 @@
+﻿[
+{
+"Name": "Geonor T-200B precipitation gauge",
+"Image": "{{ STATIC_URL }}static/images/geonor.jpg",
+"Description": "Sensor measures rain and snow at high elevations."
+},
+{
+"Name": "Hydro Svs TB4 tipping bucket",
+"Image": "{{ STATIC_URL }}static/images/tb4_gauge.jpg",
+"Description": "Sensor measures rain and snowfall under the tree canopy for comparison with inter-plant areas."
+},
+{
+"Name": "Judd acoustic ultrasonic snow depth sensor",
+"Image": "{{ STATIC_URL }}static/images/judd-acoustic.jpg",
+"Description": "Sensor measures snow depth by using ultrasonic pulses aimed at a target such as the ground."
+},
+{
+"Name": "Ambient air temperature thermocouple(OMEGA Copper Const.)",
+"Image": "{{ STATIC_URL }}static/images/nophoto.jpg",
+"Description": "Sensor measures air temperature."
+},
+{
+"Name": "Kipp & Zonen CNR1 Net radiometer",
+"Image": "{{ STATIC_URL }}static/images/kipp-zonen.jpg",
+"Description": "Sensor measures and compares incoming and reflected infrared radiation."
+},
+{
+"Name": "Quantum sensor (LiCor 190SA)",
+"Image": "{{ STATIC_URL }}static/images/pyr-and-par.jpg",
+"Description": "Sensor measures photosynthetically active radiation."
+},
+{
+"Name": "Propeller anemometer (Wind vane, RM Young 05103)",
+"Image": "{{ STATIC_URL }}static/images/windvane2.jpg",
+"Description": "Sensor measures wind speed and direction."
+},
+{
+"Name": "Barometer(Setra 278)",
+"Image": "{{ STATIC_URL }}static/images/nophoto.jpg",
+"Description": "Sensor measures barometric pressure."
+},
+{
+"Name": "Capacitative RH (CSI HMP50)",
+"Image": "{{ STATIC_URL }}static/images/capac-rh.jpg",
+"Description": "Sensor measures air temperature and relative humidity."
+},
+{
+"Name": "Dual probe heat pulse(DPHP) sensor",
+"Image": "{{ STATIC_URL }}static/images/dual-probe-heat.jpg",
+"Description": "Sensor measures soil thermal conductivity, diffusivity, and specific heat."
+},
+{
+"Name": "Soil water matric potential (Campbell Scientific Inc, 229)",
+"Image": "{{ STATIC_URL }}static/images/soil-water-matric.jpg",
+"Description": "Soil water matric potential (Psi)(-10 to 2500 kPa)."
+},
+{
+"Name": "Soil heat flux(Hukseflux HFP01SC)",
+"Image": "{{ STATIC_URL }}static/images/hukseflux.jpg",
+"Description": "Sensor measures soil heat flux, uses self-calibrating Van den Bos-Hoeksma method, -30 to 70 degrees Celsius."
+},
+{
+"Name": "Constantan thermocouple",
+"Image": "{{ STATIC_URL }}static/images/nophoto.jpg",
+"Description": "Sensor measures soil temperature (installed at 3 depths)."
+},
+{
+"Name": "Time domain reflectometer (CSI CS616)",
+"Image": "{{ STATIC_URL }}static/images/TDR.jpg",
+"Description": "Sensor measures volumetric water content, soil water storage, water infiltration rates, depth of wetting front to infer ground water recharge (installed at 3 depths)."
+},
+{
+"Name": "Small diameter piezometers",
+"Image": "{{ STATIC_URL }}static/images/nophoto.jpg",
+"Description": "Sensors measure pore-water pressure."
+},
+{
+"Name": "Dynamax TDP Sap velocity sensors",
+"Image": "{{ STATIC_URL }}static/images/sap-flow.jpg",
+"Description": "Sensors measure sap flow and are installed at all dominant shrub and/or tree species."
+},
+{
+"Name": "Point dendrometers (Ag. Elec. Corp.)",
+"Image": "{{ STATIC_URL }}static/images/dendrometer.jpg",
+"Description": "Sensors measure tree stem growth and are installed on all dominant tree species."
+},
+{
+"Name": "VB-C60 PTZ Internet Camera",
+"Image": "{{ STATIC_URL }}static/images/camera.jpg",
+"Description": "Camera can potentially measure canopy greenness and phenology, aboveground plant productivity, visual snow cover indicator and snow meltd dates, atmospheric cloudiness, herbivory, surface soil erosion, and remote troubleshooting related to sensor measurement plausibility."
+},
+{
+"Name": "Fiber optic distributed temperature (DTS)",
+"Image": "{{ STATIC_URL }}static/images/nophoto.jpg",
+"Description": "DTS measures soil temperature gradients with depth. The resulting data will be used to estimate soil water content by examining thermal pulses."
+},
+{
+"Name": "NDVI, WBI ground-based sensors (Skye Instruments, Ltd)",
+"Image": "{{ STATIC_URL }}static/images/NDVI.jpg",
+"Description": "incoming and reflected red and near infrared radiation used to calculate the normalized difference vegetation index (NDVI). NDVI values are related to the amount and health of green vegetation. The data provides a daily assessment of phenological change."
+},
+{
+"Name": "Acclima TDT monitoring system",
+"Image": "{{ STATIC_URL }}static/images/nophoto.jpg",
+"Description": "Sensors measure soil moisture, salinity and temperature."
+},
+{
+"Name": "Pyranometer (LiCor 200SZ)",
+"Image": "{{ STATIC_URL }}static/images/pyr-and-par.jpg",
+"Description": "Sensor measures solar radiation."
+},
+{
+"Name": "Snow stake",
+"Image": "{{ STATIC_URL }}static/images/snowpole.jpg",
+"Description": "Sensor measures snow depth using the webcam."
+}
+]
