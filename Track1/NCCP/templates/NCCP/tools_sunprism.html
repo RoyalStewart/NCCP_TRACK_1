@@ -1,0 +1,34 @@
+{% extends 'NCCP/tools_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block body_block %}  
+    <h1>
+		The SUNPRISM Framework</h1>
+    <p>
+        <a title="The SUNPRISM Framework zip file." href="{{ STATIC_URL }}static/CSS/sunprism.zip">SUNPRISM Framework Zip File</a>
+    </p>
+	<p>
+        The SUNPRISM framework defines an approach and provides tools aimed at supporting scientific 
+        investigation via new capabilities for combining data transformations, model simulations, 
+        and output visualizations in application scenarios developed for climate change research.
+    </p>
+    <p>
+        Consisting of two specialized software tools, the SUNPRISM Scenario Manager and the SUNPRISM Visualizer, 
+        SUNPRISM framework’s defining characteristics are a visual, user-friendly object-based 
+        interface for scenario configuration; a workflow-based environment that allows code generation 
+        and dataflow scenario execution; and data visualization capabilities for 3D environments, 
+        including for immersive virtual environments such as CAVE. 
+    </p>
+    <p>
+        An application scenario consists of a combination of data resource objects and computational 
+        activity objects and, procedurally, there are five modes of operation in SUNPRISM: resource 
+        registration, scenario configuration, automated scenario code generation, scenario execution, 
+        and data examination.
+	</p>
+    <p>
+        The main author of SUNPRISM is Sohei Okamoto, who developed it as part of his Ph.D. in 
+        Computer Science and Engineering at UNR. Sohei can be contacted at 
+        <a href="mailto:sohei.okamoto@gmail.com">sohei.okamoto@gmail.com</a>.
+    </p>
+{% endblock %}

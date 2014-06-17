@@ -1,0 +1,34 @@
+{% extends 'NCCP/research_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block style_block %}
+{% endblock %}
+
+{% block body_block %}
+	<div style="padding-left: 1em;">
+			<object id="equipment-sensors" type="application/x-shockwave-flash" data="{{ STATIC_URL }}static/equipment-sensors.swf" width="840"
+				height="402" style="text-align: center">
+				<param name="movie" value="{{ STATIC_URL }}static/equipment-sensors.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<a href="http://www.adobe.com/go/getflash">
+					<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+						alt="Get Adobe Flash player" />
+				</a>
+			</object>
+	</div>
+	<p style="font-size: 1.1em">
+		Roll over instrument illustrations for description.</p>
+	<p>
+		For a written description and sensors list, please visit the <span style="font-weight: bold"><a title="Details how monitoring equipmentis used to collect climate data." href="{% url 'researchED' %}">Equipment Details</a></span> page.</p>
+
+{% endblock %}

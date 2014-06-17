@@ -1,0 +1,51 @@
+{% extends 'NCCP/libraries_base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block body_block %} 
+
+	<div id="flashContent" style="padding: 1em">
+		<object width="620" height="520"
+            type="application/x-shockwave-flash" 
+            data="{{ STATIC_URL }}static/images/photos-videos-gallery.swf"
+			id="photos-videos-gallery">
+			<param name="movie" value="{{ STATIC_URL }}static/images/photos-videos-gallery.swf" />
+			<param name="base" value="{{ STATIC_URL }}static/images/" />
+            <param name="quality" value="high" />
+			<param name="bgcolor" value="#d1e8b2" />
+			<param name="play" value="true" />
+			<param name="loop" value="true" />
+			<param name="wmode" value="window" />
+			<param name="scale" value="showall" />
+			<param name="menu" value="true" />
+			<param name="devicefont" value="false" />
+			<param name="salign" value="" />
+			<param name="allowScriptAccess" value="sameDomain" />
+			<!--[if !IE]>-->
+			<object 
+                type="application/x-shockwave-flash" 
+                data="{{ STATIC_URL }}static/images/photos-videos-gallery.swf" width="620"
+				height="520">
+				<param name="movie" value="{{ STATIC_URL }}static/images/photos-videos-gallery.swf" />
+				<param name="base" value="{{ STATIC_URL }}static/images/" />
+                <param name="quality" value="high" />
+				<param name="bgcolor" value="#d1e8b2" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<!--<![endif]-->
+				<a href="http://www.adobe.com/go/getflash">
+					<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif"
+						alt="Get Adobe Flash player" />
+				</a>
+				<!--[if !IE]>-->
+			</object>
+			<!--<![endif]-->
+		</object>
+	</div>
+{% endblock %}
