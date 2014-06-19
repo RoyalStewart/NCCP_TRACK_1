@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render_to_response
-from .models import sensorList
-from .models import peoplesList
+from .models import SensorList
+from .models import PeoplesList
 
 # Create your views here.
 def home(request):
@@ -23,7 +23,7 @@ def researchE(request):
 def researchED(request):
 	return render_to_response("NCCP/research_e-details.html")
 def researchSL(request):
-	return render_to_response("NCCP/research_sensorlist.html", {'Sensors': sensorList.objects.all()})
+	return render_to_response("NCCP/research_sensorlist.html", {'Sensors': SensorList.objects.all()})
 def researchL(request):
 	return render_to_response("NCCP/research_locations.html")
 def dataresource(request):
@@ -53,7 +53,7 @@ def educationW(request):
 def educationS(request):
 	return render_to_response("NCCP/education_secondary.html")
 def people(request):
-	return render_to_response("NCCP/people.html", {'People': peoplesList.objects.all()})
+	return render_to_response("NCCP/people.html", {'People': PeoplesList.objects.all()})
 def libraries_default(request):
 	return render_to_response("NCCP/libraries_default.html")
 def libraries_publications(request):

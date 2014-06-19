@@ -1,42 +1,17 @@
 <!DOCTYPE html >
 <html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
-<head><link href="{{ STATIC_URL }}static/CSS/Footer.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Header.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Headings.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Highlighted%20area.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Layout.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Markup%20validation.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Menus.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Modules.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/News.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Unsupported%20browsers.css" type="text/css" rel="stylesheet" /><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><link href="{{ STATIC_URL }}static/CSS/images/Logo.ico" rel="shortcut icon" sizes="128x128" type="image/vnd.microsoft.icon" /><link href="{{ STATIC_URL }}static/CSS/images/Logo.svg" rel="icon" sizes="any" type="image/svg+xml" /><title>
-	Nevada Climate Change Portal: Contact Information
+<head><link href="{{ STATIC_URL }}static/CSS/Footer.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Header.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Headings.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Highlighted%20area.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Layout.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Markup%20validation.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Menus.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Modules.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/News.css" type="text/css" rel="stylesheet" /><link href="{{ STATIC_URL }}static/CSS/Unsupported%20browsers.css" type="text/css" rel="stylesheet" /><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><link href="{{ STATIC_URL }}static/images/Logo.ico" rel="shortcut icon" sizes="128x128" type="image/vnd.microsoft.icon" /><link href="{{ STATIC_URL }}static/images/Logo.svg" rel="icon" sizes="any" type="image/svg+xml" /><title>
+	{% block title %}{% endblock %}
 </title><link href="{{ STATIC_URL }}static/CSS/jqsimplemenu.css" rel="Stylesheet" type="text/css" /><link href="{{ STATIC_URL }}static/CSS/lightbox.css" type="text/css" rel="stylesheet" />
-    <style type="text/css">
-        .ContactList 
-        {
-            list-style-type: none;
-            margin-left: -1.0em;
-        }
-        .EmailList
-        {
-            list-style-type: none;
-        }
-        .EmailList li
-        {
-            padding: 0.5em 0 0.5em 0;
-        }
-        .EmailList a
-        {
-            font-weight: bold;
-        }
-        .ContactHeading
-        {
-            text-decoration: underline;
-        }
-        .ComponentName
-        {
-            font-weight: bold;
-        }
-    </style>
+	
+	{% block style %}{% endblock %}
 
         <script type="text/javascript">
             var SiteBasePath = '{{ STATIC_URL }}static/JS/';
             var ScriptBasePath = '{{ STATIC_URL }}static/JS/';
             var PluginBasePath = '{{ STATIC_URL }}static/JS/';
             var LightboxBasePath = PluginBasePath;
-            var StaticContentPath = '{{ STATIC_URL }}static/';
+            var StaticContentPath = 'localhost:8000/static/';
         </script>
         <script type="text/javascript" src="{{ STATIC_URL }}static/JS/Scripts.min.js"></script>
         <script type="text/javascript">
@@ -47,7 +22,10 @@
                 });
             });
         </script>
-    </head>
+
+    {% block script %}{% endblock %}
+    
+</head>
 <body>
     <div id="NormalContent">
         <header id="TitleArea">
@@ -57,10 +35,10 @@
         <nav id="MenuArea" class="menubar">
             <ul id="MainMenuBar">
                 <li>
-                    <a title="Background and information about the Nevada Climate Change Project and its efforts." href="{% url 'project' %}">The Project</a>
+                    <a title="Background and information about the Nevada Climate Change Project and its efforts." href="{% url 'projectB' %}">The Project</a>
                     <ul>
                         <li>
-                            <a title="Project funding information." href="{% url 'funding' %}">Funding</a></li>
+                            <a title="Project funding information." href="{% url 'projectF' %}">Funding</a></li>
                         <li>
                             <a title="The 6 components that work together to support the Nevada Climate Change Project." href="{% url 'projectC' %}">Components</a></li>
                         <li>
@@ -97,7 +75,7 @@
                             <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a>
                         </li>
                         <li>
-                            <a target="_blank">Data Management Plan</a>
+                            <a href="{{ STATIC_URL }}static/Data%20management%20plan.pdf" target="_blank">Data Management Plan</a>
                         </li>
                         <li>
                             <a title="Predictive data resulting from the aplication of newly-adapted software models on large quantities of historical climate measurements." href="{% url 'modeloutput' %}">Climate Modeling Data</a></li>
@@ -118,155 +96,64 @@
                         <li>
                             <a title="A series of activities created by Washoe county school teachers to help educators teach climate change science to their students." href="{% url 'educationW' %}">Washoe Science Activities</a></li>
                         <li>
-                            <a title="A collection of course materials for post secondary education classes."  href="{% url 'educationS' %}">Post Secondary Materials</a></li>
+                            <a title="A collection of course materials for post secondary education classes." href="{% url 'educationS' %}">Post Secondary Materials</a></li>
                         <li>
-                            <a title="Learn how water conservation steps you can take at home can keep a lake from disappearing." href="{% url 'losing_the_lake' %}">Losing the Lake</a></li>
+                            <a title="Learn how water conservation steps you can take at home can keep a lake from disappearing.">Losing the Lake</a></li>
                         <li>
-                            <a target="_blank">UNLV Library Guide</a></li>
+                            <a href="http://guides.library.unlv.edu/content.php?pid=334568&amp;sid=2736757" target="_blank">UNLV Library Guide</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Collaborators and other persons involved with the Nevada Climate Change Project." href="{% url 'people' %}">People</a></li>
+                    <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People</a></li>
                 <li>
-                    <a title="Videos, publications, software, and other resources related to or produced by the project." href="{% url 'libraries' %}">Libraries</a>
+                    <a title="Videos, publications, software, and other resources related to or produced by the project.">Libraries</a>
                     <ul>
                         <li>
-                            <a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
+                            <a title="Publications produced by or related to the project.">Publications</a></li>
                         <li>
-                            <a title="Photos and videos gathered during project activities." href="{% url 'photos_videos' %}">Photos / Videos</a></li>
+                            <a title="Photos and videos gathered during project activities.">Photos / Videos</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Software systems and technologies produced or utilized by the project." href= "{% url 'tools' %}">Tools</a>
+                    <a title="Software systems and technologies produced or utilized by the project.">Tools</a>
                     <ul>
                         <li>
-                            <a title="The Demeter Framework for Model and Data Interoperability." href="{% url 'demeter' %}">Demeter Framework</a>
+                            <a title="The Demeter Framework for Model and Data Interoperability.">Demeter Framework</a>
                         </li>
                         <li>
-                            <a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization." href="{% url 'sunprism' %}">SUNPRISM Framework</a>
+                            <a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization.">SUNPRISM Framework</a>
                         </li>
                         <li>
-                            <a title="The Web Enabled Date &amp; Modeling Toolkit" href="{% url 'webmit' %}">WEDMIT</a>
+                            <a title="The Web Enabled Date &amp; Modeling Toolkit">WEDMIT</a>
                         </li>
                         <li>
-                            <a title="A web application used for browsing NCARWRF data" href="{% url 'visted' %}">VISTED</a>
+                            <a title="A web application used for browsing NCARWRF data">VISTED</a>
                         </li>
                         <li>
-                            <a title="The ATMOS Toolkit" href="{% url 'atmos' %}">ATMOS</a>
+                            <a title="The ATMOS Toolkit">ATMOS</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Contact members of the Nevada Climate Change Project." href= "{% url 'contact_us' %}">Contact Us</a></li>
+                    <a title="Contact members of the Nevada Climate Change Project.">Contact Us</a></li>
                 <li>
-                    <a title="The Nevada Climate Change Homepage." href= "{% url 'home' %}">Home</a></li>
+                    <a title="The Nevada Climate Change Homepage." href="{% url 'home' %}">Home</a></li>
             </ul>
         </nav>
         <header id="HeadingArea">
-            
-    <div class="bigimage-2">
-        <img src="{{ STATIC_URL }}static/images/bnr-water-bird-LFenstermaker.jpg" alt="A bird landing in the reeds of a pond." style="height:195px;width:1060px;" /></div>
+
+	{% block heading %}{% endblock %}
 
         </header>
         <section id="Left">
-            
-    <div class="module">
-        <div>
-            NCCP Resources</div>
-        <ul class="nav">
-            <li>
-                <a title="Background and information about the Nevada Climate Change Project and its efforts.">The Project</a></li>
-            <li>
-                <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN).">Research Sites (NevCAN)</a></li>
-            <li>
-                <a title="Search for and download collected sensor data." target="_blank">Sensor Data (Silverlight)</a></li>
-            <li>
-                <a title="Search for and download collected sensor data." target="_blank">Sensor Data (HTML 5)</a></li>
-            <li>
-                <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People</a></li>
-            <li>
-                <a title="Videos, publications, software, and other resources related to or produced by the project.">Libraries</a></li>
-        </ul>
-    </div>
 
-        </section>
-        <section id="Main">
-            
-    <h1>
-        Contact</h1>
-    <p>
-        The Nevada Climate Change Project is dedicated to scientific collaboration and public
-        education. Questions regarding collaborative efforts, members, developed technologies,
-        climate research, and general comments or inquiries are always welcome. Please direct
-        your inquiries or comments to:</p>
-    <div>
-        <ul class="ContactList">
-            <li>
-                <div class="ContactHeading">Project Leadership</div>
-                <ul class="EmailList">
-                    <li><a href="mailto:Gayle.Dana@dri.edu">Gayle Dana</a> (Project Principal Investigator)</li>
-                    <li><a href="mailto:Nick.Lancaster@dri.edu">Nick Lancaster</a> (Project Co-Principal
-                        Investigator, DRI)</li>
-                    <li><a href="mailto:smensing@unr.edu">Scott Mensing</a> (Project Co-Principal Investigator,
-                        UNR)</li>
-                    <li><a href="mailto:piechota@ce.unlv.edu">Tom Piechota</a> (Project Co-Principal Investigator,
-                        UNLV)</li>
-                </ul>
-            </li>
-            <li>
-                <div class="ContactHeading">Science Component Leaders</div>
-                <ul class="EmailList">
-                    <li><span class="ComponentName">Climate Modeling</span>: <a href="mailto:Darko.Koracin@dri.edu">Darko Koracin</a> (DRI)</li>
-                    <li><span class="ComponentName">Water</span>, <span class="ComponentName">NevCAN</span>: <a href="mailto:Lynn.Fenstermaker@dri.edu">Lynn Fenstermaker</a>
-                        (DRI), <a href="mailto:dadevitt@unlv.nevada.edu">Dale Devitt</a> (UNLV), <a href="mailto:lsaito@cabnr.unr.edu">
-                            Laurel Saito</a> (UNR)</li>
-                    <li><span class="ComponentName">Ecological Change</span>, <span class="ComponentName">
-                        NevCAN</span>: <a href="mailto:fbiondi@unr.edu">Franco Biondi</a> (UNR),
-                        <a href="mailto:Jay.Arnone@dri.edu">Jay Arnone</a> (DRI)</li>
-                    <li><span class="ComponentName">Cyberinfrastructure</span>: <a href="mailto:dascalus@cse.unr.edu">Sergiu Dascalu</a> (UNR),
-                        <a href="mailto:fredh@cse.unr.edu">Fred Harris</a> (UNR)</li>
-                    <li><span class="ComponentName">Education</span>: <a href="mailto:nussbaum@unlv.nevada.edu">Michael Nussbaum</a> (UNLV)</li>
-                    <li><span class="ComponentName">Policy</span>: <a href="mailto:helen.neill@unlv.edu">Helen Neill</a> (UNLV)</li>
-                </ul>
-            </li>
-            <li>
-                <div class="ContactHeading">NevCAN Technical Operations</div>
-                <ul class="EmailList">
-                    <li><a href="mailto:scotty@dayhike.net">Scotty Strachan</a> (UNR)</li>
-                    <li><a href="mailto:gmwrcc@dri.edu">Greg McCurdy</a> (DRI)</li>
-                    <li><a href="mailto:Brad.Lyles@dri.edu">Brad Lyles</a> (DRI)</li>
-                    <li><a href="mailto:brian.bird@unlv.edu">Brian Bird</a> (UNLV)</li>
-                </ul>
-            </li>
-            <li>
-                <div class="ContactHeading">NCCP Technical Operations</div>
-                <ul class="EmailList">
-                    <li><a href="mailto:ericf@cse.unr.edu">Eric Fritzinger</a> (UNR)</li>
-                    <li><a href="mailto:rkelley@cse.unr.edu">Richard Kelley</a> (UNR)</li>
-                    <li><a href="mailto:mcmahon@cse.unr.edu">Michael J. McMahon Jr.</a> (UNR)</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
+	{% block default %}{% endblock %}
 
-    <p>
-        Additional contact information by individual can be found on the <span style="font-weight: bold">
-            <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People page</a></span>.</p>
+	{% block modL %}{% endblock %}
+ 
+	{% block body %}{% endblock %}
 
-        </section>
-        <section id="Right">
-            
-    
-<div class="module">
-	<div>
-		EPSCoR</div>
-	<h3 style="text-align: center">
-		<img src="{{ STATIC_URL }}static/images/cyberinfra.gif" alt="Data analysis visualization." style="height:88px;width:94px;" /></h3>
-	<p style="text-align: center; font-weight: bold">
-		<a title="The Nevada Infrastructure for Climate Change Science, Education and Outreach." href="http://www.nevada.edu/epscor/nsf/climate1/" target="_blank">Nevada Infrastructure for Climate Change Science, Education and Outreach</a>
-	</p>
-</div>
-
+	{% block modR %}{% endblock %}
 
         </section>
         <footer id="SiteFooter">
@@ -288,7 +175,7 @@
             </div>
             <div style="text-align: right; padding: 0em 1em 0.1em 1em">
                 Last updated:
-                Tuesday, June 3, 2014 7:40:13 PM
+                Tuesday, June 3, 2014 7:32:10 PM
                 UTC <span style="padding-left: 2em">Version:</span>
                 <span id="SiteVersion">1.4.4.0</span>
             </div>

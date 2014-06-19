@@ -1,8 +1,22 @@
 {% extends 'NCCP/project_base.html' %}
 
-{% block title %}{{ category_name }}{% endblock %}
+{% block title %}Nevada Climate Change Portal: The Project{% endblock %}
 
-{% block body_block %}
+{% block style %}
+    <style type="text/css">
+        ul
+        {
+            padding-bottom: 1em;
+        }
+        
+        ul.EmphasizedList li
+        {
+            font-style: italic;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
     <h1>
         The Project</h1>
     <h2>

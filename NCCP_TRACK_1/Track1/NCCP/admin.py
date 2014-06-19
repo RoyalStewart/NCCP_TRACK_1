@@ -1,7 +1,7 @@
 from django.contrib import admin
-from .models import sensorList
-from .models import peoplesList
+from .models import SensorList
+from .models import PeoplesList
 
 # Register your models here.
-admin.site.register(sensorList)
-admin.site.register(peoplesList)
+admin.site.register(SensorList)
+admin.site.register(PeoplesList)

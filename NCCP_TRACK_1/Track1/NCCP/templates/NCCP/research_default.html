@@ -1,8 +1,8 @@
 {% extends 'NCCP/research_base.html' %}
 
-{% block title %}{{ category_name }}{% endblock %}
+{% block title %}Nevada Climate Change Portal: The Transects{% endblock %}
 
-{% block style_block %}
+{% block style %}
     <style>
         #SiteTable
         {
@@ -33,7 +33,7 @@
     </style>
 {% endblock %}
 
-{% block body_block %}
+{% block body %}
     <h1>
         The Nevada Climate-ecohydrological Assessment Network (N<span class="h1-lowcase">ev</span>CAN)</h1>
     <p>
@@ -282,4 +282,17 @@
         </tbody>
     </table>
 
+{% endblock %}
+
+{% block modR %}
+    <div class="module">
+        <div>
+            Functional Overview</div>
+        <h3 style="text-align: center">
+            <a class="lightbox" href="{{ STATIC_URL }}static/images/transects-overview-lg.jpg"
+                title="Diagram illustrating a major way that the NevCAN is designed to function. The x-axis represents time (two years depicted) and the y-axis represents space (latitude and elevation). The mountain ranges making up the southern (lower green hill) and northern (upper white-topped green hill) transects symbolically show elevation and location of the transect sites (filled blue circles). Extending directly to the right (i.e., moving through time) from each site is a set of lines symbolizing weather and other environmental data that are being, and will continue to be, automatically logged every 10 min. Along the upper x-axis, weather events (E1—En) are shown. If an event occurs at a site, a red-filled circle denotes when the event occurred and at what site(s). The gray-filled circles to the right of an event denote the time of a sequential response to that event. Circles that remain on the data lines indicate that responses have been noted only at that site for the event. Connecting lines and gray-filled circles that move to the data line of another site indicate that the initial event has elicited a response at another site along the transect at a later time. Of course, there must be plausible explanations for connecting events and subsequent responses. Analytical and statistical tools can aid in evaluating behavior-over-time patterns (e.g., from daily patterns to longer timescales) as depicted in the yellow box. Ultimately, data analysis aims to help assess climate effects on ecosystem hydrology and ecology and aid in prediction of potential anthropogenic climate change effects.">
+                <img id="RightSideBar_Image1" src="{{ STATIC_URL }}static/images/transects-overview-sm.jpg" alt="Transects overview" style="height:122px;width:150px;" />
+            </a>
+            Click thumbnail for an overview graphic of NevCAN</h3>
+    </div>
 {% endblock %}

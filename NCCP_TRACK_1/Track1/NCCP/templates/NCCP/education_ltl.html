@@ -1,8 +1,70 @@
 {% extends 'NCCP/education_base.html' %}
 
-{% block title %}{{ category_name }}{% endblock %}
+{% block title %}Losing the Lake{% endblock %}
 
-{% block body_block %} 
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+    
+    <style type="text/css">
+        #Main figure
+        {
+            text-align: center;
+            padding: 1em;
+            float: none;
+        }
+        figcaption
+        {
+            padding-top: 0.2em;
+            font-weight: bold;
+        }
+        .GameButton
+        {
+            border-radius: 0.2em;
+            background-color: #9BBD69;
+            padding: 0.7em;
+            cursor: pointer;
+            color: White;
+            font-weight: bold;
+            font-size: 1.3em;
+            text-align: center;
+            margin: 0.5em 1em;
+        }
+        .GameButton a
+        {
+            color: White;
+            text-decoration: none;
+        }
+    </style>
+{% endblock %}
+
+{% block body %} 
     <h1>
         Losing the Lake</h1>
     <p>

@@ -5,7 +5,7 @@ from .models import PeoplesList
 
 # Create your views here.
 def home(request):
-	return render_to_response("NCCP/home.html")
+	return render_to_response("NCCP/Home.html")
 def projectB(request):
 	return render_to_response("NCCP/project_default.html")
 def projectF(request):
@@ -81,4 +81,4 @@ def tools_visted(request):
 def tools_atmos(request):
 	return render_to_response("NCCP/tools_atmos.html")
 def contact_us(request):
-	return render_to_response("NCCP/contact_us.html")
+	return render_to_response("NCCP/ContactUs.html")
