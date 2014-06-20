@@ -1,0 +1,34 @@
+{% extends 'NCCP/Base.html' %}
+
+{% block title%}Nevada Climate Change Portal: 2013 Publications{% endblock %}
+
+{% block heading %}
+	<div class="bigimage-2">
+		<img src="{{ STATIC_URL }}static/images/bnr-library.jpg" alt="Books and a pair of glasses on a table." style="height:195px;width:1060px;" />
+</div>
+{% endblock %}
+
+{% block modL %}
+<div class="module">
+	<div>
+		Libraries</div>
+	<nav>
+		<ul>
+			<li><a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
+			<li><a title="Photos and videos gathered during project activities." href="{% url 'photosVideos' %}">Photos / Videos</a></li>
+		</ul>
+	</nav>
+</div>
+{% endblock %}
+
+{% block modR %}	
+<div class="module">
+	<div>
+		EPSCoR</div>
+	<h3 style="text-align: center">
+		<img src="{{ STATIC_URL }}static/images/cyberinfra.gif" alt="Data analysis visualization." style="height:88px;width:94px;" /></h3>
+	<p style="text-align: center; font-weight: bold">
+		<a title="The Nevada Infrastructure for Climate Change Science, Education and Outreach." href="http://www.nevada.edu/epscor/nsf/climate1/" target="_blank">Nevada Infrastructure for Climate Change Science, Education and Outreach</a>
+	</p>
+</div>
+{% endblock %}

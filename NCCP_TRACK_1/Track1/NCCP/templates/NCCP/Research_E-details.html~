@@ -1,0 +1,171 @@
+{% extends 'NCCP/research_base.html' %}
+
+{% block title %}Nevada Climate Change Portal: Equipment Details{% endblock %}
+
+{% block style %}
+	<style type="text/css">
+		#Right
+		{
+			display: none;
+			visibility: hidden;
+			width: 0px;
+		}
+		#Main
+		{
+			width: 860px;
+		}
+		#Main li
+		{
+			padding-bottom: 1em;
+		}
+	</style>
+{% endblock %}
+
+{% block body %}
+	<h1>
+		The Nevada Climate-ecohydrological Assessment Network (N<span class="h1-lowcase">ev</span>CAN)</h1>
+	<h2>
+		Equipment and Sensors: <span style="font-style: italic">Detail</span></h2>
+	<div style="float: right; padding: 1em;">
+        <a class="lightbox" href="{{ STATIC_URL }}static/images/footprint_instrumentation_tower-lg.jpg"
+            title="Cross sectional schematic of standard instrumentation installed at each transect site. A forested site is pictured here.">
+            <img src="{{ STATIC_URL }}static/images/footprint_instrumentation_tower-lg.jpg" alt="Sensor station along a transect." style="height:252px;width:299px;" />
+        </a>
+    </div>
+	<p>
+		The equipment and instrumentation that make up each site of the elevational transects
+		have been selected to monitor major hydrologic fluxes/flows and stocks, as well
+		as key modulating ecological factors, processes and stocks. Each transect site is
+		instrumented with a common set of equipment. At lower elevation, non-forest sites,
+		all instrumentation is mounted on a 10 m guyed tall meteorological tower (UT30 Tower,
+		Campbell Scientific Inc., Logan, UT). At higher elevation forested sites, the 10
+		m tower is placed in a forest gap to measure wind speed and direction, PAR, total
+		solar radiation, and precipitation. The solar panels providing the majority of the
+		station power are mounted on separate support legs near the towers. <span style="font-style: italic">
+			Right: Click on image for enlargement.</span></p>
+	<p>
+		Each monitoring station is located within an approximate 100 x 100 m (one hectare)
+		homogeneous area. One hectare (a) allows complete and accurate representation of
+		the plant communities found at each elevation, with multiple repetition of plant
+		community units; (b) is an appropriate scale for modeling purposes that rely upon
+		satellite data and other gridded data; and (c) provide sufficient space for establishing
+		replicated experimental plots for future studies (e.g., precipitation treatments
+		including irrigation or rain-out shelters; snow removal/addition treatments; simulated
+		aerosol deposition on snow surfaces).</p>
+	<p>
+		Data measured at each site are collected via sensors hard-wired to Campbell Scientific
+		Inc. multiplexers and data logger(s). These data are then transmitted in real time
+		via a Free-Wave spread spectrum radio (e.g., 900 MHz) to nearby base stations of
+		either UNR’s seismological broadband network/microwave backbone (Sheep Range transect)
+		or via a radio link built between the lower elevation sites in the Snake Range transect
+		and the highest elevation site that transmits data to a base station antenna located
+		at Great Basin College in Ely, Nevada. All data is eventually transmitted to the
+		data portal constructed by EPSCoR’s cyber infrastructure group. The data portal
+		provides public access to real time and archived data as well as general information
+		about the project.</p>
+	<h2>
+		Variables Measured</h2>
+	<h3>
+		Water and ecological environmental &quot;drivers&quot;</h3>
+	<p>
+		Sensors at each tower location are being used to continuously track a number of
+		variables, meterological, abiotic and biotic (listed below) that not only enable
+		assessment of climate variability, but more importantly provide information on hydrological
+		and ecological response to climate variability. For example air temperature and
+		air relative humidity (<span style="font-style: italic">Campbell HMP50</span>, manufactured
+		by Vaisala) are being measured that allow calculation of evaporative demand of the
+		air (vapor pressure deficit, VPD, a factor that strongly influences leaf stomatal
+		conductance and transpiration, Bunce 1982; Oren et al. 1999; Körner 1994). Other
+		variables measured include:</p>
+	<div style="padding-left: 2em">
+		<ul>
+			<li><span style="font-weight: bold">Precipitation</span>: One Geonor (<span style="font-style: italic">Geonor
+				Inc., T-200</span>) vibrating wire precipitation gauge is installed in an open area
+				at high elevation sites to continuously measure rain and snowfall. An ultrasonic
+				snow depth sensor (<span style="font-style: italic">Judd Communications USD</span>)
+				has been placed next to the Geonor gage to more thoroughly assess snow depth as
+				well as comparability of the two snow measurements. One conventional tipping bucket
+				rain gauge (<span style="font-style: italic">Campbell Scientific Inc., TB4</span>)
+				is also installed at each site.</li>
+			<li><span style="font-weight: bold">Plant canopy interception of snow</span>: To measure
+				snow interception, <span style="font-style: italic">graduated snow stakes</span>
+				(e.g., sturdy 3 m long wooden or metal stakes marked every 5 cm along each stake
+				(e.g. surveyor's pole) have been installed at a number of locations around all high
+				elevation tower locations. The programmable pan-tilt-zoom webcams (described below)
+				are being used to photograph each stake on a daily basis.</li>
+			<li><span style="font-weight: bold">Soil infiltration and percolation</span>: At each
+				site, sensors measure baseline soil water flux or downward velocity e.g. using time
+				domain transmissometry (<span style="font-style: italic">Acclima TDT</span>) installed
+				vertically at 2-17 and 17-32 cm and horizontally at 10 and 20 cm, water matric potential
+				(<span style="font-style: italic">Campbell Scientific Inc., 229</span>) installed
+				at 20 cm and specific heat (<span style="font-style: italic">East 30 Sensors DPHP</span>)
+				sensors installed at 1 and 2 cm depths.</li>
+			<li><span style="font-weight: bold">Subsurface soil (above bedrock) water flow</span>:
+				Small diameter piezometers will be advanced to bedrock at locations surrounding
+				each tower, or in the immediate vicinity of the monitoring weirs, to estimate the
+				potential for shallow subsurface runoff. Each piezometers will be equipped with
+				a pressure transducer that will be independent of the datalogger used at the center
+				of each plot. Other techniques to monitor subsurface runoff, like the use of a monitored
+				trench (i.e., Tromp-van Meerveld and McDonnell, WRR, 2006) will be used if site
+				conditions allow, and if necessary to characterize this component of the water budget.</li>
+			<li><span style="font-weight: bold">Soil water content/stocks (volumetric)</span>: Stocks
+				of plant available water present in the top layers of the soil vadose zone are tracked
+				by water matric potential sensors (mentioned above; <span style="font-style: italic">
+					Campbell 229</span>) and time domain reflectrometry probes (<span style="font-style: italic">Campbell
+						Scientific Inc., CS160</span>) for the top 30 cm of the soil. These sensors
+				are co-located with sap flow and point dendrometer sensors.</li>
+			<li><span style="font-weight: bold">Snow depth</span>: Ultrasonic snow depth sensors
+				(<span style="font-style: italic">Judd Communications USD</span>) have been installed
+				at each site, to measure snow depth. To obtain a site-level assessment of snow depth,
+				and snow depth distribution, the <span style="font-style: italic">graduated snow stakes</span>
+				(described above) have been placed at plant and inter-shrub microsites for webcam
+				photography of snow depth on a daily basis.</li>
+			<li><span style="font-weight: bold">Soil temperature and thermal flux: </span>Copper-constantan
+				thermocouples (Omega Engineering Inc.) were installed at 2.5, 5, 10, 20 and 50 cm
+				soil depths to log soil temperature. Together with soil heat flux plates (<span style="font-style: italic">Cambell
+					Scientific Inc., HFP01SC</span>) installed at 5 cm depth near each tower, heat
+				transfer within the soil can be calculated. </li>
+			<li><span style="font-weight: bold">Solar radiation measurements: </span>Net radiation
+				and its components are measured with a Kipp &amp; Zonen (<span style="font-style: italic">CNR-1</span>),
+				which measures incoming long- and shortwave radiation, versus outgoing long- and
+				shortwave radiation. Along with a pyranometer (<span style="font-style: italic">Campbell
+					Scientific Inc., CS300</span>) that measures total sun and sky incoming radiation
+				in the visible and near infrared region of the spectrum these sensors enable calculation
+				of net radiation and surface alebo. A photosynthetic photon flux density sensor
+				(<span style="font-style: italic">Campbell Scientific Inc. LI190SB</span> manufactured
+				by LICOR) measures incoming radiation used by plants for photosynthesis. The data
+				from this sensor enables explanation of temporal patterns in plant transpiration
+				(as measured with a sap flow system). Coupled with the previously listed soil temperature
+				and moisture sensor data, they provide estimation of plant water availability and
+				quantification of critical lower levels where transpiration is greatly affected
+				(in conjunction with sap flow meters). </li>
+		</ul>
+	</div>
+	<h3>
+		Ecological response(s) (hydro-ecological &ldquo;drivers&rdquo;)</h3>
+	<p>
+		To quantify responses of tree species to climate variability and to help " parameterize"
+		paleo tree ring responses to overall "climate" (plant moisture availability), automated
+		point dendrometers (<span style="font-style: italic">Agricultural Electronics Corporation,
+			APD</span>) have been installed on selected trees at each upper elevation site.
+		Tree diameter changes also will be used in conjunction with other measures of individual
+		tree performance such as transpiration (measured with <span style="font-style: italic">
+			Dynamax TDP-30</span> sap flow probes) and condition (e.g. snow and rain water
+		interception; relative canopy leaf area and canopy duration and phenology). To quantify
+		seasonal canopy phenology (development and senescence) and size (e.g., proxy for
+		leaf area), one ground-based NDVI sensor (<span style="font-style: italic">Skye Instruments,
+			two channel light sensor</span>) above each of target plant representing each
+		site.
+	</p>
+	<h3>
+		Hillside surface water flow (runoff/on)</h3>
+	<p>
+		At most sites (that meet method-required slope and soil texture thresholds), <span
+			style="font-style: italic">runoff collectors</span> (Miller et al. 2005) are
+		monitoring surface runoff. The rate of water flowing into the gauge will be used
+		to calculate hillslope overland water flow.
+	</p>
+	<p style="font-weight: bold">
+		<a title="The precise list of sensor equipment used to collect climate measurements." href="{% url 'researchSL' %}">View List of Sensors</a></p>
+
+{% endblock %}

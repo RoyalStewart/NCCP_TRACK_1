@@ -1,0 +1,121 @@
+{% extends 'NCCP/Education_Base.html' %}
+
+{% block title %}Carbon Footprint{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h2>
+        Introduction to Transect Data</h2>
+    <h3>
+        What are transects and why monitor them?</h3>
+    <p>
+        Transect data research is a type of distance sampling. Distance sampling is a technique
+        during which samples are collected on a designated transect line or points. Transect
+        data can encompass either one or multiple variables from a monitored plot. Such
+        data is typically monitored over a prolonged period of type and is ultimately available
+        for comparison between multiple plots.
+    </p>
+    <p>
+        In order to accurately collect data, various sensor and monitoring equipment is
+        implemented on site. Such equipment can measure change in temperature, weather,
+        soil, surrounding plant and organism life. Depending on the course of study, equipment,
+        plot size, location, and controls will vary. However, in general, transect data
+        is used to study and monitor the course of long-term changes and fluctuations.
+    </p>
+    <p>
+        Transect sites can provide data for environmental research in the field of ecology,
+        meteorology, climate change, etcetera.
+    </p>
+    <h3>
+        Why sample?</h3>
+    <figure>
+        <img src="{{ STATIC_URL }}static/images/Transect.png" alt="An example of correlated transect data." style="height:101px;width:265px;" />
+    </figure>
+    <p>
+        Prior to conducting a study, it is important to determine the type of data needed,
+        the location of the sites and why. During an ecological study, it may be important
+        to know what type of plant and animals are inhabiting a particular area. Thus, it
+        will be important to sample the quantity of organisms, the availability of their
+        habitat, the fluctuation of their population and other factors of interest. Ultimately,
+        collected data can be used to evaluate and project fluctuations. Once your interest
+        of study is established, it is important to determine what type of equipment, sensors,
+        and monitors are required.</p>
+    <h3>
+        Possible site equipment</h3>
+    <dl>
+        <dt>Precipitation gauge</dt>
+        <dd>
+            Measures rain and snow at high elevations.</dd>
+        <dt>Tipping bucket sensor</dt>
+        <dd>
+            Measures rain and snowfall under the tree canopy for comparison with inter-plant
+            areas.</dd>
+        <dt>Acoustic ultrasonic snow depth sensor</dt>
+        <dd>
+            Measures snow depth by using ultrasonic pulses aimed at a target such as the ground.</dd>
+        <dt>Ambient air temperature thermocouple </dt>
+        <dd>
+            Measures air temperature.</dd>
+        <dt>Radiometer sensor</dt>
+        <dd>
+            Measures and compares incoming and reflected infrared radiation.</dd>
+        <dt>Quantum sensor</dt>
+        <dd>
+            Measures photosynthetically active radiation.</dd>
+        <dt>Propeller anemometer</dt>
+        <dd>
+            Measures wind speed and direction.</dd>
+        <dt>Barometer sensor</dt>
+        <dd>
+            Measures barometric pressure.</dd>
+        <dt>Capacitative RH sensor</dt>
+        <dd>
+            Measures air temperature and relative humidity.</dd>
+        <dt>Dual probe heat pulse (DPHP) sensor</dt>
+        <dd>
+            Measures soil thermal conductivity, diffusivity, and specific heat.</dd>
+        <dt>Time domain reflectometer sensor</dt>
+        <dd>
+            Measures volumetric water content, soil water storage, water infiltration rates,
+            depth of wetting front to infer ground water recharge.</dd>
+        <dt>Point dendrometers sensors</dt>
+        <dd>
+            Measure tree stem growth and are installed on all dominant tree species.</dd>
+        <dt>Fiber optic distributed temperature sensor</dt>
+        <dd>
+            Measures soil temperature gradients with depth.</dd>
+    </dl>
+    <footer>
+        <a href="{{ STATIC_URL }}static/Introduction%20to%20Transect%20Data.doc" target="_blank">Download this article as a Microsoft Word document</a>
+    </footer>
+{% endblock %}

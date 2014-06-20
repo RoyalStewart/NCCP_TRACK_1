@@ -1,0 +1,123 @@
+{% extends 'NCCP/project_base.html' %}
+
+{% block title %}Nevada Climate Change Portal: Funding{% endblock %}
+
+{% block body %}
+    <h1>
+        The Project</h1>
+    <h2>
+        Funding</h2>
+    <p>
+        On September 1, 2008, NSHE received an award of $15 million from NSF EPSCoR (Cooperative
+        Agreement No. EPS-0814372). The five-year award funds science, education, and outreach
+        infrastructure at
+        <a title="The University of Nevada, Reno." href="http://www.unr.edu" target="_blank">UNR</a>,
+        <a title="The University of Nevada, Las Vegas." href="http://www.unlv.edu" target="_blank">UNLV</a>,
+        <a title="The Desert Research Institute." href="http://www.dri.edu" target="_blank">DRI</a>,
+        <a title="Nevada State College." href="http://nsc.nevada.edu" target="_blank">NSC</a>, and
+        <a title="The Nevada System of Higher Education." href="http://www.nevada.edu" target="_blank">NSHE</a>'s community colleges
+        for the study of climate change and its effects on Nevada. Per the project proposal,
+        the funds received were allocated to create a statewide interdisciplinary program
+        that is stimulating transformative research, education, and outreach on the effects
+        of regional climate change to ecosystem services (particularly water resources)
+        and supports the use of this knowledge by policy makers and stakeholders.</p>
+    <p>
+        Toward those ends, the majority of the funds from the project have and are being
+        distributed in the following ways:</p>
+    <h3>
+        Physical Infrastructure</h3>
+    <p>
+        Infrastructure funds are utilized to purchase items that can be utilized over longer
+        periods of time and provide functionality to researchers, scientists, and project
+        components. Expenditures have been made for:
+    </p>
+    <ul>
+        <li>Instrumented environment transects to observe, measure and analyze the effects of
+            climate change on ecosystems and water resources (including groundwater recharge).
+            These transects are located in the sourth and north of the state. These transects
+            are implemented by
+            <a title="The University of Nevada, Reno." href="http://www.unr.edu" target="_blank">UNR</a>,
+            <a title="The University of Nevada, Las Vegas." href="http://www.unlv.edu" target="_blank">UNLV</a>,
+            and
+            <a title="The Desert Research Institute." href="http://www.dri.edu" target="_blank">DRI</a>
+            working in conjunction with one another. </li>
+        <li>A data portal / web site to support centralized, inter-disciplinary climate change
+            research. Specifically, facilitating the exchange of data between groups of researchers,
+            decision makers, and stakeholders. This development is spearheaded by
+            <a title="The University of Nevada, Reno." href="http://www.unr.edu" target="_blank">UNR</a>.</li>
+        <li>Computing hardware and software to support the development of the web site, the
+            collection of climate data, and modeling efforts that utilize climate data. This
+            development is spearheaded by
+            <a title="The University of Nevada, Reno." href="http://www.unr.edu" target="_blank">UNR</a>.</li>
+        <li>Computing resources and personnel to develop regional climate modeling capabilities,
+            led by
+            <a title="The Desert Research Institute." href="http://www.dri.edu" target="_blank">DRI</a>.</li>
+        <li>Development of a state-of-the-art visualization facility – a &ldquo;Solutions Room&rdquo;
+            – that will be used by the Social Science Climate Change Network to facilitate two-way
+            communication between scientists, decision makers, and the public. This development
+            is spearheaded by
+            <a title="The University of Nevada, Las Vegas." href="http://www.unlv.edu" target="_blank">UNLV</a>.</li>
+    </ul>
+    <h3>
+        Human Infrastructure</h3>
+    <p>
+        In addition to leveraging the existing talents of members at participating institutions,
+        these new positions have been created to increase and enhance the capabilities of
+        the project as a whole:
+    </p>
+    <h4>
+        Desert Research Institute</h4>
+    <ul>
+        <li>Regional climate modeling</li>
+        <li>Ecosystems modeling</li>
+    </ul>
+    <h4>
+        University of Nevada, Las Vegas</h4>
+    <ul>
+        <li>Demographer</li>
+        <li>Ecohydrologist</li>
+        <li>Computer visualization</li>
+    </ul>
+    <h4>
+        University of Nevada, Reno</h4>
+    <ul>
+        <li>Paleoclimate modeling</li>
+        <li>Ecoclimatologist</li>
+        <li>Database administrator</li>
+        <li>Software developer</li>
+    </ul>
+    <h3>
+        Education and Outreach</h3>
+    <p>
+        Developments focused on education and community outreach take many forms. Activities
+        undertaken as a part of this project range from the creation of new educational
+        courses to the involvement of local small businesses.
+    </p>
+    <h4>
+        Educational Courses / Programs</h4>
+    <ul>
+        <li>A K-12 program focused on at-risk, in-service middle school teachers in a &ldquo;whole
+            school&rdquo; approach to improve their content and pedagogy of basic climate change
+            science and STEM education at a critical level. This development is led by
+            <a title="Nevada State College." href="http://nsc.nevada.edu" target="_blank">NSC</a>.</li>
+        <li>Undergraduate and graduate level classes in climate change topics, including a graduate
+            certificate program in climate change science (implemented statewide).</li>
+    </ul>
+    <h4>
+        Research Positions</h4>
+    <ul>
+        <li>Undergraduate research scholarships (30 per year).</li>
+        <li>Graduate research fellowships (up to 25 per year).</li>
+        <li>Postdoctoral researchers (up to 3 per year).</li>
+    </ul>
+    <h4>
+        Outreach Activities</h4>
+    <ul>
+        <li>A wide range of outreach and diversity activities, including recruitment and funding
+            for diversity hires.</li>
+        <li>Linkages to small business through a partnership with the Nevada Small Business
+            Development Center.</li>
+        <li>Bi-lingual web and video production.</li>
+        <li>Stakeholder involvement, including the review of collected raw climate data.</li>
+    </ul>
+{% endblock %}

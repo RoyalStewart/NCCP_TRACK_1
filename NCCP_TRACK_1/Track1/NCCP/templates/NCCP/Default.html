@@ -1,0 +1,369 @@
+{% extends 'NCCP/base.html' %}
+
+{% block title %}Nevada Climate Change Portal{% endblock %}
+
+{% block style %}
+    <link rel="Stylesheet" type="text/css" href="{{ STATIC_URL }}static/CSS/skin.css" />
+    <style type="text/css">
+        figure.HighlightedArea
+        {
+            width: 44%;
+            float: left;
+            margin: 1em;
+            padding: 0.5em;
+        }
+        
+        figure.HighlightedArea img
+        {
+            float: left;
+        }
+        
+        figure.HighlightedArea figcaption
+        {
+            float: left;
+            vertical-align: top;
+            padding-top: 1em;
+            padding-left: 0.5em;
+            width: 80%;
+        }
+        #mycarousel
+        {
+            visibility: hidden;
+            display: none;
+        }
+    </style>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript">
+        $script.ready('jCarousel', function () {
+            $(document).ready(function () {
+                $('#mycarousel').css('visibility', 'visible').show();
+                $('#mycarousel').jcarousel({
+                    wrap: 'circular', auto: 20
+                });
+            });
+        });
+    </script>
+{% endblock %}
+
+{% block heading %}
+   <div class="bigimage">
+        <ul id="mycarousel" class="jcarousel-skin-tango">
+            <li>
+                <img class="image-feature" src="{{ STATIC_URL }}static/images/map-array.jpg" alt="Map of Nevada" style="height:233px;width:600px;" />
+                <div class="news_text">
+                    <h1>
+                        Monitoring Nevada: Data Resources</h1>
+                    <p>
+                        As the name implies, the Nevada Climate Change Project is focused on collecting
+                        climate change data as it relates to the State of Nevada. Detailed information is
+                        available through the links below.</p>
+                    <nav>
+                        <ul style="list-style-type: none">
+                            <li>
+                                <a title="An overview of the resources deployed for and created by the project to collect data." href="{% url 'dataresource' %}">Data Resources</a></li>
+                            <li>
+                                <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a></li>
+                            <li>
+                                <a title="Search for and download collected sensor data.">Sensor Data (Silverlight)</a></li>
+                            <li>
+                                <a title="Search for and download collected sensor data.">Sensor Data (HTML 5)</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </li>
+            <li>
+                <img class="image-feature" src="{{ STATIC_URL }}static/images/station-strachan.jpg" alt="Landscape image of station" style="height:233px;width:600px;" />
+                <div class="news_text">
+                    <h1>
+                        The Nevada Climate-ecohydrological Assessment Network (N<span class="h1-lowcase">ev</span>CAN)</h1>
+                    <p>
+                        UNLV, UNR, and DRI, in collaboration with land owner agencies in Nevada, established
+                        two elevational transects of monitoring stations to collect data for long-term assessment
+                        of climate variability and change in Nevada.</p>
+                    <nav>
+                        <ul style="list-style-type: none">
+                            <li>
+                                <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">About NevCAN</a></li>
+                            <li>
+                                <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment / Sensors</a></li>
+                            <li>
+                                <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
+                            <li>
+                                <a title="Live web cameras deployed at research sites to facilitate data collection, monitoring, and general viewing of site conditions." >Web Cameras</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </li>
+            <li>
+                <img class="image-feature" src="{{ STATIC_URL }}static/images/library.jpg" alt="Image of books" style="height:233px;width:600px;" />
+                <div class="news_text">
+                    <h1>
+                        Libraries</h1>
+                    <p>
+                        The Nevada Climate Change Project has compiled a collection of resources related
+                        to the general topic of climate change, climate research, and project development
+                        activities. These resources, though available elsewhere on this site and the Internet,
+                        are organized centrally in the project library.</p>
+                    <nav>
+                        <ul style="list-style-type: none">
+                            <li>
+                                <a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
+                            <li>
+                                <a title="Photos and videos gathered during project activities." href="{% url 'photos_videos' %}">Photos / Videos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block modL %}
+    <div class="module">
+        <div>
+            Getting Started</div>
+        <nav>
+            <ul>
+                <li>
+                    <a title="Examples of activities that can be carried out using the Nevada Climate Change Portal." href="{{ STATIC_URL }}static/Exercises.pdf">Sample Exercises</a></li>
+                <li><a href="http://www.zoomerang.com/Survey/WEB22GABNKC4UU/">Educational
+                    Workshop Survey</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="module">
+        <div>
+            <a title="An overview of the resources deployed for and created by the project to collect data." >Data Resources</a></div>
+        <nav>
+            <ul>
+                <li>
+                    <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a></li>
+                <li>
+                    <a title="Search for and download collected sensor data.">Sensor Data (Silverlight)</a></li>
+                <li>
+                    <a title="Search for and download collected sensor data.">Sensor Data (HTML 5)</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+<div class="module">
+    <div>
+        NevCAN</div>
+    <ul class="nav">
+        <li>
+            <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment / Sensors</a></li>
+        <li>
+            <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
+        <li>
+            <a title="Some of the most recent images and measurements taken at each monitoring site, updated as quickly as possible." >Current Conditions</a></li>
+        <li>
+            <a title="Live web cameras deployed at research sites to facilitate data collection, monitoring, and general viewing of site conditions.">Web Cameras</a></li>
+        <li>
+            <a title="Search for and download collected sensor data.">Get Sensor Data (Silverlight)</a></li>
+        <li>
+            <a title="Search for and download collected sensor data.">Get Sensor Data (HTML 5)</a></li>
+    </ul>
+</div>
+
+    
+<div class="module">
+	<div>
+		Libraries</div>
+	<nav>
+		<ul>
+			<li><a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
+			<li><a title="Photos and videos gathered during project activities." href="{% url 'photos_videos' %}">Photos / Videos</a></li>
+		</ul>
+	</nav>
+</div>
+
+    
+<div class="module">
+	<div>
+		Tools</div>
+	<nav>
+		<ul>
+            <li><a title="The Demeter Framework for Model and Data Interoperability." href="{% url 'demeter' %}">Demeter Framework</a></li>
+		</ul>
+        <ul>
+            <li><a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization." href="{% url 'sunprism' %}">SUNPRISM Framework</a></li>
+        </ul>
+        <ul>
+            <li><a title="The Web Enabled Date &amp; Modeling Toolkit" href="{% url 'webmit' %}">WEDMIT</a></li>
+        </ul>
+        <ul>
+            <li><a title="A web application used for browsing NCARWRF data" href="{% url 'visted' %}">VISTED</a></li>
+        </ul>
+        <ul>
+            <li><a title="The ATMOS Toolkit" href="{% url 'atmos' %}">ATMOS</a></li>
+        </ul>
+	</nav>
+</div>
+{% endblock %}
+
+{% block body %}           
+    <h1>
+        Welcome To The Nevada Climate Change Portal</h1>
+    <p>
+        Seeking to provide cloud-like &ldquo;research-as-a-service (RaaS)&rdquo;, the focus
+        of this project is to advance the quality and quantity of infrastructure and data
+        collection for climate, hydrological, and ecological information pertaining to the
+        state of Nevada. This website provides information on the Nevada Climate Change
+        Project and access to both the NevCAN (Nevada Climate-ecohydrology Assessment Network)
+        and climate modeling output. All information and data is publicly available for
+        download to any person or group that seeks to use it for any purpose, be it research,
+        education, personal interest, or otherwise.</p>
+    <p>
+        One of the major goals of this project was to create an easily accessible, and expandable
+        infrastructure for geospatial data (such as climate information). By providing access
+        to real-time and archived environmental data the project significantly enhances
+        the ability of scientists, land managers educators and students to analyze and graphically
+        present environmental data observations.</p>
+    <p>
+        This effort was funded by the National Science Foundation EPSCoR (Experimental Program
+        to Stimulate Competitive Research) program under cooperative agreement number is
+        EPS 0814372.</p>
+    <h2>
+        The Project Participants</h2>
+    <figure class="HighlightedArea">
+        <a title="The Nevada System of Higher Education." href="http://www.nevada.edu" target="_blank"><img title="The Nevada System of Higher Education." src="{{ STATIC_URL }}static/images/NSHE.svg" alt="NSHE" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="The Nevada System of Higher Education." href="http://www.nevada.edu" target="_blank">Nevada System of Higher Education</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="Great Basin College." href="http://www.gbcnv.edu/" target="_blank"><img title="Great Basin College." src="{{ STATIC_URL }}static/images/GBC.svg" alt="GBC" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="Great Basin College." href="http://www.gbcnv.edu/" target="_blank">Great Basin College</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="The Desert Research Institute." href="http://www.dri.edu" target="_blank"><img title="The Desert Research Institute." src="{{ STATIC_URL }}static/images/DRI.svg" alt="DRI" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="The Desert Research Institute." href="http://www.dri.edu" target="_blank">Desert Research Institute</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="Nevada State College." href="http://nsc.nevada.edu" target="_blank"><img title="Nevada State College." src="{{ STATIC_URL }}static/images/NSC.svg" alt="NSC" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="Nevada State College." href="http://nsc.nevada.edu" target="_blank">Nevada State College</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="The University of Nevada, Las Vegas." href="http://www.unlv.edu" target="_blank"><img title="The University of Nevada, Las Vegas." src="{{ STATIC_URL }}static/images/UNLV.svg" alt="UNLV" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="The University of Nevada, Las Vegas." href="http://www.unlv.edu" target="_blank">University of Nevada, Las Vegas</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="Truckee Meadows Community College." href="http://www.tmcc.edu/" target="_blank"><img title="Truckee Meadows Community College." src="{{ STATIC_URL }}static/images/TMCC.svg" alt="TMCC" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="Truckee Meadows Community College." href="http://www.tmcc.edu/" target="_blank">Truckee Meadows Community College</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="The University of Nevada, Reno." href="http://www.unr.edu" target="_blank"><img title="The University of Nevada, Reno." src="{{ STATIC_URL }}static/images/UNR.svg" alt="NSHE" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="The University of Nevada, Reno." href="http://www.unr.edu" target="_blank">University of Nevada, Reno</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="Western Nevada College." href="http://www.wnc.edu/" target="_blank"><img title="Western Nevada College." src="{{ STATIC_URL }}static/images/WNC.svg" alt="WNC" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="Western Nevada College." href="http://www.wnc.edu/" target="_blank">Western Nevada College</a>
+        </figcaption>
+    </figure>
+    <figure class="HighlightedArea">
+        <a title="College of Southern Nevada." href="http://www.csn.edu/" target="_blank"><img title="College of Southern Nevada." src="{{ STATIC_URL }}static/images/CSN.svg" alt="CSN" style="height:50px;width:50px;" /></a>
+        <figcaption>
+            <a title="College of Southern Nevada." href="http://www.csn.edu/" target="_blank">College of Southern Nevada</a>
+        </figcaption>
+    </figure>
+{% endblock %}
+            
+{% block modR %}    
+<div class="module">
+    <header>
+        News</header>
+    <div id="RightSideBar_ctl00">
+        <ul class="NewsList">
+            <li>
+                <div class="Date">
+                    March 3, 2014
+                </div>
+                <div class="News">
+                    The annual meeting for the new NSF EPSCoR Track 1 project, including the External Advisory Council, will take place at UNR March 5-7, 2014.
+                </div>
+            </li>
+            <li>
+                <div class="Date">
+                    February 14, 2014
+                </div>
+                <div class="News">
+                    This website, and its accompanying services, have been migrated to the new NRDC hardware, which was purchased last year.  
+                    The migration of other, less visible services is ongoing, and may cause some minor interruptions to service.
+                </div>
+            </li>
+            <li>
+                <div class="Date">
+                    December 1, 2013
+                </div>
+                <div class="News">
+                    A CI node is being designed at UNLV, with a goal of connecting it to the NRDC in the near future.
+                </div>
+            </li>
+            <li>
+                <div class="Date">
+                    November 16, 2013
+                </div>
+                <div class="News">
+                    A new site in the Walker Basin has gone online and is currently collecting data.  The data will be transmitted back to our servers once the logistics are worked out.
+                </div>
+            </li>
+            <li>
+                <div class="Date">
+                    November 14, 2013
+                </div>
+                <div class="News">
+                    As part of the new NSF EPSCoR Track 1 project, the NCCP will expand into the Nevada Research Data Center (NRDC).  The website is due to release in the Summer of 2014.
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <script type="text/javascript">
+        $script.ready('vTicker', function () {
+            $(document).ready(function () {
+                $('#RightSideBar_ctl00').vTicker(
+                {
+                    animation: 'fade',
+                    height: 400,
+                    showItems: 3
+                });
+            });
+        });
+    </script>
+</div>
+
+    
+<div class="module">
+	<div>
+		EPSCoR</div>
+	<h3 style="text-align: center">
+		<img src="{{ STATIC_URL }}static/images/cyberinfra.gif" alt="Data analysis visualization." style="height:88px;width:94px;" /></h3>
+	<p style="text-align: center; font-weight: bold">
+		<a title="The Nevada Infrastructure for Climate Change Science, Education and Outreach." href="http://www.nevada.edu/epscor/nsf/climate1/">Nevada Infrastructure for Climate Change Science, Education and Outreach</a>
+	</p>
+</div>
+
+    <h2 style="padding-top: 1em; text-align: center; margin: 0px;">
+        Synergistic Efforts</h2>
+    <img src="{{ STATIC_URL }}static/images/modis_wonderglobe_lrg_NASA_earth_observatory-sm.jpg" alt="Earth" style="height:160px;width:160px;padding: 0px 20px" />
+    <p style="font-size: 1.1em; padding: 1em">
+        The Nevada Climate Change Project is a collaborative effort amongst researchers,
+        disciplines, and institutions. <span style="font-weight: bold">
+            <a title="Synergistic efforts." href="{% url 'projectS' %}">More >></a></span></p>
+{% endblock %}
+

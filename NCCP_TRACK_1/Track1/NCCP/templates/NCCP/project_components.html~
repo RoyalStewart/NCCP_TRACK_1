@@ -1,0 +1,40 @@
+{% extends 'NCCP/project_base.html' %}
+
+{% block title %}Nevada Climate Change Portal: The Project Components{% endblock %}
+
+{% block body %}
+    <h1>
+        The Project</h1>
+    <h2>
+        Components</h2>
+    <p>
+        The Nevada Climate Change Project is a collaborative effort of many individuals
+        at various
+        <a title="The Nevada System of Higher Education." href="http://www.nevada.edu" target="_blank">Nevada System of Higher Education</a>
+        institutions. Encompassing educational and research entities from both the North
+        and South of the state, the project combines the unique strengths and resources
+        of each institution with the talents and expertise of their individual researchers,
+        students, and faculty. This vast pool of expertise and resources is overseen at
+        various levels, ultimately reporting to (and directed by)
+        <a title="The Nevada Experimental Program to Stimulate Competitive Research." href="http://www.nevada.edu/epscor/" target="_blank">Nevada EPSCoR</a>.
+    </p>
+    <p>
+        Each institution involved in the project has one point of contact (entitled a &ldquo;Co-Principal
+        Investigator&rdquo; or &ldquo;Co-PI&rdquo;) that encourages and coordinates inter-institution
+        communication. The Co-PIs are further tasked with ensuring the smooth, productive
+        communication and flow of research information amongst the project components –
+        cross-institution teams of individuals that focus on a particular area of research
+        or development. Each of the 6 project components – described below – consists of
+        individuals at one or more institutions that coordinate their efforts to achieve
+        a specific set of goals (e.g. research, infrastructure development, etc.) related
+        to the project. These components constitute the most important, high-level organizational
+        structures of the project and include:</p>
+    <ul>
+        <li>Atmospheric Sciences</li>
+        <li>Hydrology</li>
+        <li>Ecology</li>
+        <li>Education</li>
+        <li>Cyberinfrastructure</li>
+        <li>Policy &amp; Outreach</li>
+    </ul>
+{% endblock %}

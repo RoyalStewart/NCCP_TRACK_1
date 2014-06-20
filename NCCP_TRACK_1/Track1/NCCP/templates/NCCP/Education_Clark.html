@@ -1,0 +1,195 @@
+{% extends 'NCCP/Education_Base.html' %}
+
+{% block title %}S.E.N.S.O.R. - Nevada Climate Change Data Portal{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+    
+    <style type="text/css">
+        #Main .module
+        {
+            margin: 0.5em;
+        }
+        </style>
+
+{% endblock %}
+
+{% block modL %}
+<div class="module">
+    <div>
+        NevCAN</div>
+    <ul class="nav">
+        <li>
+            <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment / Sensors</a></li>
+        <li>
+            <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
+        <li>
+            <a title="Some of the most recent images and measurements taken at each monitoring site, updated as quickly as possible.">Current Conditions</a></li>
+        <li>
+            <a title="Live web cameras deployed at research sites to facilitate data collection, monitoring, and general viewing of site conditions.">Web Cameras</a></li>
+        <li>
+            <a title="Search for and download collected sensor data.">Get Sensor Data (Silverlight)</a></li>
+        <li>
+            <a title="Search for and download collected sensor data.">Get Sensor Data (HTML 5)</a></li>
+    </ul>
+</div>
+
+    
+
+<div class="module">
+    <header>Articles</header>
+    <ul class="nav">
+        <li>
+            <a href="{% url 'footprint' %}">Carbon Footprint</a></li>
+        <li>
+            <a href="{% url 'conductivity' %}">Electric Conductivity of Soil</a></li>
+        <li>
+            <a href="{% url 'transect' %}">Introduction to Transect Data</a></li>
+        <li>
+            <a href="{% url 'volumetric' %}">Volumetric Water Content</a></li>
+        <li>
+            <a href="{% url 'weather' %}">Weather v. Climate</a></li>
+        <li>
+            <a href="{% url 'wind' %}">Wind Speed</a></li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block body %}
+    <h1>
+        Clark County Climate Change Science Activities</h1>
+
+    <p>
+        Hands-on experiments &mdash; found to the right &mdash; are designed to provide instructors with interactive 
+        exercises that enhance student understanding of the environment and research. These exercises have 
+        been grouped together based upon their expected student audience, but are potentially of interest 
+        to all students. 
+    </p>
+
+    <p>
+        Informative articles &mdash; found to the left &mdash; provide background and information related to 
+        climate science, as well as the specific research undertaken as a part of this project. 
+        These short, illustrated topics are meant to explain specific scientific research techniques 
+        or topics, spurring discussion amongst students, instructors, and researchers. 
+    </p>
+
+    <p>
+        Case studies – found below – are lesson plans that middle and high school teachers can use which 
+        are based on actual scientific research that was conducted as part of the NSF EPSCoR Climate 
+        Change Project.
+    </p>
+
+    <p>
+        In addition, by using the link below, students and teachers can access the Lib Guide. This is an 
+        annotated guide to resources useful for understanding and communicating climate science and climate change risks 
+    </p>
+
+    <p style="margin-bottom: 20px;">
+        Students and instructors are encouraged to enhance their understanding of climate research by 
+        undertaking some research of their own, using the data collected by the project in the 
+        classroom or for projects. The available data is the same that seasoned researchers use in 
+        their analyses, and it is made available just as promptly. The live web cameras and site 
+        conditions are also available throughout the day.
+    </p>
+
+<div class="module">
+    <header>Case Studies</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/CP3_visualrep_final.b.docx">Visualizing Complex Climate Change Data (Grades 9-12)</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/CP4-website%20usability-final.docx">How Does the Usability of an Information Source Affect How We Use It? (Grades 9 - 12)</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/CP1-resilience-final.docx">How Can a Community Become More Resilient to the Effects of Climate Change? (Grades 9-12)</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/CP2-climate%20literacy-final.b.docx">Willingness to Take Action (Grades 9 - 12)</a></li>
+    </ul>
+</div>
+    
+    <div class="module">
+        <header>Library Guides</header>
+        <ul class="nav">
+            <li><a href="http://guides.library.unlv.edu/content.php?pid=334568&amp;sid=2736757" target="_blank">University of Nevada, Las Vegas Resource Guide</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block modR %}
+<div class="module">
+    <header>Elementary School Hands-on Activities</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/Conservation%20v%20Efficiency.docx">Conservation vs. Efficiency</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Temperature%20and%20Precipitation%20Investigation%20(elementary%20school).docx">Temperature and Precipitation</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Temperature%20and%20Humidity%20Investigation%20(elementary%20school).docx">Temperature and Humidity</a></li>
+    </ul>
+</div>
+
+    
+
+<div class="module">
+    <header>Middle School Hands-on Activities</header>
+    <ul class="nav">
+        <li>
+            <a  href="{{ STATIC_URL }}static/Air%20Temp%20and%20RH%20Investigation%20(middle%20school).docx">Air Temperature and Relative Humidity Investigation</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Atmospheric%20Anemometer%20Experiment.doc">Atmospheric Anemometer Experiment</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Atmospheric%20Barometer%20Experiment.doc">Atmospheric Barometer Experiment</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Climograph%20Investigation%20(middle%20school).docx">Climograph Investigation</a></li>
+    </ul>
+</div>
+
+    
+
+<div class="module">
+    <header>High School Hands-on Activities</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/Air%20Temp%20and%20RH%20Investigation%20(high%20school).docx">Air Temperature and Relative Humidity</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Cars%20and%20Climate%20Change.docx">Cars and Climate Change</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Climograph%20Investigation%20(high%20school).docx">Climograph Investigation</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Electric%20Conductivity%20Experiment.doc">Electric Conductivity Tester Experiment</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Solar%20Oven%20Experiment.docx">Solar Oven Experiment</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Transect%20Vegetation%20Zone%20Investigation%20(high%20school).docx">Transect Vegetation Zone</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/Volumetric%20Water%20Content%20Experiment.doc">Volumetric Water Content Experiment</a></li>
+    </ul>
+</div>
+
+{% endblock %}

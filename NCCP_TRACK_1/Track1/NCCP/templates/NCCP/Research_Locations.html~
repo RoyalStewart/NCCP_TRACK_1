@@ -1,0 +1,53 @@
+{% extends 'NCCP/research_base.html' %}
+
+{% block title %}Nevada Climate Change Portal: Research Locations{% endblock %}
+
+{% block style %}
+	<style type="text/css">
+		#Right, #Left
+		{
+			display: none;
+			visibility: hidden;
+			width: 0px;
+		}
+		#Main
+		{
+			width: 100%;
+		}
+		figure
+		{
+		    margin: 0px;
+		    padding: 1.5em;
+		}
+		figcaption
+		{
+		    text-align: center;
+		    font-size: 0.9em;
+		    font-weight: bold;
+		}
+	</style>
+{% endblock %}
+
+{% block script %}
+{% endblock %}
+
+{% block body %}
+<h1>
+		The Nevada Climate-ecohydrological Assessment Network (N<span class="h1-lowcase">ev</span>CAN)</h1>
+	<h2>
+		Locations</h2>
+	<p>
+		These basin-to-mountain top transects are located in the Sheep Range (located approximately
+		35 km NNW of Las Vegas) and in the Snake Range (east central NV along the UT border;
+		approximately 335 km NNE of Las Vegas).</p>
+	<figure style="float: left">
+		<img src="{{ STATIC_URL }}static/images/snake-range-sites.jpg" alt="Snake range sites" style="height:289px;width:485px;" />
+		<figcaption>Snake Range Sites</figcaption>
+	</figure>
+	<figure style="float: right">
+		<img src="{{ STATIC_URL }}static/images/sheep-range-sites.jpg" alt="Sheep range sites" style="height:289px;width:485px;" />
+		<figcaption>Sheep Range Sites</figcaption>
+	</figure>
+	<p style="clear: both; padding-top: 1em">
+		<a>Download the Google Earth locations map</a></p>
+{% endblock %}

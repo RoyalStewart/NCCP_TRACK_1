@@ -1,0 +1,61 @@
+{% extends 'NCCP/Project_Base.html' %}
+
+{% block title %}Nevada Climate Change Portal: The Project{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        ul
+        {
+            padding-bottom: 1em;
+        }
+        
+        ul.EmphasizedList li
+        {
+            font-style: italic;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h1>
+        The Project</h1>
+    <h2>
+        Nevada Infrastructure for Climate Change Science, Education, and Outreach</h2>
+    <p>
+        The goal of this project is to:</p>
+    <ul class="EmphasizedList">
+        <li>Create a statewide interdisciplinary program and virtual climate change center to....</li>
+        <li>Stimulate transformative research, education, and outreach on the effects of regional
+            climate change on ecosystem services (especially water resources) and....</li>
+        <li>Support use of this knowledge by policy makers and stakeholders</li>
+    </ul>
+    <p>
+        It will create new interdisciplinary capability to detect, analyze, and model effects
+        of regional climate change on landscapes, ecosystems, and water resources and communicate
+        research results to decision makers and the public. Specific capabilities that are
+        being developed include:</p>
+    <ul>
+        <li>Regional climate modeling capability</li>
+        <li>Observational Network for Ecohydrology</li>
+        <li>Climate Change Data Portal </li>
+        <li>Enhanced Computational Capabilities (e.g., clusters, visualization) </li>
+        <li>New faculty </li>
+        <li>Graduate student support</li>
+        <li>Educational opportunities</li>
+        <li>Greater public awareness of climate change issues</li>
+    </ul>
+    <p>
+        Easily-distributed symmary information about the project is also available via:
+    </p>
+    <ul>
+        <li>
+            <a title="The Nevada Climate Change Fact Sheet" href="{{ STATIC_URL }}static/Fact%20Sheet.pdf">The Nevada Climate Change Fact Sheet</a></li>
+        <li>
+            <a title="The Nevada Climate Change Tri-Fold Brochure" href="{{ STATIC_URL }}static/Tri-Fold%20Brochure.pdf">The Nevada Climate Change Tri-Fold Brochure</a></li>
+    </ul>
+    <p>
+        The project is funded by a 5-year grant (2008-2013) from the National Science Foundation
+        EPSCoR program (Experimental Program to Stimulate Competitive Research), under cooperative
+        agreement EPS 0814372: Nevada Infrastructure for Climate Change Science, Education,
+        and Outreach.</p>
+{% endblock %}

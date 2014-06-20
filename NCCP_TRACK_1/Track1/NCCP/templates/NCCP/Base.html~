@@ -35,16 +35,16 @@
         <nav id="MenuArea" class="menubar">
             <ul id="MainMenuBar">
                 <li>
-                    <a title="Background and information about the Nevada Climate Change Project and its efforts." href="{% url 'projectB' %}">The Project</a>
+                    <a title="Background and information about the Nevada Climate Change Project and its efforts." href="{% url 'project' %}">The Project</a>
                     <ul>
                         <li>
-                            <a title="Project funding information." href="{% url 'projectF' %}">Funding</a></li>
+                            <a title="Project funding information." href="{% url 'funding' %}">Funding</a></li>
                         <li>
-                            <a title="The 6 components that work together to support the Nevada Climate Change Project." href="{% url 'projectC' %}">Components</a></li>
+                            <a title="The 6 components that work together to support the Nevada Climate Change Project." href="{% url 'components' %}">Components</a></li>
                         <li>
-                            <a title="Synergistic efforts." href="{% url 'projectS' %}">Synergistic Efforts</a></li>
+                            <a title="Synergistic efforts." href="{% url 'synergy' %}">Synergistic Efforts</a></li>
                         <li>
-                            <a title="The SENSOR system." href="{% url 'projectSensor' %}">The SENSOR System</a></li>
+                            <a title="The SENSOR system." href="{% url 'sensor' %}">The SENSOR System</a></li>
                         <li>
                             <a title="A map displaying an overview of Nevada, its features, and the sites we monitor.">Explore Nevada</a></li>
                     </ul>
@@ -53,9 +53,9 @@
                     <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a>
                     <ul>
                         <li>
-                            <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment</a></li>
+                            <a title="Hardware used to monitor the environment and collect data." href="{% url 'equipment' %}">Equipment</a></li>
                         <li>
-                            <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
+                            <a title="Locations at which climate data is collected." href="{% url 'locations' %}">Locations</a></li>
                         <li>
                             <a title="Some of the most recent images and measurements taken at each monitoring site, updated as quickly as possible.">Current Conditions</a></li>
                         <li>
@@ -69,7 +69,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a title="An overview of the resources deployed for and created by the project to collect data." href="{% url 'dataresource' %}">Data Resources</a>
+                    <a title="An overview of the resources deployed for and created by the project to collect data." href="{% url 'dataResource' %}">Data Resources</a>
                     <ul>
                         <li>
                             <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a>
@@ -78,7 +78,7 @@
                             <a href="{{ STATIC_URL }}static/Data%20management%20plan.pdf" target="_blank">Data Management Plan</a>
                         </li>
                         <li>
-                            <a title="Predictive data resulting from the aplication of newly-adapted software models on large quantities of historical climate measurements." href="{% url 'modeloutput' %}">Climate Modeling Data</a></li>
+                            <a title="Predictive data resulting from the aplication of newly-adapted software models on large quantities of historical climate measurements." href="{% url 'modelOutput' %}">Climate Modeling Data</a></li>
                         <li>
                             <a title="Search for and download collected sensor data." target="_blank">Sensor Data (Silverlight)</a></li>
                         <li>
@@ -92,30 +92,30 @@
                         <li> 
                             <a title="Informative science / research articles and educational activities for students and instructors from elementary school onward." href="{% url 'education' %}">Lesson Plan Matrix</a></li>
                         <li>
-                            <a title="A series of activities created by Clark county school teachers to help educators teach climate change science to their students." href="{% url 'educationC' %}">Clark Science Activities</a></li>
+                            <a title="A series of activities created by Clark county school teachers to help educators teach climate change science to their students." href="{% url 'clark' %}">Clark Science Activities</a></li>
                         <li>
-                            <a title="A series of activities created by Washoe county school teachers to help educators teach climate change science to their students." href="{% url 'educationW' %}">Washoe Science Activities</a></li>
+                            <a title="A series of activities created by Washoe county school teachers to help educators teach climate change science to their students." href="{% url 'washoe' %}">Washoe Science Activities</a></li>
                         <li>
-                            <a title="A collection of course materials for post secondary education classes." href="{% url 'educationS' %}">Post Secondary Materials</a></li>
+                            <a title="A collection of course materials for post secondary education classes." href="{% url 'secondary' %}">Post Secondary Materials</a></li>
                         <li>
-                            <a title="Learn how water conservation steps you can take at home can keep a lake from disappearing.">Losing the Lake</a></li>
+                            <a title="Learn how water conservation steps you can take at home can keep a lake from disappearing." href="{% url 'losingTheLake' %}">Losing the Lake</a></li>
                         <li>
                             <a href="http://guides.library.unlv.edu/content.php?pid=334568&amp;sid=2736757" target="_blank">UNLV Library Guide</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People</a></li>
+                    <a title="Collaborators and other persons involved with the Nevada Climate Change Project." href="{% url 'people' %}">People</a></li>
                 <li>
-                    <a title="Videos, publications, software, and other resources related to or produced by the project.">Libraries</a>
+                    <a title="Videos, publications, software, and other resources related to or produced by the project." href="{% url 'libraries' %}">Libraries</a>
                     <ul>
                         <li>
-                            <a title="Publications produced by or related to the project.">Publications</a></li>
+                            <a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
                         <li>
-                            <a title="Photos and videos gathered during project activities.">Photos / Videos</a></li>
+                            <a title="Photos and videos gathered during project activities." href="{% url 'photosVideos' %}">Photos / Videos</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a title="Software systems and technologies produced or utilized by the project.">Tools</a>
+                    <a title="Software systems and technologies produced or utilized by the project." href="{% url 'tools' %}">Tools</a>
                     <ul>
                         <li>
                             <a title="The Demeter Framework for Model and Data Interoperability.">Demeter Framework</a>
@@ -135,7 +135,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a title="Contact members of the Nevada Climate Change Project.">Contact Us</a></li>
+                    <a title="Contact members of the Nevada Climate Change Project." href="{% url 'contactUs' %}">Contact Us</a></li>
                 <li>
                     <a title="The Nevada Climate Change Homepage." href="{% url 'home' %}">Home</a></li>
             </ul>
@@ -150,9 +150,11 @@
 	{% block default %}{% endblock %}
 
 	{% block modL %}{% endblock %}
- 
+         </section>
+        <section id="Main">
 	{% block body %}{% endblock %}
-
+      </section>
+        <section id="Right">
 	{% block modR %}{% endblock %}
 
         </section>

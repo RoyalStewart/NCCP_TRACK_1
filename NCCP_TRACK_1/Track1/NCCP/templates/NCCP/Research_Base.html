@@ -1,0 +1,27 @@
+{% extends 'NCCP/Base.html' %}
+
+{% block heading %}
+    <div class="bigimage-2">
+        <img src="{{ STATIC_URL }}static/images/bnr-station_strachan.jpg" alt="A view of the desert from a climate monitoring station." style="height:195px;width:1060px;" /></div>
+{% endblock %}
+
+{% block default %}
+<div class="module">
+    <div>
+        NevCAN</div>
+    <ul class="nav">
+        <li>
+            <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment / Sensors</a></li>
+        <li>
+            <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
+        <li>
+            <a title="Some of the most recent images and measurements taken at each monitoring site, updated as quickly as possible.">Current Conditions</a></li>
+        <li>
+            <a title="Live web cameras deployed at research sites to facilitate data collection, monitoring, and general viewing of site conditions.">Web Cameras</a></li>
+        <li>
+            <a title="Search for and download collected sensor data.">Get Sensor Data (Silverlight)</a></li>
+        <li>
+            <a title="Search for and download collected sensor data.">Get Sensor Data (HTML 5)</a></li>
+    </ul>
+</div>
+{% endblock %}

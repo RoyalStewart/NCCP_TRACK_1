@@ -4,81 +4,81 @@ from .models import SensorList
 from .models import PeoplesList
 
 # Create your views here.
-def home(request):
+def Home(request):
 	return render_to_response("NCCP/Home.html")
-def projectB(request):
-	return render_to_response("NCCP/project_default.html")
-def projectF(request):
-	return render_to_response("NCCP/project_funding.html")
-def projectC(request):
-	return render_to_response("NCCP/project_components.html")
-def projectS(request):
-	return render_to_response("NCCP/project_synergy.html")
-def projectSensor(request):
-	return render_to_response("NCCP/project_sensor.html")
-def research(request):
-	return render_to_response("NCCP/research_default.html")
-def researchE(request):
-	return render_to_response("NCCP/research_equipment.html")
-def researchED(request):
-	return render_to_response("NCCP/research_e-details.html")
-def researchSL(request):
-	return render_to_response("NCCP/research_sensorlist.html", {'Sensors': SensorList.objects.all()})
-def researchL(request):
-	return render_to_response("NCCP/research_locations.html")
-def dataresource(request):
-	return render_to_response("NCCP/data_resources.html")
-def education_ltl(request):
-	return render_to_response("NCCP/education_ltl.html")
-def modeloutput(request):
-	return render_to_response("NCCP/model_output.html")
-def education(request):
-	return render_to_response("NCCP/education_default.html")
-def footprint(request):
-	return render_to_response("NCCP/carbon_footprint.html")
-def transect(request):
-	return render_to_response("NCCP/transect.html")
-def conductivity(request):
-	return render_to_response("NCCP/conductivity.html")
-def weather(request):
-	return render_to_response("NCCP/weather_climate.html")
-def wind(request):
-	return render_to_response("NCCP/wind_speed.html")
-def volumetric(request):
-	return render_to_response("NCCP/volumetric_water.html")
-def educationC(request):
-	return render_to_response("NCCP/education_clark.html")
-def educationW(request):
-	return render_to_response("NCCP/education_washoe.html")
-def educationS(request):
-	return render_to_response("NCCP/education_secondary.html")
-def people(request):
-	return render_to_response("NCCP/people.html", {'People': PeoplesList.objects.all()})
-def libraries_default(request):
-	return render_to_response("NCCP/libraries_default.html")
-def libraries_publications(request):
-	return render_to_response("NCCP/libraries_publications.html")
-def libraries_publications_2012(request):
-	return render_to_response("NCCP/libraries_publications_2012.html")
-def libraries_publications_2011(request):
-	return render_to_response("NCCP/libraries_publications_2011.html")
-def libraries_publications_2010(request):
-	return render_to_response("NCCP/libraries_publications_2010.html")
-def libraries_publications_2009(request):
-	return render_to_response("NCCP/libraries_publications_2009.html")
-def libraries_photos_videos(request):
-	return render_to_response("NCCP/libraries_photos_videos.html")
-def tools_default(request):
-	return render_to_response("NCCP/tools_default.html")
-def tools_demeter(request):
-	return render_to_response("NCCP/tools_demeter.html")
-def tools_sunprism(request):
-	return render_to_response("NCCP/tools_sunprism.html")
-def tools_webmit(request):
-	return render_to_response("NCCP/tools_webmit.html")
-def tools_visted(request):
-	return render_to_response("NCCP/tools_visted.html")
-def tools_atmos(request):
-	return render_to_response("NCCP/tools_atmos.html")
-def contact_us(request):
-	return render_to_response("NCCP/ContactUs.html")
+def Project(request):
+	return render_to_response("NCCP/Project_Default.html")
+def ProjectFunding(request):
+	return render_to_response("NCCP/Project_Funding.html")
+def ProjectComponents(request):
+	return render_to_response("NCCP/Project_Components.html")
+def ProjectSynergy(request):
+	return render_to_response("NCCP/Project_Synergy.html")
+def ProjectSensor(request):
+	return render_to_response("NCCP/Project_Sensor.html")
+def Research(request):
+	return render_to_response("NCCP/Research_Default.html")
+def ResearchEquipment(request):
+	return render_to_response("NCCP/Research_Equipment.html")
+def ResearchEdetails(request):
+	return render_to_response("NCCP/Research_E-details.html")
+def ResearchSensorList(request):
+	return render_to_response("NCCP/Research_Sensor_List.html", {'Sensors': SensorList.objects.all()})
+def ResearchLocations(request):
+	return render_to_response("NCCP/Research_Locations.html")
+def DataResource(request):
+	return render_to_response("NCCP/Data_Resources.html")
+def Education_LTL(request):
+	return render_to_response("NCCP/Education_LTL.html")
+def ModelOutput(request):
+	return render_to_response("NCCP/Model_Output.html")
+def Education(request):
+	return render_to_response("NCCP/Education_Default.html")
+def Footprint(request):
+	return render_to_response("NCCP/Carbon_Footprint.html")
+def Transect(request):
+	return render_to_response("NCCP/Transect.html")
+def Conductivity(request):
+	return render_to_response("NCCP/Conductivity.html")
+def Weather(request):
+	return render_to_response("NCCP/Weather_Climate.html")
+def Wind(request):
+	return render_to_response("NCCP/Wind_Speed.html")
+def Volumetric(request):
+	return render_to_response("NCCP/Volumetric_Water.html")
+def EducationClark(request):
+	return render_to_response("NCCP/Education_Clark.html")
+def EducationWashoe(request):
+	return render_to_response("NCCP/Education_Washoe.html")
+def EducationSecondary(request):
+	return render_to_response("NCCP/Education_Secondary.html")
+def People(request):
+	return render_to_response("NCCP/People.html", {'People': PeoplesList.objects.all()})
+def Libraries(request):
+	return render_to_response("NCCP/Libraries_Default.html")
+def LibrariesPublications(request):
+	return render_to_response("NCCP/Libraries_Publications.html")
+def LibrariesPublications2012(request):
+	return render_to_response("NCCP/Libraries_Publications_2012.html")
+def LibrariesPublications2011(request):
+	return render_to_response("NCCP/Libraries_Publications_2011.html")
+def LibrariesPublications2010(request):
+	return render_to_response("NCCP/Libraries_Publications_2010.html")
+def LibrariesPublications2009(request):
+	return render_to_response("NCCP/Libraries_Publications_2009.html")
+def LibrariesPhotosVideos(request):
+	return render_to_response("NCCP/Libraries_Photos_Videos.html")
+def Tools(request):
+	return render_to_response("NCCP/Tools_Default.html")
+def ToolsDemeter(request):
+	return render_to_response("NCCP/Tools_Demeter.html")
+def ToolsSunprism(request):
+	return render_to_response("NCCP/Tools_Sunprism.html")
+def ToolsWEDMIT(request):
+	return render_to_response("NCCP/Tools_WEDMIT.html")
+def ToolsVISTED(request):
+	return render_to_response("NCCP/Tools_VISTED.html")
+def ToolsATMOS(request):
+	return render_to_response("NCCP/Tools_ATMOS.html")
+def ContactUs(request):
+	return render_to_response("NCCP/Contact_Us.html")

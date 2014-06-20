@@ -1,0 +1,46 @@
+{% extends 'NCCP/Tools_Base.html' %}
+
+{% block title %}{{ category_name }}{% endblock %}
+
+{% block body_block %} 
+	<h1>
+		The Web Enabled Data & Modeling Toolkit</h1>
+    <p>
+        <a title="The Web Enabled Data &amp; Modeling Toolkit" href="https://dl.dropboxusercontent.com/u/68241976/WEDMIT%20Publish/WEDMIT%202013_06_06_21_14.zip">WEDMIT</a>
+    </p>
+    <p>
+        The Web Enabled Data & Modeling Toolkit (WEDMIT) is a combination of a web-enabled 
+        application with a cross-platform desktop application. WEDMIT is primarily aimed 
+        at addressing data and model interoperability challenges. Researchers in 
+        environmental sciences work with datasets that have a large variety of data 
+        structures and file formats. Consequently, for data and model interoperability, 
+        it is essential to have the right tools for converting from a given data structure 
+        to another, and from a specific file format to another. WEDMIT is an original 
+        web-enabled approach for generating data processors capable of handling a multitude 
+        of data operations, including numerous data conversion and processing activities. 
+    </p>
+    <p>
+        WEDMIT emphasizes end-user, direct manipulation-based definition of data 
+        processors and automated code generation of their associated code, thus freeing 
+        the scientists from specialized and often tedious programming tasks. This, in turn, 
+        translates into an increased efficiency of the scientific research work. The 
+        applicability of WEDMIT goes beyond the domain of environmental sciences, for 
+        which it was initially created, as it can be used in many other areas of research 
+        that emphasize data-intensive exploration and processing. 
+    </p>
+    <p>
+        WEDMIT consists of a two part solution, a web application that provides an interactive 
+        way to generate and manage user-defined data structures, data operations, and data 
+        processors, and a desktop-based generic data processor. The generic processor takes the 
+        definition of the data processor generated via web application. Then, it 
+        generates the code related to a data processor, compiles it on the fly, and runs it. 
+        The users can configure different runtime parameters that pertain to code generation, 
+        compilation, and running the data processor. The concept of a data processor can be 
+        extended to couple two models in a feed-forward execution.
+    </p>
+    <p>
+        The main author of the WEDMIT is Jigar Patel, who developed it as part of his Ph.D. in 
+        Computer Science and Engineering at UNR. Jigar can be contacted at 
+        <a href="mailto:jspatel@cse.unr.edu">jspatel@cse.unr.edu</a>.
+    </p>
+{% endblock %}

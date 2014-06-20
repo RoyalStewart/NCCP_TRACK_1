@@ -1,0 +1,93 @@
+{% extends 'NCCP/Education_Base.html' %}
+
+{% block title %}Weather vs. Climate{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h2>
+        Weather v. Climate</h2>
+    <h3>
+        What is the primary difference?</h3>
+    <figure>
+        <img src="{{ STATIC_URL }}static/images/Thermal%20Earth.gif" alt="Thermal images of Earth" style="height:103px;width:206px;" />
+    </figure>
+    <p>
+        The difference between weather and climate is a measure of time. Weather is what
+        conditions of the atmosphere are over a short period of time, and climate is how
+        the atmosphere "behaves" over relatively long periods of time.</p>
+    <p>
+        When we talk about climate change, we talk about changes in long-term averages of
+        daily weather. In summary, climate is made up of prolonged weather patterns.</p>
+    <h3>
+        Defining Weather
+    </h3>
+    <p>
+        Weather is essentially atmospheric patterns. This does not necessarily reflect anthropological
+        effects like emissions or pollutions. Weather can considered the natural way for
+        our planet to express temperature, humidity, precipitation, cloudiness, brightness,
+        visibility, wind, and atmospheric pressure, as in high and low pressure.</p>
+    <h3>
+        Defining Climate</h3>
+    <p>
+        Unlike weather, climate is the description of the long-term pattern of weather in
+        a particular area. According to many scientists, climate is defined as the accumulation
+        to weather over a period of time equivalent to 30 years. This observation is generally
+        done using average weather patterns.
+    </p>
+    <p>
+        When discussion climate we generally discuss averages of precipitation, temperature,
+        humidity, sunshine, wind velocity, phenomena such as fog, frost, and hail storms,
+        and other measures of the weather that occur over a long period in a particular
+        place.
+    </p>
+    <p>
+        For example, after looking at rain gauge data, lake and reservoir levels, and satellite
+        data, scientists can tell if during a summer, an area was drier than average. If
+        it continues to be drier than normal over the course of many summers, than it would
+        likely indicate a change in the climate.
+    </p>
+    <h3>
+        Why Study Climate?</h3>
+    <p>
+        The reason studying climate and a changing climate is important, is that will affect
+        people around the world. Rising global temperatures are expected to raise sea levels,
+        and change precipitation and other local climate conditions. Changing regional climate
+        could alter forests, crop yields, and water supplies. It could also affect human
+        health, animals, and many types of ecosystems. Deserts may expand into existing
+        rangelands, and features of some of our National Parks and National Forests may
+        be permanently altered.</p>
+            <footer>
+        <a href="{{ STATIC_URL }}static/Weather%20v%20Climate.docx" target="_blank">Download this article as a Microsoft Word document</a>
+    </footer>
+
+{% endblock %}

@@ -1,4 +1,4 @@
-{% extends 'NCCP/base.html' %}
+{% extends 'NCCP/Base.html' %}
 
 {% block title %}Nevada Climate Change Portal{% endblock %}
 
@@ -62,7 +62,7 @@
                     <nav>
                         <ul style="list-style-type: none">
                             <li>
-                                <a title="An overview of the resources deployed for and created by the project to collect data." href="{% url 'dataresource' %}">Data Resources</a></li>
+                                <a title="An overview of the resources deployed for and created by the project to collect data." href="{% url 'dataResource' %}">Data Resources</a></li>
                             <li>
                                 <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a></li>
                             <li>
@@ -87,9 +87,9 @@
                             <li>
                                 <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">About NevCAN</a></li>
                             <li>
-                                <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment / Sensors</a></li>
+                                <a title="Hardware used to monitor the environment and collect data." href="{% url 'equipment' %}">Equipment / Sensors</a></li>
                             <li>
-                                <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
+                                <a title="Locations at which climate data is collected." href="{% url 'locations' %}">Locations</a></li>
                             <li>
                                 <a title="Live web cameras deployed at research sites to facilitate data collection, monitoring, and general viewing of site conditions." >Web Cameras</a></li>
                         </ul>
@@ -111,7 +111,7 @@
                             <li>
                                 <a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
                             <li>
-                                <a title="Photos and videos gathered during project activities." href="{% url 'photos_videos' %}">Photos / Videos</a></li>
+                                <a title="Photos and videos gathered during project activities." href="{% url 'photosVideos' %}">Photos / Videos</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -120,7 +120,7 @@
     </div>
 {% endblock %}
 
-{% block body %}
+{% block default %}
     <div class="module">
         <div>
             Getting Started</div>
@@ -153,9 +153,9 @@
         NevCAN</div>
     <ul class="nav">
         <li>
-            <a title="Hardware used to monitor the environment and collect data." href="{% url 'researchE' %}">Equipment / Sensors</a></li>
+            <a title="Hardware used to monitor the environment and collect data." href="{% url 'equipment' %}">Equipment / Sensors</a></li>
         <li>
-            <a title="Locations at which climate data is collected." href="{% url 'researchL' %}">Locations</a></li>
+            <a title="Locations at which climate data is collected." href="{% url 'locations' %}">Locations</a></li>
         <li>
             <a title="Some of the most recent images and measurements taken at each monitoring site, updated as quickly as possible." >Current Conditions</a></li>
         <li>
@@ -174,7 +174,7 @@
 	<nav>
 		<ul>
 			<li><a title="Publications produced by or related to the project." href="{% url 'publications' %}">Publications</a></li>
-			<li><a title="Photos and videos gathered during project activities." href="{% url 'photos_videos' %}">Photos / Videos</a></li>
+			<li><a title="Photos and videos gathered during project activities." href="{% url 'photosVideos' %}">Photos / Videos</a></li>
 		</ul>
 	</nav>
 </div>
@@ -201,10 +201,9 @@
         </ul>
 	</nav>
 </div>
+{% endblock %}
 
-        </section>
-        <section id="Main">
-            
+{% block body%}
     <h1>
         Welcome To The Nevada Climate Change Portal</h1>
     <p>
@@ -282,11 +281,9 @@
             <a title="College of Southern Nevada." href="http://www.csn.edu/" target="_blank">College of Southern Nevada</a>
         </figcaption>
     </figure>
-
-        </section>
-        <section id="Right">
+{% endblock %}
             
-    
+{% block modR %}    
 <div class="module">
     <header>
         News</header>
@@ -367,6 +364,6 @@
     <p style="font-size: 1.1em; padding: 1em">
         The Nevada Climate Change Project is a collaborative effort amongst researchers,
         disciplines, and institutions. <span style="font-weight: bold">
-            <a title="Synergistic efforts." href="{% url 'projectS' %}">More >></a></span></p>
+            <a title="Synergistic efforts." href="{% url 'synergy' %}">More >></a></span></p>
 {% endblock %}
 

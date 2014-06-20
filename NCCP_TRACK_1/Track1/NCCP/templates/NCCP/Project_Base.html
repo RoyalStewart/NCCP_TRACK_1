@@ -1,0 +1,39 @@
+{% extends 'NCCP/Base.html' %}
+
+{% block heading %}
+	<div class="bigimage-2">
+		<img src="{{ STATIC_URL }}static/images/bnr-on-tower-fenstermaker.jpg" alt="Team members working on field equipment." style="height:195px;width:1060px;" />
+	</div>
+{% endblock %}
+
+{% block default %}
+	<div class="module">
+		<div>
+			About the Project</div>
+		<ul class="nav">
+			<li>
+				<a title="Project funding information." href="{% url 'funding' %}">Funding</a></li>
+			<li>
+				<a title="The 6 components that work together to support the Nevada Climate Change Project." href="{% url 'components' %}">Components</a></li>
+			<li>
+				<a title="Synergistic efforts." href="{% url 'synergy' %}">Synergistic Efforts</a></li>
+            <li>
+                <a title="The SENSOR system." href="{% url 'sensor' %}">The SENSOR System</a></li>
+            <li>
+                <a title="A map displaying an overview of Nevada, its features, and the sites we monitor.">Explore Nevada</a></li>
+		</ul>
+	</div>
+{% endblock %}
+
+{% block modR %}
+<div class="module">
+	<div>
+		EPSCoR</div>
+	<h3 style="text-align: center">
+		<img src="{{ STATIC_URL }}static/images/cyberinfra.gif" alt="Data analysis visualization." style="height:88px;width:94px;" /></h3>
+	<p style="text-align: center; font-weight: bold">
+		<a title="The Nevada Infrastructure for Climate Change Science, Education and Outreach." href="http://www.nevada.edu/epscor/nsf/climate1/" target="_blank">Nevada Infrastructure for Climate Change Science, Education and Outreach</a>
+	</p>
+</div>
+{% endblock %}
+

@@ -1,0 +1,135 @@
+{% extends 'NCCP/Base.html' %}
+
+{% block title %}Nevada Climate Change Portal: Contact Information{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        .ContactList 
+        {
+            list-style-type: none;
+            margin-left: -1.0em;
+        }
+        .EmailList
+        {
+            list-style-type: none;
+        }
+        .EmailList li
+        {
+            padding: 0.5em 0 0.5em 0;
+        }
+        .EmailList a
+        {
+            font-weight: bold;
+        }
+        .ContactHeading
+        {
+            text-decoration: underline;
+        }
+        .ComponentName
+        {
+            font-weight: bold;
+        }
+    </style>
+{% endblock %}
+
+{% block heading %}            
+    <div class="bigimage-2">
+        <img src="{{ STATIC_URL }}static/images/bnr-water-bird-LFenstermaker.jpg" alt="A bird landing in the reeds of a pond." style="height:195px;width:1060px;" /></div>
+{% endblock %}
+
+{% block default %}            
+    <div class="module">
+        <div>
+            NCCP Resources</div>
+        <ul class="nav">
+            <li>
+                <a title="Background and information about the Nevada Climate Change Project and its efforts.">The Project</a></li>
+            <li>
+                <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN).">Research Sites (NevCAN)</a></li>
+            <li>
+                <a title="Search for and download collected sensor data." target="_blank">Sensor Data (Silverlight)</a></li>
+            <li>
+                <a title="Search for and download collected sensor data." target="_blank">Sensor Data (HTML 5)</a></li>
+            <li>
+                <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People</a></li>
+            <li>
+                <a title="Videos, publications, software, and other resources related to or produced by the project.">Libraries</a></li>
+        </ul>
+    </div>
+{% endblock %}
+{% block body %}
+
+    <h1>
+        Contact</h1>
+    <p>
+        The Nevada Climate Change Project is dedicated to scientific collaboration and public
+        education. Questions regarding collaborative efforts, members, developed technologies,
+        climate research, and general comments or inquiries are always welcome. Please direct
+        your inquiries or comments to:</p>
+    <div>
+        <ul class="ContactList">
+            <li>
+                <div class="ContactHeading">Project Leadership</div>
+                <ul class="EmailList">
+                    <li><a href="mailto:Gayle.Dana@dri.edu">Gayle Dana</a> (Project Principal Investigator)</li>
+                    <li><a href="mailto:Nick.Lancaster@dri.edu">Nick Lancaster</a> (Project Co-Principal
+                        Investigator, DRI)</li>
+                    <li><a href="mailto:smensing@unr.edu">Scott Mensing</a> (Project Co-Principal Investigator,
+                        UNR)</li>
+                    <li><a href="mailto:piechota@ce.unlv.edu">Tom Piechota</a> (Project Co-Principal Investigator,
+                        UNLV)</li>
+                </ul>
+            </li>
+            <li>
+                <div class="ContactHeading">Science Component Leaders</div>
+                <ul class="EmailList">
+                    <li><span class="ComponentName">Climate Modeling</span>: <a href="mailto:Darko.Koracin@dri.edu">Darko Koracin</a> (DRI)</li>
+                    <li><span class="ComponentName">Water</span>, <span class="ComponentName">NevCAN</span>: <a href="mailto:Lynn.Fenstermaker@dri.edu">Lynn Fenstermaker</a>
+                        (DRI), <a href="mailto:dadevitt@unlv.nevada.edu">Dale Devitt</a> (UNLV), <a href="mailto:lsaito@cabnr.unr.edu">
+                            Laurel Saito</a> (UNR)</li>
+                    <li><span class="ComponentName">Ecological Change</span>, <span class="ComponentName">
+                        NevCAN</span>: <a href="mailto:fbiondi@unr.edu">Franco Biondi</a> (UNR),
+                        <a href="mailto:Jay.Arnone@dri.edu">Jay Arnone</a> (DRI)</li>
+                    <li><span class="ComponentName">Cyberinfrastructure</span>: <a href="mailto:dascalus@cse.unr.edu">Sergiu Dascalu</a> (UNR),
+                        <a href="mailto:fredh@cse.unr.edu">Fred Harris</a> (UNR)</li>
+                    <li><span class="ComponentName">Education</span>: <a href="mailto:nussbaum@unlv.nevada.edu">Michael Nussbaum</a> (UNLV)</li>
+                    <li><span class="ComponentName">Policy</span>: <a href="mailto:helen.neill@unlv.edu">Helen Neill</a> (UNLV)</li>
+                </ul>
+            </li>
+            <li>
+                <div class="ContactHeading">NevCAN Technical Operations</div>
+                <ul class="EmailList">
+                    <li><a href="mailto:scotty@dayhike.net">Scotty Strachan</a> (UNR)</li>
+                    <li><a href="mailto:gmwrcc@dri.edu">Greg McCurdy</a> (DRI)</li>
+                    <li><a href="mailto:Brad.Lyles@dri.edu">Brad Lyles</a> (DRI)</li>
+                    <li><a href="mailto:brian.bird@unlv.edu">Brian Bird</a> (UNLV)</li>
+                </ul>
+            </li>
+            <li>
+                <div class="ContactHeading">NCCP Technical Operations</div>
+                <ul class="EmailList">
+                    <li><a href="mailto:ericf@cse.unr.edu">Eric Fritzinger</a> (UNR)</li>
+                    <li><a href="mailto:rkelley@cse.unr.edu">Richard Kelley</a> (UNR)</li>
+                    <li><a href="mailto:mcmahon@cse.unr.edu">Michael J. McMahon Jr.</a> (UNR)</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <p>
+        Additional contact information by individual can be found on the <span style="font-weight: bold">
+            <a title="Collaborators and other persons involved with the Nevada Climate Change Project.">People page</a></span>.</p>
+
+{% endblock %}
+
+{% block modR %}
+    <div class="module">
+	<div>
+		EPSCoR</div>
+	<h3 style="text-align: center">
+		<img src="{{ STATIC_URL }}static/images/cyberinfra.gif" alt="Data analysis visualization." style="height:88px;width:94px;" /></h3>
+	<p style="text-align: center; font-weight: bold">
+		<a title="The Nevada Infrastructure for Climate Change Science, Education and Outreach." href="http://www.nevada.edu/epscor/nsf/climate1/" target="_blank">Nevada Infrastructure for Climate Change Science, Education and Outreach</a>
+	</p>
+</div>
+{% endblock %}

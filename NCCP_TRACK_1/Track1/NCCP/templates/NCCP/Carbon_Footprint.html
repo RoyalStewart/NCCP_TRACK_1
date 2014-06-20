@@ -1,0 +1,77 @@
+{% extends 'NCCP/education_base.html' %}
+
+{% block title %}Carbon Footprint{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h2>
+        Carbon Footprint</h2>
+    <figure>
+        <img src="{{ STATIC_URL }}static/images/CO2.jpg" alt="Carbon dioxide" style="height:93px;width:140px;" />
+    </figure>
+    <p>
+        A carbon footprint is the overall environmental impact of a company, individual,
+        society, organization, or product. Overall, this is the total amount of greenhouse
+        gases produced to directly and indirectly support human activities, usually expressed
+        in equivalent tons of carbon dioxide (CO<span style="vertical-align: sub">2</span>).
+        Definite calculations can prove to be nearly impossible due to the magnitude of
+        associated variables.</p>
+    <h3>
+        Sources</h3>
+    <p>
+        Most of the carbon footprint emissions for the average U.S. household come from
+        indirect sources. This means that a majority of the emissions that are produces
+        do not involve the consumer; these are generally released during manufacturing or
+        shipping.
+    </p>
+    <p>
+        The main influences on carbon footprints include population, economic output, and
+        energy and carbon intensity of the economy.</p>
+    <h3>
+        Measurement</h3>
+    <p>
+        A carbon footprint estimate can help one understand their impact and the natural
+        resources they use and/or waste. This measurement can be seen as an effective tool
+        for setting lifestyle goals or changes to becoming more sustainable.
+    </p>
+    <p>
+        Online calculators are available for individual use – such calculators can provide
+        an individual with an average count of planets necessary to sustain their lifestyle.
+        While organizations may calculate the emissions associate with their process to
+        produce a more accurate company profile.
+    </p>
+    <footer>
+        <a href="{{ STATIC_URL }}static/Carbon%20Footprint.docx" target="_blank">Download this article as a Microsoft Word document</a>
+    </footer>
+
+{% endblock %}

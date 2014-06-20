@@ -3,5 +3,38 @@
 {% block title %}{{ category_name }}{% endblock %}
 
 {% block body_block %}
-
+   <h1>
+		The ATMOS Toolkit</h1>
+    <p>
+        <a title="The ATMOS Toolkit Github Page" href="https://github.com/andydittrich/ATMOS">The ATMOS Toolkit Github Page</a>
+    </p>
+    <p>
+        The ATMOS toolkit provides Access to Tabular and Map-based Online Services.  It is an 
+        ASP.NET web application that aggregates climate change data from various web services 
+        and presents that data in a uniform way to researchers.  The toolkit uses a set of 
+        plugins to provide access to various data sources, and can be extended by writing new 
+        plugins to access additional data sources.  The fact that multiple disparate services 
+        are being accessed through multiple plugins is transparent to the end user, who accesses 
+        data through the web front-end.
+    </p>
+    <p>
+        The ATMOS toolkit's goal is to facilitate climate change research by providing a uniform 
+        and consistent access method for the wide variety of climate change data sources that 
+        exist, including both map-based data and tabular data.  These various data sources may 
+        have different access methods, data formats, and metadata, which presents a challenging 
+        environment for climate change researchers.  The ATMOS toolkit helps to create a consistent 
+        interface, allowing researchers to focus on the data itself rather than how the data is 
+        accessed.  The ATMOS toolkit also takes steps to provide metadata and links to the original 
+        data source to support data provenance, and ensure that climate change research based on 
+        this data will stand up to scrutiny from the scientific community.
+    </p>
+    <p>
+        ATMOS has been released as open source software under the Apache License 2.0, and is 
+        available on GitHub here:
+    </p>
+    <p>
+        The main author of ATMOS is Andrew Dittrich, who developed it as part of his master's thesis 
+        in Computer Science at the University of Nevada, Reno.  Andrew can be contacted at 
+        <a href="mailto:andy.dittrich@gmail.com">andy.dittrich@gmail.com</a>
+    </p>
 {% endblock %}

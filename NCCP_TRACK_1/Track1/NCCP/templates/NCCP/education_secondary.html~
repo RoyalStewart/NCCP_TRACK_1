@@ -1,0 +1,99 @@
+{% extends 'NCCP/education_base.html' %}
+
+{% block title %}S.E.N.S.O.R. - Nevada Climate Change Data Portal{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+    
+    <style type="text/css">
+        #Main .module
+        {
+            margin: 0.5em;
+        }
+    </style>
+
+{% endblock %}
+
+{% block modL %}
+<div class="module">
+    <header>Post Secondary Course Materials</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/SOC_ENV4xx_6xx%20Social%20Dilemmas%20(Futrell).zip">Sociology 4xx/6xx</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/PLS%20403_603%20Policy%20(Kauneckis).zip">Political Science 403L/603L</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/English%20102%20Composition%20II%20(Bentley).zip">English Composition II</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/GEOG%204xx_6xx%20Climate%20Solutions%20(Albright).zip">Geography 422/622</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/GEOG%20280%20Geospatial%20Atlas%20(Nowicki-Judkins).zip">Geography 280</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/GEOG%20220x%20Interpreting%20Climate%20Science%20(Barrie).zip">Geography 220X</a></li>
+        <li>
+            <a href="{{ STATIC_URL }}static/MATH%20420%20Math%20Modeling%20(Herald%20et%20al.).zip">Math 420/620</a></li>
+    </ul>
+</div>
+
+
+{% endblock %}
+
+{% block body %}
+    <h1>
+        Post Secondary Climate Change Science Activities</h1>
+
+    <p>The NSF EPSCoR Nevada Climate Change project funded in 2012 the development of a number of 
+       college-level courses or course modules on climate change.  These included courses in the social 
+       and natural sciences, English composition, and a course module in mathematics.  Many of the courses 
+       were designed to be offered on-line.  The courses/modules have or will be offered at specific 
+       institutions in Nevada.  The course materials are being made publically available to encourage 
+       faculty at other institutions to offer similar courses on climate change.  (Potential instructors 
+       should contact the original developers for exams and other assessment materials.)</p>
+
+    <p>The courses on this page include:</p>
+    <ul>
+        <li>Sociology 4xx/6xx: The Social Dilemmas of Climate Change (developed at the University of Nevada, 
+            Las Vegas, by Drs. Robert Futrell, Shannon Monnat, and Christie Batson).</li>
+        <li>Political Science 403L/603L:  Climate Change Mitigation and Adaptation Policy (developed at the 
+            University of Nevada, Reno, by Dr. Derek Kauneckis).</li>
+        <li>English Composition II:  Focus on Climate Change and Sustainability (developed at Great Basin 
+            College by Dr. Susanne Bentley).</li>
+        <li>Geography/Policy.   GEOG  422/622 Climate Solutions: Local to Global Perspectives (developed at 
+            the University of Nevada, Reno, by Dr. Thomas Albright).</li>
+        <li>Geography/Policy.  GEOG 280 Geospatial Atlas of Climate Change:  Mapping Coupled Human-Environmental 
+            Aspects of Climate Change Impacting Nevada (developed at the University of Nevada, Reno, by Drs. 
+            Scott Nowicki and Gabriel Judkins).</li>
+        <li>Geography/Communications:  GEOG 220X Interpreting Climate Science (developed at the Public Lands 
+            Institute, University of Nevada, Las Vegas, by Dr. Elizabeth Barrie).</li>
+        <li>Mathematical Modeling:  A module for a capstone mathematical modeling course MATH 420/620 (developed 
+            at the University of Nevada, Reno, by Drs. Christopher Herald, Satoko Kurita, and Aleksey Telyakovskiy). </li>
+    </ul>
+
+{% endblock %}

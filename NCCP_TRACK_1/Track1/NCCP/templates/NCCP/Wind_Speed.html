@@ -1,0 +1,98 @@
+{% extends 'NCCP/Education_Base.html' %}
+
+{% block title %}Wind Speed{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <h2>
+        Wind Speed</h2>
+    <h3>
+        The importance of studying wind velocity</h3>
+    <p>
+        Wind speed, or wind velocity, is significant to weather forecasting and affects
+        other major functions such as the air transportation of pollen, the metabolism rate
+        of plant species, and other anthropogenic factors. Wind speed can also be used to
+        determine the onset of a new season or major weather occurrence. Wind velocity is
+        typically measured with an anemometer, which is a common weather station instrument.
+        Anemometers can be used to measure wind speed and pressure, variables that are very
+        important to predicting weather patterns.</p>
+    <p>
+        Wind speed is affected by various micro and macro factors, such as pressure gradient.
+        Pressure gradient is defined as the difference in the air pressure between two atmospheric
+        points. Essentially, the greater the difference in pressure, the faster the wind
+        will flow from a high to low pressure atmosphere to balance out the fluctuation.
+        Factors like hurricanes, tornadoes and monsoons can regionally and locally influence
+        wind speed.
+    </p>
+    <p>
+        According to Discovering Physical Geography by Alan F. Arbogast, wind direction
+        and velocity are influenced by following primary factors:</p>
+    <dl>
+        <dt>Pressure gradient</dt>
+        <dd>
+            The difference in barometric pressure between adjacent zones of high and low pressure.</dd>
+        <dt>Frictional forces</dt>
+        <dd>
+            Features on the Earth's surface which oppose the wind; e.g.: mountains, trees, buildings,
+            etc.</dd>
+        <dt>Coriolis effect</dt>
+        <dd>
+            The Earth's rotation causes winds to be deflected to the right in the Northern Hemisphere,
+            and in the Southern Hemisphere to the left.</dd>
+    </dl>
+    <h3>
+        NevCAN Monitoring</h3>
+    <figure>
+        <img src="{{ STATIC_URL }}static/images/Anemometer.png" alt="An anemometer." style="height:120px;width:103px;" />
+    </figure>
+    <p>
+        The sensor used to measure and report wind speed and direction on the NCCP website
+        is called a propeller anemometer, specifically the RM Young Wind Vane. This model
+        is corrosion-resistant and ideal for a wide range of wind measuring applications.
+        The wind speed sensor is a four blade helicoid propeller. The propeller rotation
+        produces an AC sine wave voltage signal. The wind direction sensor is a rugged yet
+        lightweight vane. Vane angle is sensed by a precision potentiometer. Constructed
+        of UV stabilized plastic with stainless steel and anodized aluminum fittings, the
+        sensor mounts on standard 1 inch pipe (Young USA). This type of equipment is designed
+        for operating temperatures -50 to 50°C, making it an ideal piece of equipment in
+        Nevada weather.
+    </p>
+    <p>
+        The data collected from this sensor is made public on the NCCP website. Simply chose
+        your desired range, time frame and measurement units.
+    </p>
+    <footer>
+        <a href="{{ STATIC_URL }}static/Wind%20Speed.doc" target="_blank">Download this article as a Microsoft Word document</a>
+    </footer>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'NCCP/Base.html' %}
+
+{% block title %}Nevada Climate Change Portal: Tools{% endblock %}
+
+{% block heading %}
+    <div class="bigimage-2">
+        <img id="Heading_Image1" src="{{ STATIC_URL }}static/images/bnr-data-wable.jpg" alt="An abstract representation of data using satellites, circuits, and other hardware." style="height:195px;width:1060px;" />
+    </div>
+{% endblock %}
+
+{% block default %}    
+<div class="module">
+	<div>
+		Tools</div>
+	<nav>
+		<ul>
+            <li><a title="The Demeter Framework for Model and Data Interoperability." href="{% url 'demeter' %}">Demeter Framework</a></li>
+		</ul>
+        <ul>
+            <li><a title="The SUNPRISM Framework for Model Interoperability, Data Transformation, and Visualization." href="{% url 'sunprism' %}">SUNPRISM Framework</a></li>
+        </ul>
+        <ul>
+            <li><a title="The Web Enabled Date &amp; Modeling Toolkit" href="{% url 'webmit' %}">WEDMIT</a></li>
+        </ul>
+        <ul>
+            <li><a title="A web application used for browsing NCARWRF data" href="{% url 'visted' %}">VISTED</a></li>
+        </ul>
+        <ul>
+            <li><a title="The ATMOS Toolkit" href="{% url 'atmos' %}">ATMOS</a></li>
+        </ul>
+	</nav>
+</div>
+{% endblock %}

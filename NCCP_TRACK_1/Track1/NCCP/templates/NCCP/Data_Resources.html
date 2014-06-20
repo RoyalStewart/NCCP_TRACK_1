@@ -1,0 +1,89 @@
+{% extends 'NCCP/base.html' %}
+
+{% block title %}Nevada Climate Change Portal: Data Resources{% endblock %}
+
+{% block heading %}
+	<div class="bigimage-2">
+		<img src="{{ STATIC_URL }}static/images/bnr-data-wable.jpg" alt="An abstract representation of data using satellites, circuits, and other hardware." style="height:195px;width:1060px;" />
+	</div>
+{% endblock %}
+
+{% block default %}
+    <div class="module">
+        <div>
+            Data Resources</div>
+        <nav>
+            <ul>
+                <li>
+                    <a title="The Nevada Climate-ecohydrological Assessment Network (NevCAN)." href="{% url 'research' %}">Research Sites (NevCAN)</a></li>
+                <li>
+                    <a title="Search for and download collected sensor data.">Sensor Data (Silverlight)</a></li>
+                <li>
+                    <a title="Search for and download collected sensor data.">Sensor Data (HTML 5)</a></li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}
+
+{% block body %}
+    <h1>
+        Data Resources</h1>
+    <p>
+        The Nevada Climate Change Project is focused on collecting climate change data as
+        it relates to the State of Nevada. This information is then made available to researchers,
+        scientists, and any other interested entity who is curious about the past, present,
+        and / or future state of the Nevada climate and its hydrological and ecological
+        resources.
+    </p>
+    <p>
+        To properly measure climate conditions, monitoring stations have been placed along
+        two transects within the state in key vegetation zones that represent a typical
+        set of conditions found in the Great Basin and Mojave Desert ecosystems within the
+        state. Various measurements are collected at these stations, recorded, and archived
+        for later use by researchers, climate modelers, land managers, educators, students
+        and any interested person.
+    </p>
+    <p style="font-weight: bold; text-align: center; padding: 1em;">
+        <a>Get Data</a></p>
+    <p>
+        Additional visualizations and analyses of NevCAN data are available from these Western
+        Regional Climate Center (WRCC) websites*:
+    </p>
+    <ul>
+        <li>
+            <a href="http://www.wrcc.dri.edu/GBtransect/" target="_blank">Snake Range Transect</a></li>
+        <li>
+            <a href="http://www.wrcc.dri.edu/SRtransect/" target="_blank">Sheep Range Transect</a></li>
+    </ul>
+    <p>
+        The Western Regional Climate Center (WRCC), which is operated by
+        <a id="Content_HyperLink3" title="The Desert Research Institute." href="http://www.dri.edu" target="_blank">The Desert Research Institute</a>,
+        supports a three-partner National Climate Service Program, the partners of which
+        include: National Climatic Data Center (NCDC), Regional Climate Centers (RCC's)
+        and State Climate Offices. WRCC provides historical climate information and current
+        weather observations and forecasts for western states including: Alaska, Hawaii,
+        Washington, Oregon, California, Idaho, Nevada, Arizona, Montana, Wyoming, Colorado
+        and New Mexico. As a collaborator in this (and other) efforts, WRCC provides supplemental
+        data graphing and analysis.
+    </p>
+    <p style="font-style: italic; padding-top: 1em; font-size: 0.9em">
+        * Any NevCAN data provided or otherwise distributed by external organizations may
+        have undergone additional data processing and / or modification that renders the
+        data &ldquo;processed&rdquo; or otherwise non-raw. The Nevada Climate Change Project
+        is not responsible for data modifications made by such external entities. The Nevada
+        Climate Change Project website is the authoritative source for raw NevCAN data.
+    </p>
+{% endblock %}
+
+{% block modR %}
+<div class="module">
+	<div>
+		EPSCoR</div>
+	<h3 style="text-align: center">
+		<img src="{{ STATIC_URL }}static/images/cyberinfra.gif" alt="Data analysis visualization." style="height:88px;width:94px;" /></h3>
+	<p style="text-align: center; font-weight: bold">
+		<a title="The Nevada Infrastructure for Climate Change Science, Education and Outreach." href="http://www.nevada.edu/epscor/nsf/climate1/" target="_blank">Nevada Infrastructure for Climate Change Science, Education and Outreach</a>
+	</p>
+</div>
+{% endblock %}
+

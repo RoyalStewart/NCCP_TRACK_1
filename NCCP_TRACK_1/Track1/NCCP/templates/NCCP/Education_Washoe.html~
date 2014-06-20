@@ -1,0 +1,212 @@
+{% extends 'NCCP/education_base.html' %}
+
+{% block title %}S.E.N.S.O.R. - Nevada Climate Change Data Portal{% endblock %}
+
+{% block style %}
+    <style type="text/css">
+        #Main figure
+        {
+            float: right;
+            padding: 0.5em;
+        }
+        #Main footer
+        {
+            text-align: right;
+            padding: 1em;
+        }
+        #Main p
+        {
+            text-align: justify;
+        }
+        #Main dl
+        {
+            padding-left: 1em;
+        }
+        #Main dt
+        {
+            font-weight: bold;
+        }
+        #Main dd
+        {
+            margin-bottom: 0.5em;
+        }
+    </style>
+    
+    <style type="text/css">
+        #Main .module
+        {
+            margin: 0.5em;
+        }
+        </style>
+
+{% endblock %}
+
+{% block modL %}
+<div class="module">
+    <header>Elementary School</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/2-Chaney-Melting%20Ice%20Activity.4PDF.pdf">2. Melting Ice</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/3-Fawley-Greenhouse%20Effect.pdf">3. Greenhouse Effect</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/4-Wilkinson-GCC%20Lesson%20Plan.pdf">4. GCC Lesson Plan</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/5-Squires-Water%20and%20GCC.pdf">5. Water & GCC</a>
+        </li>
+    </ul>
+</div>
+
+    
+
+<div class="module">
+    <header>Middle School</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/6-Batcabe-Water%20Activity%201.pdf">6. Water Activity #1</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/7-Sattler-Carbon%20Footprint%20Activity.pdf">7. Carbon Footprint</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/8-Armbruster-5E%20Lesson-Food%20Waste.pdf">8. Food Waste</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/9-Armbruster-Food%20Waste%20Investigation-Hand-out.pdf">9. Food Waste Hand-Out</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/10-Armbruster-Wetland%205E%20Lesson.pdf">10. Wetland</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/11-Suchy-M-Socratic.pdf">11. Alternative Fuels (Socratic)</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/12-Suchy-M%20Sustainability.pdf">12. Sustainability</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/13-Suchy-M%20Wind%20Energy.pdf">13. Wind Energy</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/14-Kaiser-Meet%20the%20Creatures.pdf">14. Meet the Creatures</a>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}
+
+{% block body %}
+    <h1>
+        Washoe County Climate Change Science Activities</h1>
+    <p>
+        This series of activities is adapted from a climate change activity manual 
+        that was created to aid science teachers in bringing climate change science 
+        to their classrooms in an approachable and relevant way.  The activities and 
+        lessons contained in the manual represent the best work of some of the Washoe 
+        County School District elementary, middle and high school teachers who 
+        participated in the EPSCoR climate change educational institutes held over 
+        four summers at the University of Nevada, Reno from 2009 to 2012.
+    </p>
+    <p>
+        Activities and lessons were written for teacher use in the Reno, Nevada area 
+        but the authors and manual editors believe that a wider application can be 
+        reached in other parts of the country and of the world.  Lessons can be 
+        modified to fit specialized schools and programs that include units on climate 
+        change or environmental science.  High school and middle school lessons can be 
+        modified to fit elementary programs.  We believe that science teachers are very 
+        good at modifying lessons for their own unique circumstances!  Each of the 
+        lessons and activities have been implemented in public school science classes 
+        and were designed specifically for practical use.  Please let the authors know 
+        of your successes with their plans and feel free to submit your own original 
+        lessons to the EPSCoR Nevada-UNR Director(s) for inclusion in an upcoming second 
+        edition of the Climate Change Activity Manual.
+    </p>
+    
+    <p>
+        The activity manual was organized by grade level and can be accessed on the Nevada 
+        Climate Change Portal as follows:
+    </p>
+    <ul>
+        <li>
+            #1 – Introduction: has information about the project and contact information 
+            for manual editor, <a href="mailto:jacque@unr.edu">Jacque Ewing-Taylor, Ph.D.</a>, along with descriptions and 
+            information on both the 5E model of science lesson construction and inquiry-based 
+            science education theory and implementation.
+        </li>
+        <li>
+            #2-5 – Elementary School Activities
+        </li>
+        <li>
+            #6-14 – Middle School Activities
+        </li>
+        <li>
+            #15-25 – High School Activities
+        </li>
+        <li>
+            #26 – Appendix from the Manual: Article on The Socratic Method, to be used 
+            in conjunction with activity #11 Alternative Fuels Activity
+        </li>
+    </ul>
+
+{% endblock %}
+
+{% block modR %}
+<div class="module">
+    <header>Reference</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/1-Introduction.pdf">1. Introduction</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/26-Socratic%20Method%20(Appendix).pdf">26. Socratic Method (Appendix)</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/EPSCoR%20GCC%20Activity%20Manual.rev6-17.pdf">Entire Manual</a>
+        </li>
+    </ul>
+</div>
+
+    
+
+<div class="module">
+    <header>High School</header>
+    <ul class="nav">
+        <li>
+            <a href="{{ STATIC_URL }}static/15-Hopper-Oceans%20on%20Acid.pdf">15. Oceans on Acid</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/16-EPSCoR-Ice%20Cores.pdf">16. Ice Cores</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/17-Carney-Climate%20and%20Change.pdf">17. Climate & Change</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/18-English-Water%20Wheel.pdf">18. Water Wheel</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/19-English-Wind%20Machine.pdf">19. Wind Machine</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/20-McCusky-Green%20Energy.pdf">20. Green Energy</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/21-Dierenga-Biome%20Lesson.pdf">21. Biome Lesson</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/22-Dierenga-5E%20Gardening%20Project.pdf">22. Gardening Project</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/23-Tatar-Dendrochronology.pdf">23. Dedrochronology</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/24-Batcabe-Water%20Climate%20Radioisotopes.pdf">24. Water Climate Radioisotope</a>
+        </li>
+        <li>
+            <a href="{{ STATIC_URL }}static/25-Hastings-Water%20Inquiry%20Activity.pdf">25. Water Inquiry Activity</a>
+        </li>
+    </ul>
+</div>
+
+{% endblock %}
